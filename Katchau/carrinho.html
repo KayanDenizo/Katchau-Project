@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Carrinho | Katchau</title>
+
+    <link rel="stylesheet" href="css/carrinho.css">
+
+    <link rel="stylesheet" href="Katchau/css/background.css">
+    <link rel="stylesheet" href="css/index2.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="img/logo-katchau-removebg-preview.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Nav Section -->
+
+    <!-- Testando Funcoes praticas do Carrinho -->
+
+    <!-- Botao para adicionar ao carrinho -->
+     <button id="adicionar-carrinho">Adicionar ao carrinho</button>
+
+     <!-- <span class="material-symbols-outlined" id="botaoCarrinho">shopping_cart</span> -->
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <h2>Carrinho</h2>
+        <ul id="lista-produtos">
+            <!-- Produtos Listados Aqui -->
+
+        </ul>
+    </div>
+
+    <!-- Informações do produto -->
+    <div id="produto" class="produto">
+        <h2 id="nome-produto">Lorem</h2>
+        <p id="descricao-produto">Este produto faz tal coisa</p>
+        <p id="preco-produto">R$ 800</p>
+        <img src="img/img-products/fone.png" alt="Foto do fone" id="foto-produto">
+    </div>
+
+
+    <!-- Fim Testando funcoes praticas do carrinho -->
+
+    <header>
+        <nav class="navbar">
+            <div class="logomarca">
+                <a href="index2.html"><img src="img/logo-katchau-removebg-preview.png" alt="logo"
+                        class="logo-marca"></a>
+            </div>
+
+            <div class="div-search">
+                <input class="searchBar" type="search" placeholder="Pesquisar produtos..." name="search"><i
+                    class="material-symbols-outlined">search</i>
+            </div>
+
+            <nav class="navbar-menu">
+                <button>
+                    <a href="assets/profile/index.html" class="icon material-symbols-outlined">person</a>
+                </button>
+                <button>
+                    <a href="assets/Favoritos/favoritos.html" class="icon material-symbols-outlined">favorite</a>
+                </button>
+                <button>
+                    <span class="icon material-symbols-outlined" id="botaoCarrinho">shopping_cart</span>
+                </button>
+                <button>
+                    <a href="assets/faq/faq.html" class="icon material-symbols-outlined">contact_support</a>
+                </button>
+                <button class="signUpBtn"><a href="assets/SignUp/cadastro.html">Cadastrar</a></button>
+                <button class="loginBtn"><a href="assets/SignUp/entrar-kayan.html">Entrar</a></button>
+            </nav>
+        </nav>
+        <nav class="navbar-items">
+            <li class="item hover-underline-animation"><a href="index2.html">Início</a></li>
+
+            <div class="dropdown-container">
+                <li class="item hover-underline-animation dropbtn"><a
+                        href="assets/categorias/categorias.html">Categorias</a></li>
+                <div class="dropdown-content">
+                    <a href="assets/categorias/computadores.html">Computadores</a>
+                    <a href="assets/categorias/perifericos.html">Periféricos</a>
+                    <a href="assets/categorias/hardware.html">Hardware</a>
+                    <a href="assets/categorias/monitores.html">Monitores</a>
+                </div>
+
+            </div>
+
+
+            <li class="item hover-underline-animation"><a href="assets/contato/index.html">Contato</a></li>
+
+            <li class="item hover-underline-animation"><a href="assets/ajuda/index.html">Ajuda</a></li>
+        </nav>
+    </header>
+
+    <!-- Banner Slide Section -->
+    <div class="slider">
+
+        <div class="slides">
+            <!-- Radio Button -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-- Fim Radio Buttons -->
+
+            <!-- Slide Images -->
+            <div class="slide first">
+                <img src="img/img-slides/1.png" alt="Imagem 1" />
+            </div>
+
+            <div class="slide">
+                <img src="img/img-slides/2.png" alt="Imagem 2" />
+            </div>
+
+            <div class="slide">
+                <img src="img/img-slides/3.png" alt="Imagem 3" />
+            </div>
+
+            <div class="slide">
+                <img src="img/img-slides/4.png" alt="Imagem 4" />
+            </div>
+            <!-- Fim Slide Images -->
+
+            <!-- Navigation auto -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+
+    </div>
+    <!-- Fim Slide Section -->
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="products-container">
+            <h2 class="title-section">Produtos em destaque</h2>
+            <div class="products">
+
+
+                <div class="product">
+                    <div class="image-container">
+                        <a href="assets/products/mouse.html">
+                            <img class="imagem-product" src="img/img-products/mouse.png" height="300px" width="300px"
+                                alt="produto6">
+                        </a>
+                        <div class="descont-container">
+                            <span class="descont">-33%</span>
+                        </div>
+                    </div>
+
+                    <h3 class="title">Mouse Razer</h3>
+                    <p class="off">R$ <b> 300,00</b></p>
+                    <p class="price">R$ <b>200,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(68)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="assets/products/gabinete.html">
+                            <img class="imagem-product" src="img/img-products/gabinete.png" height="300px" width="300px"
+                                alt="produto6">
+                        </a>
+                        <div class="descont-container">
+                            <span class="descont">-37.5%</span>
+                        </div>
+                    </div>
+                    <h3 class="title">Gabinete Redragon</h3>
+                    <p class="off">R$ <b> 400,00</b></p>
+                    <p class="price">R$ <b>250,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(92)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="assets/products/notebook-dell-gamer.html">
+                            <img class="imagem-product" src="img/img-products/notebook gamer dell.png" height="300px"
+                                width="300px" alt="produto6">
+                        </a>
+                        <div class="descont-container">
+                            <span class="descont">-5.94%</span>
+                        </div>
+                    </div>
+                    <h3 class="title">Notebook Dell Gamer</h3>
+                    <p class="off">R$ <b> 5300,00</b></p>
+                    <p class="price">R$ <b>4999,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(32)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="assets/products/computador-dell.html">
+                            <img class="imagem-product" src="img/img-products/notebook dell.png" height="300px"
+                                width="300px" alt="produto6">
+                        </a>
+                        <div class="descont-container">
+                            <span class="descont">-8.86%</span>
+                        </div>
+                    </div>
+                    <h3 class="title">Notebook Dell I5</h3>
+                    <p class="off">R$ <b> 3500,00</b></p>
+                    <p class="price">R$ <b>3200,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(58)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="assets/products/teclado.html">
+                            <img class="imagem-product" src="img/img-products/teclado mecanico.png" height="300px"
+                                width="300px" alt="produto6">
+                        </a>
+                        <div class="descont-container">
+                            <span class="descont">-33%</span>
+                        </div>
+                    </div>
+                    <h3 class="title">Teclado Mecânico K500</h3>
+                    <p class="off">R$ <b> 300,00</b></p>
+                    <p class="price">R$ <b>200,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(32)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="assets/products/computador-gamer-i5.html">
+                            <img class="imagem-product" src="img/img-products/pc-i5.png" height="300px" width="300px"
+                                alt="produto6">
+                        </a>
+                        <div class="descont-container">
+                            <span class="descont">-10%</span>
+                        </div>
+                    </div>
+                    <h3 class="title">Computador Gamer I5</h3>
+                    <p class="off">R$ <b> 5000,00</b></p>
+                    <p class="price">R$ <b>4500,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(68)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="assets/products/monitor.html">
+                            <img class="imagem-product" src="img/img-products/monitor.png" height="300px" width="300px"
+                                alt="produto6">
+                        </a>
+                        <div class="descont-container">
+                            <span class="descont">-2.92%</span>
+                        </div>
+                    </div>
+                    <h3 class="title">Monitor AOC</h3>
+                    <p class="off">R$ <b> 720,00</b></p>
+                    <p class="price">R$ <b>699,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(43)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="assets/products/fone.html">
+                            <img class="imagem-product" src="img/img-products/fone.png" height="300px" width="300px"
+                                alt="produto6">
+                        </a>
+                        <div class="descont-container">
+                            <span class="descont">-13.3%</span>
+                        </div>
+                    </div>
+                    <h3 class="title">HeadSet Redragon</h3>
+                    <p class="off">R$ <b> 600,00</b></p>
+                    <p class="price">R$ <b>520,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(57)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+                <div class="product last">
+                    <a href="assets/products/monitor2.html">
+                        <img src="img/img-products/monitor-curvado.png" height="300px" width="300px" alt="produto6">
+                    </a>
+                    <h3 class="title">Monitor para PC UltraWide</h3>
+                    <p class="off">R$ <b> 1200,00</b></p>
+                    <p class="price">R$ <b>999,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(68)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Secao dos produtos em promocao -->
+    <section class="product-promo">
+        <div class="products-promo-container">
+            <div class="promo-container">
+                <h2 class="title-section">Produtos em promoção</h2>
+                <span id="timer">29:20:10</span>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <div class="image-container">
+                        <a href="assets/products/cooler.html">
+                            <img class="imagem-product" src="img/img-products/cooler-notebook.png" height="300px"
+                                width="300px" alt="produto6">
+                        </a>
+                        <div class="descont-container">
+                            <span class="descont">-50.96%</span>
+                        </div>
+                    </div>
+                    <h3 class="title">Cooler Notebook 6 Fans</h3>
+                    <p class="off">R$ <b> 220,00</b></p>
+                    <p class="price">R$ <b>108,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(75)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="assets/products/kit-limpeza.html">
+                            <img class="imagem-product" src="img/img-products/kit-de-limpeza-pc.png" height="300px"
+                                width="300px" alt="produto6">
+                        </a>
+                        <div class="descont-container">
+                            <span class="descont">-38%</span>
+                        </div>
+                    </div>
+                    <h3 class="title">Kit de limpeza de eletrônicos</h3>
+                    <p class="off">R$ <b> 34,00</b></p>
+                    <p class="price">R$ <b>21,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(68)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="assets/products/caixa-de-som.html">
+                            <img class="imagem-product" src="img/img-products/Caixa de som.png" height="300px"
+                                width="300px" alt="produto6">
+                        </a>
+                        <div class="descont-container">
+                            <span class="descont">-16.67%</span>
+                        </div>
+                    </div>
+                    <h3 class="title">Caixa de Som Desktop</h3>
+                    <p class="off">R$ <b> 300,00</b></p>
+                    <p class="price">R$ <b>250,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(89)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="assets/products/luminaria.html">
+                            <img class="imagem-product" src="img/img-products/Luminario-com-carregador.png"
+                                height="300px" width="300px" alt="produto6">
+                        </a>
+                        <div class="descont-container">
+                            <span class="descont">-12.2%</span>
+                        </div>
+                    </div>
+                    <h3 class="title">Luminária com carregador</h3>
+                    <p class="off">R$ <b> 90,00</b></p>
+                    <p class="price">R$ <b>79,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(120)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="assets/products/headset-gamer2.html">
+                            <img class="imagem-product" src="img/img-products/Headset-gamer.png" height="300px"
+                                width="300px" alt="produto6">
+                        </a>
+                        <div class="descont-container">
+                            <span class="descont">-17.5%</span>
+                        </div>
+                    </div>
+                    <h3 class="title">Heaset Gamer Havit</h3>
+                    <p class="off">R$ <b> 120,00</b></p>
+                    <p class="price">R$ <b>99,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(96)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <a href="assets/products/teclado-gamer.html">
+                            <img class="imagem-product" src="img/img-products/teclado-gamer.png" height="300px"
+                                width="300px" alt="produto6">
+                        </a>
+                        <div class="descont-container">
+                            <span class="descont">-20%</span>
+                        </div>
+                    </div>
+                    <h3 class="title">Teclado Mecânico Redragon</h3>
+                    <p class="off">R$ <b> 300,00</b></p>
+                    <p class="price">R$ <b>240,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(102)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+                <div class="product product-query">
+                    <div class="image-container">
+                        <img class="imagem-product" src="img/img-products/fone.png" height="300px" width="300px"
+                            alt="produto6">
+                        <div class="descont-container">
+                            <span class="descont">-13.33%</span>
+                        </div>
+                    </div>
+                    <h3 class="title">HeadSet Redragon</h3>
+                    <p class="off">R$ <b> 600,00</b></p>
+                    <p class="price">R$ <b>520,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(102)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+                <div class="product product-query">
+                    <div class="image-container">
+                        <img class="imagem-product" src="img/img-products/mouse.png" height="300px" width="300px"
+                            alt="produto6">
+                        <div class="descont-container">
+                            <span class="descont">-37%</span>
+                        </div>
+                    </div>
+                    <h3 class="title">Mouse Razer</h3>
+                    <p class="off">R$ <b> 300,00</b></p>
+                    <p class="price">R$ <b>200,00</b></p>
+                    <div class="stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #ffad33;">
+                            <path
+                                d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
+                            </path>
+                        </svg>
+                        <span>(102)</span>
+
+                    </div>
+                    <button class="btnPrice" type="button">
+                        <a class="btnLink" href="#">ADICIONAR AO CARRINHO</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="exclusive">
+                    <h2>Exclusivo</h2>
+                    <h3>Se inscreva!</h3>
+                    <span>Garanta 10% de desconto no primeiro pedido</span>
+                    <div class="input-container">
+                        <input class="footer-input" type="email" placeholder="Insira seu e-mail" required>
+                        <!-- <i class="material-symbols-outlined">send</i> -->
+                        <button type="button" class="btn">ENVIAR</button>
+                    </div>
+                </div>
+                <div class="support">
+                    <h2>Suporte</h2>
+                    <span><i class="material-symbols-outlined icon-footer-support">phone_in_talk</i>(11)
+                        98996-9652</span>
+                    <span><i
+                            class="material-symbols-outlined icon-footer-support">alternate_email</i>katchau.support@gmail.com</span>
+                </div>
+                <div class="account">
+                    <h2>Sua Conta</h2>
+                    <span><a href="assets/profile/index.html">Minha conta</a></span>
+                    <span><a href="assets/SignUp/entrar-kayan.html">Entrar / Cadastrar</a></span>
+                    <span><a href="assets/carrinho/carrinho.html">Carrinho</a></span>
+                    <span><a href="assets/Favoritos/favoritos.html">Favoritos</a></span>
+                    <span><a href="index2.html" class="hover-simple">Início</a></span>
+                </div>
+                <div class="quick-links">
+                    <h2>Links Rápidos</h2>
+                    <span><a href="assets/politica-de-privacidade/politica-de-privacidade.html">Política de
+                            privacidade</a></span>
+                    <span><a href="assets/termos-de-uso/termos-de-uso.html">Termos de uso</a></span>
+                    <span><a href="assets/faq/faq.html">FAQ</a></span>
+                    <span><a href="assets/contato/index.html">Contato</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright-container">
+        <span>&copy Copyright Katchau 2024 Todos os direitos reservados</span>
+    </div>
+
+    <!-- Footer -->
+
+    <script src="JS/carrinho.js"></script>
+
+    <script src="JS/slider.js"></script>
+    <script src="JS/timer.js"></script>
+    <!-- <script src="JS/cart.js"></script> -->
+</body>
+
+</html>
