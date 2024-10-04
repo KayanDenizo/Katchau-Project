@@ -8,84 +8,91 @@
 }
 
 .sidebar {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100vh;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border: 1px solid #ddd;
-    z-index: 3;
 
-    border-radius: 50px 0px 0px 50px;
-  }
-  
-  .sidebar.show {
-    display: block;
-  }
-  
-  .lista-produtos {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .lista-produtos li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .lista-produtos li:last-child {
-    border-bottom: none;
-  }
-  
-  .produto {
-    display: none;
-  }
-  
-  
-  #foto-produto {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-  }
+  /* Scroll da sidebar */
+  overflow-y: auto;
+  max-height: 900px;
+  /* ajuste o valor para o tamanho desejado */
+  transition: all 0.5s ease-in-out;
+
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  z-index: 3;
+
+  border-radius: 50px 0px 0px 50px;
+}
+
+.sidebar.show {
+  display: block;
+}
+
+.lista-produtos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-produtos li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.lista-produtos li:last-child {
+  border-bottom: none;
+}
+
+.produto {
+  display: none;
+}
+
+
+#foto-produto {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
 
 /* Botoes de adicionar e excluir */
 
-  .quantidade button {
-    width: 20px;
-    height: 20px;
-    border: none;
-    border-radius: 50%;
-    background-color: #ccc;
-    color: #333;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .quantidade button:hover {
-    background-color: #aaa;
-  }
-  
-  .quantidade .aumentar {
-    margin-right: 5px;
-  }
-  
-  .quantidade .diminuir {
-    margin-left: 5px;
-  }
+.quantidade button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
 
-  .excluir {
-    background-color: #f00;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .excluir:hover {
-    background-color: #ff3333;
-  }
+.quantidade button:hover {
+  background-color: #aaa;
+}
+
+.quantidade .aumentar {
+  margin-right: 5px;
+}
+
+.quantidade .diminuir {
+  margin-left: 5px;
+}
+
+.excluir {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.excluir:hover {
+  background-color: #ff3333;
+}
