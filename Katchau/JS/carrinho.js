@@ -23,19 +23,26 @@ botaoAdicionar.addEventListener('click', () => {
 
     // Adicione as informações do produto à lista de produtos
     const produto = {
-        nome: 'Nome do Produto',
+        nome: 'Nome do produto',
         descricao: 'Descrição do Produto',
         preco: 'R$ 99,99',
-        foto: 'https://example.com/foto-produto.jpg',
+        foto: '../assets/IMG/img-products/fone.png',
         quantidade: 1
+    };
+
+    const product2 = {
+        nome: nomeProduto.innerText,
+        desc: descricaoProduto.innerText,
+        preco: precoProduto.innerText,
+        foto: fotoProduto.src
     };
 
     const itemProduto = document.createElement('li');
     itemProduto.innerHTML = `
-    <h2>${produto.nome}</h2>
-    <p>${produto.descricao}</p>
-    <p>${produto.preco}</p>
-    <img src="${produto.foto}" alt="${produto.nome}">
+    <h2>${product2.nome}</h2>
+    <p>${product2.desc}</p>
+    <p>${product2.preco}</p>
+    <img src="${product2.foto}" alt="${produto.nome}" id="foto-produto">
     <div class="quantidade">
         <button class="diminuir">-</button>
         <span class="quantidade-texto">${produto.quantidade}</span>
@@ -68,10 +75,10 @@ botaoAdicionar.addEventListener('click', () => {
     });
 
     // Exiba as informações do produto
-    nomeProduto.textContent = produto.nome;
-    descricaoProduto.textContent = produto.descricao;
-    precoProduto.textContent = produto.preco;
-    fotoProduto.src = produto.foto;
+    nomeProduto.textContent = product2.nome;
+    descricaoProduto.textContent = product2.desc;
+    precoProduto.textContent = product2.preco;
+    fotoProduto.src = product2.foto;
     fotoProduto.alt = produto.nome;
 
     // Exiba o produto
