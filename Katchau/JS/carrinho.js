@@ -19,7 +19,8 @@ const fotoProduto = document.getElementById('foto-produto');
 // Adicione um evento de clique ao botão Adicionar ao Carrinho
 
 
-botaoAdicionar.addEventListener('click', () => {
+botaoAdicionar.addEventListener('click', (event) => {
+    event.preventDefault();
     // Exiba a sidebar
     sidebar.classList.add('show');
     body.classList.add('bg');

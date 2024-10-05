@@ -11,6 +11,8 @@ li {
 
 #adicionar-carrinho {
   cursor: pointer;
+  z-index: 5;
+  position: relative;
   padding: 10px 20px;
   background-color: #ccc;
   border-radius: 5px;
