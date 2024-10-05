@@ -107,6 +107,7 @@ a {
 }
 
 .navbar-menu .material-symbols-outlined {
+    cursor: pointer;
     font-size: 30px;
     margin: 0 10px 0 0;
     font-weight: 300;

@@ -1,3 +1,5 @@
+const body = document.getElementById('page');
+
 // Selecione o botão Adicionar ao Carrinho
 const botaoAdicionar = document.getElementById('adicionar-carrinho');
 const botaoCarrinho = document.getElementById('botaoCarrinho');
@@ -103,6 +105,8 @@ botaoCarrinho.addEventListener('click', (event) => {
     event.preventDefault();
     // Exiba a sidebar
     sidebar.classList.add('show');
+
+    
 });
 
 
