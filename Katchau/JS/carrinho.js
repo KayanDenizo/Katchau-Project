@@ -22,6 +22,8 @@ const fotoProduto = document.getElementById('foto-produto');
 botaoAdicionar.addEventListener('click', () => {
     // Exiba a sidebar
     sidebar.classList.add('show');
+    body.classList.add('bg');
+
 
     // Adicione as informações do produto à lista de produtos
     const produto = {
