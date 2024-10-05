@@ -106,7 +106,7 @@ botaoCarrinho.addEventListener('click', (event) => {
     // Exiba a sidebar
     sidebar.classList.add('show');
 
-    
+    body.classList.add('bg');
 });
 
 
@@ -115,5 +115,6 @@ document.addEventListener('click', (event) => {
     if (!sidebar.contains(event.target) && event.target !== botaoAdicionar && event.target !== botaoCarrinho && sidebar.classList.contains('show')) {
         sidebar.classList.remove('show');
         document.querySelector('.produto').classList.remove('show');
+        body.classList.remove('bg');
     }
 });

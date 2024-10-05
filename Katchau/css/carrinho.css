@@ -2,6 +2,13 @@ li {
   list-style: none;
 }
 
+.bg {
+  background: #000;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.5;
+}
+
 #adicionar-carrinho {
   cursor: pointer;
   padding: 10px 20px;
