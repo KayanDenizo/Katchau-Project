@@ -39,16 +39,26 @@ botaoAdicionar.addEventListener('click', () => {
 
     const itemProduto = document.createElement('li');
     itemProduto.innerHTML = `
-    <h2>${product2.nome}</h2>
-    <p>${product2.desc}</p>
-    <p>${product2.preco}</p>
-    <img src="${product2.foto}" alt="${produto.nome}" id="foto-produto">
-    <div class="quantidade">
-        <button class="diminuir">-</button>
-        <span class="quantidade-texto">${produto.quantidade}</span>
-        <button class="aumentar">+</button>
+    <div class="container">
+        <div class="produto-container">
+            <img src="${product2.foto}" alt="${produto.nome}" id="foto-produto">
+            <div class="info-produto">
+                <p>${product2.desc}</p>
+                <p>${product2.preco}</p>
+                <div class="bottom-container">
+                    <div class="quantidade">
+                        <button class="diminuir">-</button>
+                        <span class="quantidade-texto">${produto.quantidade}</span>
+                        <button class="aumentar">+</button>
+                    </div>
+                    <div class="excluir-arquivar">
+                        <span class="excluir">Excluir</span>
+                        <span class="arquivar">Arquivar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <button class="excluir">Excluir</button>
   `;
 
     listaProdutos.appendChild(itemProduto);
@@ -71,6 +81,10 @@ botaoAdicionar.addEventListener('click', () => {
 
     // Adicione um evento de clique ao botão de excluir
     itemProduto.querySelector('.excluir').addEventListener('click', () => {
+        listaProdutos.removeChild(itemProduto);
+    });
+
+    itemProduto.querySelector('.arquivar').addEventListener('click', () => {
         listaProdutos.removeChild(itemProduto);
     });
 

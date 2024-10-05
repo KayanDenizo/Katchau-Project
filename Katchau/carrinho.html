@@ -33,13 +33,21 @@
     <!-- Testando Funcoes praticas do Carrinho -->
 
     <!-- Botao para adicionar ao carrinho -->
-     <button id="adicionar-carrinho">Adicionar ao carrinho</button>
+    <button id="adicionar-carrinho">Adicionar ao carrinho</button>
 
-     <!-- <span class="material-symbols-outlined" id="botaoCarrinho">shopping_cart</span> -->
+    <!-- <span class="material-symbols-outlined" id="botaoCarrinho">shopping_cart</span> -->
 
     <!-- Sidebar -->
     <div id="sidebar" class="sidebar">
-        <h2>Carrinho</h2>
+        <div class="sidebar_header_container">
+            <h2 class="cart_title">Carrinho</h2>
+            <span class="showAll" id="showAll">Marcar Todos</span>
+        </div>
+        <div class="sidebar_subtotal_container">
+            <span class="subtotal" id="subTotal"><strong>Subtotal:</strong>
+                <p>R$</p> 339.54
+            </span>
+        </div>
         <ul id="lista-produtos">
             <!-- Produtos Listados Aqui -->
 
@@ -48,11 +56,14 @@
 
     <!-- Informações do produto -->
     <div id="produto" class="produto">
-        <h2 id="nome-produto">Lorem</h2>
-        <p id="descricao-produto">Este produto faz tal coisa</p>
-        <p id="preco-produto">R$ 800</p>
         <img src="img/img-products/fone.png" alt="Foto do fone" id="foto-produto">
+        <h2 id="nome-produto">Lorem</h2>
+        <p id="descricao-produto">Headset Fone de Ouvido Havit HV-H2002d Pink, Gamer, com Microfone, Falante 53mm, Plug
+            3, 5mm: compatível com XBOX ONE e PS4, HAVIT, HV-H2002d Cor Rosa</p>
+        <p id="preco-produto">R$ 800</p>
     </div>
+
+    
 
 
     <!-- Fim Testando funcoes praticas do carrinho -->
