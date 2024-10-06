@@ -7,6 +7,12 @@ const botaoCarrinho = document.getElementById('botaoCarrinho');
 // Selecione a sidebar
 const sidebar = document.getElementById('sidebar');
 
+// Select All
+const selectAll = document.getElementById('selectAll');
+
+// Input Checkbox
+const input = document.getElementById('input_check');
+
 // Selecione a lista de produtos
 const listaProdutos = document.getElementById('lista-produtos');
 
@@ -44,7 +50,9 @@ botaoAdicionar.addEventListener('click', (event) => {
 
     const itemProduto = document.createElement('li');
     itemProduto.innerHTML = `
-    <div class="container">
+    <div class="produtos_container">
+     <input type="checkbox" class="input_check" id="input_check">
+     <div class="container">
         <div class="produto-container">
             <img src="${product2.foto}" alt="${produto.nome}" id="foto-produto">
             <div class="info-produto">
@@ -63,6 +71,7 @@ botaoAdicionar.addEventListener('click', (event) => {
                 </div>
             </div>
         </div>
+      </div>
     </div>
   `;
 
@@ -120,4 +129,11 @@ document.addEventListener('click', (event) => {
         document.querySelector('.produto').classList.remove('show');
         body.classList.remove('bg');
     }
+});
+
+selectAll.addEventListener('click', () => {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach((checkbox) => {
+        checkbox.checked = true;
+    });
 });

@@ -69,7 +69,23 @@ li {
   }
 }
 
+.produtos_container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 
+}
+
+.input_check {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.input_check:checked {
+  cursor: pointer;
+  border: 1px solid #FD7014;  
+}
 
 .container {
   border: 1px solid #ccc;
@@ -112,7 +128,7 @@ li {
   position: fixed;
   top: 0;
   right: 0;
-  width: 650px;
+  width: 700px;
   height: 100vh;
   background-color: #393E46;
   /* padding: 20px; */
