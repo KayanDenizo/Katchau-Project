@@ -89,7 +89,7 @@ li {
   color: #fff;
   margin-right: 40px;
   margin-bottom: 30px;
-  width: 600px;
+  width: 90%;
 }
 
 
@@ -101,7 +101,7 @@ li {
 .info-produto {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 10px;
 
   p,h2 {
     margin: 6px;
@@ -226,7 +226,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-right: 8px;
   gap: 50px;
   margin-top: 25px;
 }
