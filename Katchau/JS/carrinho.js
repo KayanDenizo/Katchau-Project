@@ -1,4 +1,4 @@
-// SISTEMA - I M C O M P L E T O - PARA ADICIONAR TODOS OS PRODUTOS NO CARRINHO
+// SISTEMA - 90% PRONTO - PARA ADICIONAR TODOS OS PRODUTOS NO CARRINHO
 
 // // Selecione o botão Adicionar ao Carrinho
 const body = document.getElementById('page');
@@ -35,8 +35,8 @@ botoesAdicionar.forEach((botao) => {
         body.classList.add('bg');
         // Exiba a sidebar
 
-
-
+        
+        
         // Obtenha as informações do produto
         const produto = {
             nome: botao.parentNode.querySelector('.title').textContent,
@@ -45,6 +45,11 @@ botoesAdicionar.forEach((botao) => {
             foto: botao.parentNode.querySelector('.imagem-product').src,
             quantidade: 1
         };
+        
+        // SubTotal INCOMPLETO
+        const subtotal = document.getElementById('subTotal');
+        subtotal.innerHTML = `${produto.preco}`
+        // Fim SubTotal
 
         const itemProduto = document.createElement('li');
         itemProduto.innerHTML = `
