@@ -3,7 +3,7 @@
 // // Selecione o botão Adicionar ao Carrinho
 const body = document.getElementById('page');
 
-const botoesAdicionar = document.querySelectorAll('.btnPrice');
+const botoesAdicionar = document.querySelectorAll('.product button.btnPrice');
 const botaoCarrinho = document.getElementById('botaoCarrinho');
 
 // Selecione a sidebar
@@ -30,6 +30,7 @@ const fotoProduto = document.getElementById('foto-produto');
 botoesAdicionar.forEach((botao) => {
     botao.addEventListener('click', (event) => {
         event.preventDefault();
+        event.stopPropagation();
         sidebar.classList.add('show');
         body.classList.add('bg');
         // Exiba a sidebar
