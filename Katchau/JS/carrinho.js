@@ -35,8 +35,6 @@ botoesAdicionar.forEach((botao) => {
         body.classList.add('bg');
         // Exiba a sidebar
 
-        
-        
         // Obtenha as informações do produto
         const produto = {
             nome: botao.parentNode.querySelector('.title').textContent,
@@ -45,11 +43,6 @@ botoesAdicionar.forEach((botao) => {
             foto: botao.parentNode.querySelector('.imagem-product').src,
             quantidade: 1
         };
-        
-        // SubTotal INCOMPLETO
-        const subtotal = document.getElementById('subTotal');
-        subtotal.innerHTML = `${produto.preco}`
-        // Fim SubTotal
 
         const itemProduto = document.createElement('li');
         itemProduto.innerHTML = `
