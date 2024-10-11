@@ -238,6 +238,7 @@ li {
 
 
 .sidebar_footer_container {
+  display: none;
   background-color: #454E59;
   position: fixed;
   bottom: 0;

@@ -9,6 +9,8 @@ const botaoCarrinho = document.getElementById('botaoCarrinho');
 // Selecione a sidebar
 const sidebar = document.getElementById('sidebar');
 
+const footerSidebar = document.getElementById('footerSidebar');
+
 // Select All
 const selectAll = document.getElementById('selectAll');
 
@@ -33,6 +35,7 @@ botoesAdicionar.forEach((botao) => {
         event.stopPropagation();
         sidebar.classList.add('show');
         body.classList.add('bg');
+        footerSidebar.style.display = 'block';
         // Exiba a sidebar
 
         // Obtenha as informações do produto
@@ -92,6 +95,8 @@ botoesAdicionar.forEach((botao) => {
         // Adicione um evento de clique ao botão de excluir
         itemProduto.querySelector('.excluir').addEventListener('click', () => {
             listaProdutos.removeChild(itemProduto);
+            footerSidebar.style.display = 'none';
+
         });
 
         itemProduto.querySelector('.arquivar').addEventListener('click', () => {
