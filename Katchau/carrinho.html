@@ -44,7 +44,9 @@
             <span class="showAll" id="selectAll">Marcar Todos</span>
         </div>
         <div class="sidebar_subtotal_container">
-            <span class="subtotal"><strong>Subtotal:</strong><p id="subTotal">""</p></span>
+            <span class="subtotal"><strong>Subtotal:</strong>
+                <p id="subTotal">""</p>
+            </span>
         </div>
         <ul id="lista-produtos">
             <!-- Produtos Listados Aqui -->
@@ -52,7 +54,31 @@
         </ul>
 
         <div class="sidebar_footer_container">
-            
+            <div class="frete_container">
+                <div class="header_container">
+                    <div class="frete_header_container">
+                        <span class="material-symbols-outlined">
+                            check_circle
+                        </span>
+                        <p>Seu pedido é elegível para FRETE GRÁTIS.</p>
+                    </div>
+                    <p class="margin">Clique em Frete grátis após fechar o pedido.</p>
+                </div>
+
+                <div class="subtotal_container">
+                    <div class="header_subtotal_container">
+                        <h2>Subtotal</h2>
+                        <span class="quantidade_produtos">Quantidade</span>
+                        <span class="preco_total">Preco</span>
+                    </div>
+
+                    <div class="fechar_pedido_container">
+                        <a href="#">
+                            <button type="button" class="fechar_pedido_btn">Fechar Pedido</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -60,7 +86,8 @@
     <div id="produto" class="produto">
         <img src="img/img-products/fone.png" alt="Foto do fone" id="foto-produto">
         <h2 id="nome-produto">Lorem</h2>
-        <p id="descricao-produto">Headset Fone de Ouvido Havit HV-H2002d Pink, Gamer, com Microfone, Falante 53mm, Plug
+        <p id="descricao-produto">Headset Fone de Ouvido Havit HV-H2002d Pink, Gamer, com Microfone, Falante 53mm,
+            Plug
             3, 5mm: compatível com XBOX ONE e PS4, HAVIT, HV-H2002d Cor Rosa</p>
         <p id="preco-produto">R$ 800</p>
     </div>

@@ -48,6 +48,7 @@ li {
   display: flex;
   justify-content: end;
   border-bottom: 1px solid #ccc;
+
   .subtotal {
     text-align: end;
     font-size: 15px;
@@ -103,7 +104,8 @@ li {
   flex-direction: column;
   margin-left: 10px;
 
-  p,h2 {
+  p,
+  h2 {
     margin: 6px;
   }
 
@@ -151,6 +153,10 @@ li {
 
 .lista-produtos li:last-child {
   border-bottom: none;
+}
+
+#lista-produtos {
+  margin-bottom: 280px;
 }
 
 .produto {
@@ -228,4 +234,79 @@ li {
   align-items: baseline;
   gap: 50px;
   margin-top: 25px;
+}
+
+
+.sidebar_footer_container {
+  background-color: #454E59;
+  position: fixed;
+  bottom: 0;
+  width: 690px;
+
+  .frete_container {
+    padding-bottom: 30px;
+  }
+
+  .header_container {
+    margin-left: 50px;
+    padding-top: 20px;
+    
+    p {
+      color: #ccc;
+      margin: 10px 0 0 0;
+    }
+
+    .margin {
+      margin-left: 30px;
+    }
+
+    .frete_header_container {
+      display: flex;
+      align-items: end;
+      gap: 5px;
+  
+      span {
+        color: #6DF037;
+      }
+  
+      p {
+        color: #82BD69;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .header_subtotal_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block: 35px;
+    margin-left: 55px;
+
+    h2 {
+      color: #fff;
+    }
+  }
+
+  .fechar_pedido_container {
+    display: flex;
+    justify-content: center;
+
+    .fechar_pedido_btn {
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px 150px;
+      color: #fff;
+      transition: .2s ease-in-out;
+
+      &:hover {
+        background-color: #82BD69;
+        border: 1px solid #82BD69;
+        transition: .2s ease-in-out;
+      }
+    }
+  }
+  
 }
