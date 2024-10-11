@@ -35,7 +35,9 @@ botoesAdicionar.forEach((botao) => {
         event.stopPropagation();
         sidebar.classList.add('show');
         body.classList.add('bg');
-        footerSidebar.style.display = 'block';
+        if (listaProdutos.children.length >= 0) {
+            footerSidebar.style.display='block';
+        }
         // Exiba a sidebar
 
         // Obtenha as informações do produto
@@ -95,8 +97,9 @@ botoesAdicionar.forEach((botao) => {
         // Adicione um evento de clique ao botão de excluir
         itemProduto.querySelector('.excluir').addEventListener('click', () => {
             listaProdutos.removeChild(itemProduto);
-            footerSidebar.style.display = 'none';
-
+            if (listaProdutos.children.length === 0) {
+                footerSidebar.style.display='none';
+            }
         });
 
         itemProduto.querySelector('.arquivar').addEventListener('click', () => {
@@ -104,6 +107,7 @@ botoesAdicionar.forEach((botao) => {
         });
     });
 });
+
 
 botaoCarrinho.addEventListener('click', (event) => {
     event.preventDefault();
