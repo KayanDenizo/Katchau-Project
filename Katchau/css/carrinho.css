@@ -27,7 +27,7 @@ li {
   align-items: center;
 
   .cart_title {
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
     text-align: center;
     list-style-type: none;
@@ -242,7 +242,7 @@ li {
   background-color: #454E59;
   position: fixed;
   bottom: 0;
-  width: 690px;
+  width: 672px;
 
   .frete_container {
     padding-bottom: 30px;
@@ -255,6 +255,7 @@ li {
     p {
       color: #ccc;
       margin: 10px 0 0 0;
+      font-size: 16px;
     }
 
     .margin {
@@ -273,7 +274,7 @@ li {
       p {
         color: #82BD69;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }
