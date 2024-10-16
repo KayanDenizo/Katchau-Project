@@ -255,7 +255,7 @@ li {
     p {
       color: #ccc;
       margin: 10px 0 0 0;
-      font-size: 16px;
+      font-size: 12px;
     }
 
     .margin {
@@ -274,7 +274,7 @@ li {
       p {
         color: #82BD69;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 14px;
       }
     }
   }
@@ -283,11 +283,12 @@ li {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-block: 35px;
+    margin-block: 20px;
     margin-left: 55px;
 
     h2 {
       color: #fff;
+      font-size: 20px;
     }
   }
 
