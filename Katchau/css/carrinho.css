@@ -186,6 +186,7 @@ li {
 
 .quantidade {
   margin-top: 12px;
+  width: 130px;
 }
 
 .quantidade button {
@@ -217,6 +218,10 @@ li {
 .quantidade .diminuir {
   margin-left: 5px;
   margin-right: 15px;
+}
+
+.excluir-arquivar {
+  display: flex;
 }
 
 .excluir-arquivar span {
@@ -290,6 +295,15 @@ li {
       color: #fff;
       font-size: 20px;
     }
+
+    #quantidade_produtos {
+      color: #fff;
+    }
+    
+    #preco_total {
+      color: #fff;
+    }
+
   }
 
   .fechar_pedido_container {
