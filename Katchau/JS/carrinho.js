@@ -9,6 +9,8 @@ const botaoCarrinho = document.getElementById('botaoCarrinho');
 // Selecione a sidebar
 const sidebar = document.getElementById('sidebar');
 
+const closeSidebar = document.getElementById('closeSidebar');
+
 // Footer Sidebar
 const footerSidebar = document.getElementById('footerSidebar');
 
@@ -188,6 +190,11 @@ botaoCarrinho.addEventListener('click', (event) => {
     sidebar.classList.add('show');
     body.classList.add('bg');
 });
+
+closeSidebar.addEventListener('click', () => {
+    sidebar.classList.remove('show');
+    body.classList.remove('bg');
+})
 
 // Adicione um evento de clique ao documento para fechar a sidebar
 document.addEventListener('click', (event) => {
