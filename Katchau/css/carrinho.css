@@ -65,7 +65,7 @@ li {
       transition: .2s ease;
       
       &:hover {
-        color: #FD7014;
+        color: #b6b6b6c1;
         transition: .2s ease;
       }
     }
@@ -159,6 +159,12 @@ li {
   /* Certifique-se de que a sidebar está acima de outros elementos */
   border-radius: 40px 0px 0px 0px;
 }
+
+.sidebar::-webkit-scrollbar {
+  width: 7px;
+}
+
+
 
 .sidebar.show {
   right: 0;
