@@ -1,0 +1,21 @@
+/* styles.css */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: none; /* Inicialmente oculto */
+    padding: 10px;
+    background-color: #FD7014;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Para garantir que fique acima de outros elementos */
+    transition: .2s;
+}
+
+#scrollToTopBtn:hover {
+    /* background-color: #fd7114d0; */
+    transition: .2s;
+    box-shadow: 2px 2px 5px #FD7014;
+}
