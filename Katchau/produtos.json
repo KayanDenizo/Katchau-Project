@@ -1,0 +1,9 @@
+[
+    {"id": 1, "name": "Mouse Razer", "description": "Mouse gamer Razer com RGB.", "price": 200.00},
+    {"id": 2, "name": "Teclado Mecanico", "description": "Teclado Mecanico Redragon.", "price": 200.00},
+    {"id": 3, "name": "Gabinete Redragon", "description": "Gabinete Redragon.", "price": 250.00},
+    {"id": 4, "name": "Notebook Dell Gamer", "description": "Notebook Dell Gamer.", "price": 4999.00}
+    
+
+
+]
