@@ -81,6 +81,7 @@ a {
 
 
 .product-list-container {
+    background-color: red;
     position: absolute; /* Para posicionar a lista em relação à barra de pesquisa */
     z-index: 10; /* Para garantir que fique acima de outros elementos */
     background: white; /* Fundo branco para a lista */
@@ -98,6 +99,15 @@ a {
     list-style-type: none; /* Remove marcadores */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margens */
+    position: fixed;
+    z-index: 2;
+    max-height: 90px;
+    overflow-x: auto;
+}
+
+#product-list li {
+    background: #ccc;
+    margin-top: 3px;
 }
 
 .div-search>i {
@@ -191,7 +201,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 240px;
     /* Deixe o margin-top em 100px quando deixar o navbar em position fixed */
 }
 
