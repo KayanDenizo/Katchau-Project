@@ -112,57 +112,60 @@
 
 
     <!-- Fim Testando funcoes praticas do carrinho -->
+    <header>
+        <nav class="navbar">
+            <div class="logomarca">
+                <a href="index2.html"><img src="img/logo-katchau-removebg-preview.png" alt="logo"
+                        class="logo-marca"></a>
+            </div>
+
+            <div class="div-search">
+                <input id="search-bar" class="searchBar" type="search" placeholder="Pesquisar produtos..."
+                    name="search">
+                <i class="material-symbols-outlined">search</i>
+
+                <!-- Container para a lista de produtos -->
+                <div class="product-list-container">
+                    <ul id="product-list"></ul>
+                </div>
+            </div>
+
+            <nav class="navbar-menu">
+                <button>
+                    <a href="assets/profile/index.html" class="icon material-symbols-outlined">person</a>
+                </button>
+                <button>
+                    <a href="assets/Favoritos/favoritos.html" class="icon material-symbols-outlined">favorite</a>
+                </button>
+                <button>
+                    <span class="icon material-symbols-outlined" id="botaoCarrinho">shopping_cart</span>
+                </button>
+                <button>
+                    <a href="assets/faq/faq.html" class="icon material-symbols-outlined">contact_support</a>
+                </button>
+                <button class="signUpBtn"><a href="assets/SignUp/cadastro.html">Cadastrar</a></button>
+                <button class="loginBtn"><a href="assets/SignUp/entrar-kayan.html">Entrar</a></button>
+            </nav>
+        </nav>
+    </header>
+    <nav class="navbar-items start_scroll">
+        <li class="item hover-underline-animation"><a href="index2.html">Início</a></li>
+
+        <div class="dropdown-container">
+            <li class="item hover-underline-animation dropbtn"><a
+                    href="assets/categorias/categorias.html">Categorias</a></li>
+
+        </div>
+
+
+        <li class="item hover-underline-animation"><a href="assets/contato/index.html">Contato</a></li>
+
+        <li class="item hover-underline-animation"><a href="assets/ajuda/index.html">Ajuda</a></li>
+    </nav>
+
+    <!-- Banner Slide Section -->
     <main id="page">
-        <header>
-            <nav class="navbar">
-                <div class="logomarca">
-                    <a href="index2.html"><img src="img/logo-katchau-removebg-preview.png" alt="logo" class="logo-marca"></a>
-                </div>
-            
-                <div class="div-search">
-                    <input id="search-bar" class="searchBar" type="search" placeholder="Pesquisar produtos..." name="search">
-                    <i class="material-symbols-outlined">search</i>
-                    
-                    <!-- Container para a lista de produtos -->
-                    <div class="product-list-container">
-                        <ul id="product-list"></ul>
-                    </div>
-                </div>
-            
-                <nav class="navbar-menu">
-                    <button>
-                        <a href="assets/profile/index.html" class="icon material-symbols-outlined">person</a>
-                    </button>
-                    <button>
-                        <a href="assets/Favoritos/favoritos.html" class="icon material-symbols-outlined">favorite</a>
-                    </button>
-                    <button>
-                        <span class="icon material-symbols-outlined" id="botaoCarrinho">shopping_cart</span>
-                    </button>
-                    <button>
-                        <a href="assets/faq/faq.html" class="icon material-symbols-outlined">contact_support</a>
-                    </button>
-                    <button class="signUpBtn"><a href="assets/SignUp/cadastro.html">Cadastrar</a></button>
-                    <button class="loginBtn"><a href="assets/SignUp/entrar-kayan.html">Entrar</a></button>
-                </nav>
-            </nav>
-            <nav class="navbar-items start_scroll">
-                <li class="item hover-underline-animation"><a href="index2.html">Início</a></li>
 
-                <div class="dropdown-container">
-                    <li class="item hover-underline-animation dropbtn"><a
-                            href="assets/categorias/categorias.html">Categorias</a></li>
-
-                </div>
-
-
-                <li class="item hover-underline-animation"><a href="assets/contato/index.html">Contato</a></li>
-
-                <li class="item hover-underline-animation"><a href="assets/ajuda/index.html">Ajuda</a></li>
-            </nav>
-        </header>
-
-        <!-- Banner Slide Section -->
         <div class="slider">
 
             <div class="slides">

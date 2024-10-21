@@ -5,10 +5,10 @@
     right: 30px;
     display: none; /* Inicialmente oculto */
     padding: 10px;
-    background-color: #FD7014;
+    background-color: #666666a2;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
     z-index: 1000; /* Para garantir que fique acima de outros elementos */
     transition: .2s;
@@ -17,5 +17,6 @@
 #scrollToTopBtn:hover {
     /* background-color: #fd7114d0; */
     transition: .2s;
-    box-shadow: 2px 2px 5px #FD7014;
+    box-shadow: 0px 0px 14px #FD7014;
+    transform: scale(1.01);
 }
