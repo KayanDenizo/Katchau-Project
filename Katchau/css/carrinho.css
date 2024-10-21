@@ -5,7 +5,7 @@ li {
 .bg {
   background: #000;
   position: absolute;
-  z-index: 2;
+  z-index: 6;
   opacity: 0.5;
 }
 
@@ -155,7 +155,7 @@ li {
   opacity: 0;
   /* Inicialmente invisível */
   overflow-y: auto;
-  z-index: 3;
+  z-index: 7;
   /* Certifique-se de que a sidebar está acima de outros elementos */
   border-radius: 40px 0px 0px 0px;
 }

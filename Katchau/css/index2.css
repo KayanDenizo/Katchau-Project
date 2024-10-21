@@ -82,10 +82,10 @@ a {
 
 .product-list-container {
     position: absolute; /* Para posicionar a lista em relação à barra de pesquisa */
+    z-index: 10; /* Para garantir que fique acima de outros elementos */
     background: white; /* Fundo branco para a lista */
     border: 1px solid #ccc; /* Borda para a lista */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
-    z-index: 10; /* Para garantir que fique acima de outros elementos */
     width: calc(100% - 40px); /* Para ajustar a largura da lista */
     max-height: 200px; /* Altura máxima da lista */
     overflow-y: auto; /* Rolagem vertical se necessário */
