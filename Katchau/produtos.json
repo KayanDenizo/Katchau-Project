@@ -9,8 +9,8 @@
     },
     {
         "id": 2,
-        "name": "Teclado Mecanico",
-        "description": "Teclado Mecanico Redragon.",
+        "name": "Teclado Mecânico",
+        "description": "Teclado Mecânico Redragon.",
         "price": 200.00,
         "image": "img/img-products/teclado mecanico.png",
         "link": "assets/products/teclado.html"
@@ -30,5 +30,21 @@
         "price": 4999.00,
         "image": "img/img-products/notebook gamer dell.png",
         "link": "assets/products/notebook-dell-gamer.html"
+    },
+    {
+        "id": 5,
+        "name": "Notebook Dell I5",
+        "description": "Notebook Dell I5.",
+        "price": 3200.00,
+        "image": "img/img-products/notebook dell.png",
+        "link": "assets/products/computador-gamer-i5.html"
+    },
+    {
+        "id": 6,
+        "name": "Teclado Mecânico Gamer",
+        "description": "Teclado Mecânico Gamer K500.",
+        "price": 200.00,
+        "image": "img/img-products/teclado-gamer.png",
+        "link": "assets/products/teclado-gamer-i5.html"
     }
 ]
