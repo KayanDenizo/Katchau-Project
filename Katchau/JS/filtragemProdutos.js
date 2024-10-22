@@ -19,7 +19,27 @@ function displayProducts(productsToDisplay) {
 
     productsToDisplay.forEach(product => {
         const listItem = document.createElement('li');
-        listItem.textContent = `${product.name}: ${product.description} - R$ ${product.price.toFixed(2)}`;
+
+        // Criar um elemento de imagem
+        const img = document.createElement('img');
+        img.src = product.image; // Define a fonte da imagem
+        img.alt = product.name; // Texto alternativo
+        img.style.width = '50px'; // Define a largura da imagem
+        img.style.height = 'auto'; // Mantém a proporção
+        img.style.borderRadius = '5px';
+        // Cria um texto para o produto
+        const productInfo = document.createElement('span');
+        productInfo.textContent = `${product.name}: ${product.description} - R$ ${product.price.toFixed(2)}`;
+
+        // Adiciona a imagem e as informações ao item da lista
+        listItem.appendChild(img);
+        listItem.appendChild(productInfo);
+        
+        // Adiciona um evento de clique para redirecionar
+        listItem.addEventListener('click', () => {
+            window.location.href = product.link; // Redireciona para a página do produto
+        });
+
         productList.appendChild(listItem);
     });
 }

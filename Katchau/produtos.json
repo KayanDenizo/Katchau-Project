@@ -1,9 +1,34 @@
 [
-    {"id": 1, "name": "Mouse Razer", "description": "Mouse gamer Razer com RGB.", "price": 200.00},
-    {"id": 2, "name": "Teclado Mecanico", "description": "Teclado Mecanico Redragon.", "price": 200.00},
-    {"id": 3, "name": "Gabinete Redragon", "description": "Gabinete Redragon.", "price": 250.00},
-    {"id": 4, "name": "Notebook Dell Gamer", "description": "Notebook Dell Gamer.", "price": 4999.00}
-    
-
-
+    {
+        "id": 1,
+        "name": "Mouse Razer",
+        "description": "Mouse gamer Razer com RGB.",
+        "price": 200.00,
+        "image": "img/img-products/mouse.png",
+        "link": "assets/products/mouse.html"
+    },
+    {
+        "id": 2,
+        "name": "Teclado Mecanico",
+        "description": "Teclado Mecanico Redragon.",
+        "price": 200.00,
+        "image": "img/img-products/teclado mecanico.png",
+        "link": "assets/products/teclado.html"
+    },
+    {
+        "id": 3,
+        "name": "Gabinete Redragon",
+        "description": "Gabinete Redragon.",
+        "price": 250.00,
+        "image": "img/img-products/gabinete.png",
+        "link": "assets/products/gabinete.html"
+    },
+    {
+        "id": 4,
+        "name": "Notebook Dell Gamer",
+        "description": "Notebook Dell Gamer.",
+        "price": 4999.00,
+        "image": "img/img-products/notebook gamer dell.png",
+        "link": "assets/products/notebook-dell-gamer.html"
+    }
 ]

@@ -112,14 +112,26 @@ a {
 }
 
 #product-list li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
     background: #222831;
     color: #f1f1f1;
     font-weight: 700;
     line-height: 30px;
     margin: 7px 0;
+    border: none;
     padding: 6px;
     border-radius: 5px;
-    border: 1px dashed #000;
+    transition: .2s linear;
+
+    &:hover {
+        transition: .2s linear;
+        transform: scale(1.01);
+        background: #2a313b;
+    }
 }
 
 .div-search>i {
