@@ -90,9 +90,13 @@ a {
     width: calc(100% - 40px); /* Para ajustar a largura da lista */
     max-height: 200px; /* Altura máxima da lista */
     overflow-y: auto; /* Rolagem vertical se necessário */
-    display: none; /* Inicialmente escondido */
+    display: none;
     top: 100%; /* Posiciona a lista logo abaixo da barra de pesquisa */
     left: 0; /* Alinha à esquerda da barra de pesquisa */
+}
+
+#product-list::-webkit-scrollbar {
+    width: 0px;
 }
 
 #product-list {
@@ -107,7 +111,9 @@ a {
 
 #product-list li {
     background: #ccc;
-    margin-top: 3px;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .div-search>i {
