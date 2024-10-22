@@ -81,10 +81,9 @@ a {
 
 
 .product-list-container {
-    background-color: red;
     position: absolute; /* Para posicionar a lista em relação à barra de pesquisa */
     z-index: 10; /* Para garantir que fique acima de outros elementos */
-    background: white; /* Fundo branco para a lista */
+    background: #000; /* Fundo branco para a lista */
     border: 1px solid #ccc; /* Borda para a lista */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
     width: calc(100% - 40px); /* Para ajustar a largura da lista */
@@ -100,20 +99,27 @@ a {
 }
 
 #product-list {
+    background-color: #ccc;
     list-style-type: none; /* Remove marcadores */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margens */
     position: fixed;
     z-index: 2;
-    max-height: 90px;
+    max-height: 110px;
+    padding: 0 7px;
+    width: 450px;
     overflow-x: auto;
 }
 
 #product-list li {
-    background: #ccc;
-    margin-top: 5px;
-    padding: 10px;
+    background: #222831;
+    color: #f1f1f1;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 7px 0;
+    padding: 6px;
     border-radius: 5px;
+    border: 1px dashed #000;
 }
 
 .div-search>i {
