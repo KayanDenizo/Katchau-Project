@@ -29,7 +29,7 @@ function displayProducts(productsToDisplay) {
         img.style.borderRadius = '5px';
         // Cria um texto para o produto
         const productInfo = document.createElement('span');
-        productInfo.textContent = `${product.name}: ${product.description} - R$ ${product.price.toFixed(2)}`;
+        productInfo.textContent = `${product.name}: ${product.description}`;
 
         // Adiciona a imagem e as informações ao item da lista
         listItem.appendChild(img);
