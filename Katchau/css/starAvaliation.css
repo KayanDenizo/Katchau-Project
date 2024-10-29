@@ -1,73 +1,41 @@
+.rating {
+  direction: rtl; /* Inverte a direção para facilitar a seleção */
+}
+
+.rating > input {
+  display: none; /* Esconde os inputs de rádio */
+}
+
 .rating > label {
-    margin-right: 4px;
-  }
-  
-  .rating:not(:checked) > input {
-    display: none;
-  }
-  
-  .rating:not(:checked) > label {
-    float: right;
-    cursor: pointer;
-    font-size: 30px;
-  }
-  
-  .rating:not(:checked) > label > svg {
-    fill: #666;
-    transition: fill 0.3s ease;
-  }
-  
-  .rating > input:checked ~ label > svg {
-    fill: #ffa723;
-  }
-  
-  .rating:not(:checked) > label:hover ~ label > svg,
-  .rating:not(:checked) > label:hover > svg {
-    fill: #ff9e0b;
-  }
-  
-  #star1:hover ~ label > svg,
-  #star1:hover > svg {
-    fill: #a23c3c !important;
-  }
-  
-  #star2:hover ~ label > svg,
-  #star2:hover > svg {
-    fill: #99542d !important;
-  }
-  
-  #star3:hover ~ label > svg,
-  #star3:hover > svg {
-    fill: #9f7e18 !important;
-  }
-  
-  #star4:hover ~ label > svg,
-  #star4:hover > svg {
-    fill: #22885e !important;
-  }
-  
-  #star5:hover ~ label > svg,
-  #star5:hover > svg {
-    fill: #7951ac !important;
-  }
-  
-  #star1:checked ~ label > svg {
-    fill: #ef4444;
-  }
-  
-  #star2:checked ~ label > svg {
-    fill: #e06c2b;
-  }
-  
-  #star3:checked ~ label > svg {
-    fill: #eab308;
-  }
-  
-  #star4:checked ~ label > svg {
-    fill: #19c37d;
-  }
-  
-  #star5:checked ~ label > svg {
-    fill: #fdbe02;
-  }
-  
+  float: right;
+  cursor: pointer;
+  font-size: 30px; /* Tamanho das estrelas */
+}
+
+/* Cor padrão das estrelas */
+.rating > label > svg {
+  fill: #ff9e0b; /* Cor padrão das estrelas */
+  transition: fill 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover para as estrelas */
+.rating > label:hover > svg,
+.rating > label:hover ~ label > svg {
+  fill: #ff9e0b; /* Cor ao passar o mouse */
+}
+
+/* Estrelas selecionadas */
+.rating > input:checked ~ label > svg {
+  fill: #ffa723; /* Cor das estrelas quando selecionadas */
+}
+
+/* Para garantir que as estrelas à esquerda da estrela clicada fiquem coloridas */
+.rating > input:checked + label > svg,
+.rating > input:checked ~ label > svg {
+  fill: #ffa723; /* Cor das estrelas quando selecionadas */
+}
+
+/* Para as estrelas não selecionadas à direita da estrela clicada */
+.rating > input:checked + label ~ label > svg {
+  fill: #666; /* Cor padrão para estrelas não selecionadas */
+}
