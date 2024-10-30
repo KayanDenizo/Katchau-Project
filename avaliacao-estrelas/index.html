@@ -1,109 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avaliação com Estrelas - Múltiplos Produtos</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        .product {
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
-        .stars {
-            font-size: 24px;
-            cursor: pointer;
-        }
-        .star {
-            color: #ddd;
-        }
-        .star.active {
-            color: gold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="product" data-product-id="1">
-    <h3>Produto 1</h3>
-    <div class="stars" data-rating="0">
-        <span class="star" data-value="1">&#9733;</span>
-        <span class="star" data-value="2">&#9733;</span>
-        <span class="star" data-value="3">&#9733;</span>
-        <span class="star" data-value="4">&#9733;</span>
-        <span class="star" data-value="5">&#9733;</span>
+    <div class="product" data-product-id="1">
+        <h3>Produto 1</h3>
+        <div class="stars" data-rating="0">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
     </div>
-</div>
 
-<div class="product" data-product-id="2">
-    <h3>Produto 2</h3>
-    <div class="stars" data-rating="0">
-        <span class="star" data-value="1">&#9733;</span>
-        <span class="star" data-value="2">&#9733;</span>
-        <span class="star" data-value="3">&#9733;</span>
-        <span class="star" data-value="4">&#9733;</span>
-        <span class="star" data-value="5">&#9733;</span>
+    <div class="product" data-product-id="2">
+        <h3>Produto 2</h3>
+        <div class="stars" data-rating="0">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
     </div>
-</div>
 
-<div class="product" data-product-id="3">
-    <h3>Produto 3</h3>
-    <div class="stars" data-rating="0">
-        <span class="star" data-value="1">&#9733;</span>
-        <span class="star" data-value="2">&#9733;</span>
-        <span class="star" data-value="3">&#9733;</span>
-        <span class="star" data-value="4">&#9733;</span>
-        <span class="star" data-value="5">&#9733;</span>
+    <div class="product" data-product-id="3">
+        <h3>Produto 3</h3>
+        <div class="stars" data-rating="0">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
     </div>
-</div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Função para destacar estrelas
-    function highlight(starsContainer, rating) {
-        const stars = starsContainer.querySelectorAll('.star');
-        stars.forEach(star => {
-            star.classList.remove('active');
-            if (parseInt(star.dataset.value) <= rating) {
-                star.classList.add('active');
-            }
-        });
-    }
-
-    // Seleciona todos os produtos
-    const products = document.querySelectorAll('.product');
-
-    products.forEach(product => {
-        const starsContainer = product.querySelector('.stars');
-        const stars = starsContainer.querySelectorAll('.star');
-
-        // Event listeners para cada estrela
-        stars.forEach(star => {
-            // Mouse enter em uma estrela
-            star.addEventListener('mouseenter', function() {
-                const rating = this.dataset.value;
-                highlight(starsContainer, rating);
-            });
-
-            // Click em uma estrela
-            star.addEventListener('click', function() {
-                const rating = this.dataset.value;
-                const productId = product.dataset.productId;
-                starsContainer.dataset.rating = rating;
-                highlight(starsContainer, rating);
-                console.log('Produto ID: ' + productId + ' - Avaliação: ' + rating + ' estrelas');
-            });
-        });
-
-        // Mouse leave do container de estrelas
-        starsContainer.addEventListener('mouseleave', function() {
-            const rating = this.dataset.rating;
-            highlight(starsContainer, rating);
-        });
-    });
-});
-</script>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
