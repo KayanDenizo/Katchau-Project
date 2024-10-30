@@ -1,0 +1,27 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+.heart {
+    position: absolute;
+    top: 10px; /* Ajuste a posição conforme necessário */
+    right: 10px; /* Ajuste a posição conforme necessário */
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-image: url('https://icones.pro/wp-content/uploads/2021/02/icone-de-coeur-rouge.png'); /* Substitua pelo caminho da imagem do coração vazio */
+    background-size: cover;
+    cursor: pointer;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s;
+}
+
+.image-container:hover .heart {
+    opacity: 1; /* Torna o coração visível ao passar o mouse */
+}
