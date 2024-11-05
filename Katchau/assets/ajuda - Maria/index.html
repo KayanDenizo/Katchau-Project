@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Ajuda</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
     <header>
         <div class="logo">K</div>
         <input type="text" placeholder="Pesquisar produtos...">
+
         <div>
             <button>Cadastrar</button>
             <button>Entrar</button>
@@ -22,88 +21,81 @@
     <div class="forar">
         <h1>Como podemos ajudar?</h1>
     </div>
-
-    <div class="barra">
+    
+    <div class="barra"> 
         <input type="text" placeholder="Pesquisar produtos...">
     </div>
 
     <div class="container">
         <div class="accordion-item">
             <h3>Privacidade e Segurança</h3>
-            <div class="accordion-content">
-                <p>Informações de Privacidade...</p>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <h3>Ajuda no Pagamento</h3>
-            <div class="accordion-content">
-                <p>Informações sobre pagamento...</p>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <h3>Ajuda sobre a Conta</h3>
-            <div class="accordion-content">
-                <p>Informações sobre a conta...</p>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <h3>Ajuda sobre a Entrega</h3>
-            <div class="accordion-content">
-                <p>Informações sobre entrega...</p>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <h3>Ajuda no Reembolso</h3>
-            <div class="accordion-content">
-                <p>Informações sobre reembolso...</p>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <h3>Ajuda no cancelamento do pedido</h3>
-            <div class="accordion-content">
-                <p>Informações sobre cancelamento do pedido...</p>
-            </div>
+        <div class="accordion-content">
+            <p>Informações de Privacidade...</p>
         </div>
     </div>
 
-    <footer>
-        <div class="footer-content">
-            <div>
-                <p><strong>Exclusivo</strong><br>Ganhe 10% de desconto no primeiro pedido</p>
-            </div>
-            <div>
-                <p><strong>Suporte</strong><br>WhatsApp: (11) 99999-9999<br>Email: suporte@exemplo.com</p>
-            </div>
-            <div>
-                <p><strong>Sua Conta</strong><br>Entrar/Cadastrar<br>Meus Pedidos</p>
-            </div>
-            <div>
-                <p><strong>Links Rápidos</strong><br>Política de Privacidade<br>Termos de Uso</p>
-            </div>
+    <div class="accordion-item">
+        <h3>Ajuda no Pagamento</h3>
+        <div class="accordion-content">
+            <p>Informações sobre pagamento...</p>
         </div>
-    </footer>
+    </div>
 
-    <script>
-        const items = document.querySelectorAll('.accordion-item h3');
-        items.forEach(item => {
-            item.addEventListener('click', () => {
-                const parent = item.parentNode;
-                parent.classList.toggle('active');
-                const content = parent.querySelector('.accordion-content');
-                if (parent.classList.contains('active')) {
-                    content.style.display = 'block';
-                } else {
-                    content.style.display = 'none';
-                }
-            });
+    <div class="accordion-item">
+        <h3>Ajuda sobre a Conta</h3>
+        <div class="accordion-content">
+            <p>Informações sobre a conta...</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h3>Ajuda sobre a Entrega</h3>
+        <div class="accordion-content">
+            <p>Informações sobre entrega...</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h3>Ajuda no Reembolso</h3>
+        <div class="accordion-content">
+            <p>Informações sobre reembolso...</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h3>Ajuda no cancelamento do pedido</h3>
+        <div class="accordion-content">
+            <p>Informações sobre cancelamento do pedido...</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div>
+            <p><strong>Exclusivo</strong><br>Ganhe 10% de desconto no primeiro pedido</p>
+        </div>
+        <div>
+            <p><strong>Suporte</strong><br>WhatsApp: (11) 99999-9999<br>Email: suporte@exemplo.com</p>
+        </div>
+        <div>
+            <p><strong>Sua Conta</strong><br>Entrar/Cadastrar<br>Meus Pedidos</p>
+        </div>
+        <div>
+            <p><strong>Links Rápidos</strong><br>Política de Privacidade<br>Termos de Uso</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const items = document.querySelectorAll('.accordion-item h3');
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            const parent = item.parentNode;
+            parent.classList.toggle('active');
         });
-    </script>
+    });
+</script>
 
 </body>
-
 </html>
