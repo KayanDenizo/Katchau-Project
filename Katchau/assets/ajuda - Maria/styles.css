@@ -68,7 +68,6 @@ header button {
     border-radius: 7px;
     color: #ffffff;
     background-color: #424141;
-
 }
 
 .accordion-item {
@@ -79,7 +78,7 @@ header button {
 }
 
 .accordion-item h3 {
-    margin: 0;
+    margin: 0 0 6px 0;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -96,10 +95,20 @@ header button {
 }
 
 .accordion-content {
-    display: none;
-    padding: 10px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
     background-color: #656565;
     border-radius: 8px;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+    margin-top: 5px;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 300px; 
+    opacity: 1;
+    padding: 15px;
 }
 
 footer {
