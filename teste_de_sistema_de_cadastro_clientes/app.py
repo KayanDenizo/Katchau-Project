@@ -34,3 +34,49 @@ def register():
         new_user = User(username=username, email=email, password=hashed_password)
         db.session.add(new_user)
         db.session.commit()
+        
+        flash('Cadastro realizado com sucesso! Agora você pode fazer login.')
+        return
+    redirect(url_for('login'))
+    
+    return
+render_template('register.html')
+
+# Rota de login
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+        
+        #Busca o usuário pelo email
+        user = User.query.filter_by(email=email).first()
+
+        # Verifica a senha
+        if user and check_password_hash(user.password, password):
+            session['user_id'] = user.id
+            flash('logi realizado com sucesso!')
+            return
+            redirect(url_for('dashboard'))
+        else:
+            flash('Email ou senha incorretos!')
+    return
+render_template('login.html')
+
+# Rota do painel do usuário (apenas logado)
+@app.route('/dashboard')
+def dashboard():
+    if 'user_id' not in session:
+        flash('Faça login para acessar o painel')
+        return
+        redirect(url_for('login'))
+        
+        return "Bem vindo ao painel do usuario!"
+
+# Rota de logout
+@app.route('/logout')
+def logout():
+    session.pop('user_id', None)
+    flash('Você foi desconectado com sucesso!')
+    return
+redirect(url_for('login'))
