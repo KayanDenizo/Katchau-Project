@@ -79,7 +79,7 @@
 
 .btnPrice {
     cursor: pointer;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -91,8 +91,10 @@
     font-weight: bold;
     font-size: 1em;
     transition: .2s;
-    margin: 16px 0 0 0;
-
+    margin: 16px 0 0 0; */
+    border-radius: 8px;
+    transition: .2s;
+    
     &:hover {
         background: #01b392;
         box-shadow: 5px 5px 10px #01b392;
