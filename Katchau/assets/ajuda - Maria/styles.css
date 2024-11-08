@@ -6,34 +6,6 @@ body {
     color: #fff;
 }
 
-header {
-    background-color: #f2f2f2;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #FFCC00;
-}
-
-header input[type="text"] {
-    padding: 5px;
-    width: 300px;
-}
-
-header button {
-    padding: 10px 20px;
-    background-color: #f28b00;
-    border: none;
-    color: white;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
 .container {
     margin: 50px auto;
     width: 80%;
@@ -45,19 +17,20 @@ header button {
 
 .forar h1 {
     font-size: 40px;
-    margin-left: 275px;
+    margin-left: 250px;
     margin-bottom: 23px;
     margin-top: 3%;
 }
 
 .barra input[type="text"] {
-    background-color: #242a32;
-    border-style: solid;
-    border-color: #555;
-    border-radius: 7px; 
-    margin-left: 280px;
-    padding: 5px;
-    width: 300px;
+    width: 350px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 3px solid #606060;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    margin-left: 250px;
 }
 
 .forar input[type="text"] {
