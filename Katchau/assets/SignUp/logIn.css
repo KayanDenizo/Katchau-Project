@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #222831;
+}
+
+main {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #393E46;
+    width: 500px;
+    height: 580px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 25px #f8802f;
+    border: 1px solid #232629;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header h1::after {
+    content: '';
+    display: block;
+    width: 140px;
+    height: 6px;
+    border-radius: 20px;
+    background-color: #FD7014;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.inputContainers {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input input {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid rgba(253, 112, 20, 0.3);
+    background-color: #CCCCCC;
+    text-indent: 25px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 1px 1px 8px rgba(248, 128, 47, 0.7);
+    color: #323232;
+}
+
+input::placeholder{
+    color: #454545;
+}
+
+.icon-input {
+    margin-top: 6px;
+    margin-left: 260px;
+    position: absolute;
+    color: #555555;
+}
+
+.lembrardemim{
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+.esqueceusenha {
+    color: #FD7014;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.btn-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #555555;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    color: #393E46;
+}
