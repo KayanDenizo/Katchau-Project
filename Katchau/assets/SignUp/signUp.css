@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #222831;
+}
+
+main {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #393E46;
+    width: 800px;
+    height: 520px;
+    height: 600px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 25px #f8802f;
+    border: 1px solid #232629;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header h1::after {
+    content: '';
+    display: block;
+    width: 160px;
+    height: 6px;
+    border-radius: 20px;
+    background-color: #FD7014;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.inputContainers {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+}
+
+.inputContainers input{
+    margin-bottom: 20px;
+    
+}
+
+.input input {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid rgba(253, 112, 20, 0.3);
+    background-color: #CCCCCC;
+    text-indent: 25px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 1px 1px 8px rgba(248, 128, 47, 0.7);
+    color: #323232;
+}
+
+input::placeholder{
+    color: #454545;
+}
+
+.icon-input {
+    margin-top: 6px;
+    margin-left: 260px;
+    position: absolute;
+    color: #555555;
+}
+
+.termosdeuso {
+    color: #ffff;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.termosdeuso input[type="checkbox"]+label {
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.termosdeuso a {
+    color: #FD7014;
+    text-decoration: underline;
+}
+
+.termosdeuso a:focus {
+    color: #c53d09;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons button {
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#continuar {
+    background-color: #FD7014;
+    color: #e2e2e2;
+    border: 1px solid #8A3B07;
+    transition: 0.3s;
+}
+
+#continuar:hover {
+    background-color: #c53d09;
+    transition: 0.3s;
+}
+
+#temConta {
+    color: #e2e2e2;
+    background-color: transparent;
+    border: 1px solid #232629;
+    transition: 0.3s;
+}
+
+#temConta:hover {
+    transition: 0.3s;
+    background-color: #21252b;
+}
+
+#eyesOn {
+    display: none;
+}
+
+#eyesOff {
+    display: none;
+}
+
+#close{
+    display: none;
+    color: #ff3325;
+    margin-top: 8px;
+}
+
+.popUp {
+    display: none;
+    background-color: #222831;
+    height: 40px;
+    bottom: 5%;
+    position: fixed;
+    border-radius: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.textAdded {
+    font-size: 18px;
+    margin-left: 10px;
+    color: #ffff;
+    display: none;
+}
+
+#deniedicon {
+    width: 40px;
+}
+
+#numero{
+    width: 85px;
+    margin-right: 10px;
+}
+#numero::placeholder{
+    text-indent: 17px;
+}
+.endereco-row{
+    display: flex;
+}
+.endereco-row input{
+    width: 205px;
+}
+.homepin{
+    right: 67px;
+}
+#cidade{
+    margin-left: 10px;
+}
+#estado{
+    width: 85px;
+}
+#estado::placeholder{
+    text-indent: 30px;
+}
+
+#cep{
+    margin-bottom: 0;
+}
+.naosei-cep{
+    display: flex;
+    margin-top: 2px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #989898;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.naosei-cep:hover{
+    color: #FD7014;
+    transition: 0.5s;
+}
+/* desativar o olho padrao (que aparece no input type password) de todos os navegadores */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
+
+input[type="password"]::-webkit-clear-button,
+input[type="password"]::-webkit-inner-spin-button,
+input[type="password"]::-webkit-outer-spin-button,
+input[type="password"]::-webkit-reveal {
+    display: none;
+}
