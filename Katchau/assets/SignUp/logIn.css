@@ -21,8 +21,8 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #393E46;
-    width: 700px;
-    height: 580px;
+    width: 650px;
+    height: 600px;
     border-radius: 30px;
     box-shadow: 2px 2px 25px #f8802f;
     border: 1px solid #232629;
@@ -82,6 +82,10 @@ input::placeholder{
     color: #454545;
 }
 
+.input #password{
+    margin-bottom: 3px;
+}
+
 .icon-input {
     margin-top: 6px;
     margin-left: 260px;
@@ -91,21 +95,18 @@ input::placeholder{
 
 .lembrardemim{
     color: #ffff;
-    margin-bottom: 10px;
 }
 
 .esqueceusenha {
     color: #FD7014;
     text-decoration: underline;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .options{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 12px;
-    margin-bottom: 10px;
 }
 
 .btn-options{
@@ -114,8 +115,32 @@ input::placeholder{
     justify-content: center;
     background-color: #555555;
     border: none;
-    width: 40px;
-    height: 40px;
+    margin-top: 5px;
+    padding: 13px;
     border-radius: 100%;
-    color: #393E46;
+    color: #b0b2b4;
+}
+
+.btn-options i{
+    font-size: 22px;
+}
+
+.orOptions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.orLine{
+    width: 180px;
+    height: 1px;
+    background-color: #888888;
+    border: none;
+}
+
+.or{
+    padding: 0px 12px 0px 12px;
+    font-size: 17px;
+    color: #b0b2b4;
 }
