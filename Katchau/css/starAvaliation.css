@@ -1,41 +1,41 @@
-.rating {
-  direction: rtl; /* Inverte a direção para facilitar a seleção */
-}
 
-.rating > input {
-  display: none; /* Esconde os inputs de rádio */
-}
 
-.rating > label {
-  float: right;
+
+
+
+
+.stars-rating {
+  display: flex;
   cursor: pointer;
-  font-size: 30px; /* Tamanho das estrelas */
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-/* Cor padrão das estrelas */
-.rating > label > svg {
-  fill: #ff9e0b; /* Cor padrão das estrelas */
-  transition: fill 0.3s ease; /* Transição suave */
+.star {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  margin-right: 2px;
+  transition: transform 0.2s;
+  border-radius: 8px;
 }
 
-/* Efeito de hover para as estrelas */
-.rating > label:hover > svg,
-.rating > label:hover ~ label > svg {
-  fill: #ff9e0b; /* Cor ao passar o mouse */
+.star-icon {
+  width: 100%;
+  height: 100%;
+  fill: #ddd; /* Cor padrão das estrelas */
+  transition: fill 0.2s, transform 0.2s;
 }
 
-/* Estrelas selecionadas */
-.rating > input:checked ~ label > svg {
-  fill: #ffa723; /* Cor das estrelas quando selecionadas */
+.star.hovered .star-icon,
+.star.selected .star-icon {
+  fill: #FFD700; /* Cor das estrelas selecionadas ou em hover */
 }
 
-/* Para garantir que as estrelas à esquerda da estrela clicada fiquem coloridas */
-.rating > input:checked + label > svg,
-.rating > input:checked ~ label > svg {
-  fill: #ffa723; /* Cor das estrelas quando selecionadas */
+.star:hover .star-icon {
+  transform: scale(1.1); /* Efeito de "crescimento" ao passar o mouse */
 }
 
-/* Para as estrelas não selecionadas à direita da estrela clicada */
-.rating > input:checked + label ~ label > svg {
-  fill: #666; /* Cor padrão para estrelas não selecionadas */
+.rating-value {
+  color: #ccc;
 }

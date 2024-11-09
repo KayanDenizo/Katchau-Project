@@ -1,0 +1,9 @@
+# Passo a passo para rodar o projeto:
+
+1. Clone o repo do github na maquina
+2. Mova o projeto para a pasta htdocs do xampp
+3. Habilite o apache e o mysql do xampp
+4. Abra o projeto no localhost
+5. Abra o phpmyAdmin
+6. Crie uma database (CREATE DATABASE katchau)
+7. Importe o arquivo SQL (aba importar da database)
