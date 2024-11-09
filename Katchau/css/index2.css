@@ -1,4 +1,6 @@
 @import url(cartButton.css);
+@import url(modal.css);
+@import url(utility.css);
 
 * {
     box-sizing: border-box;

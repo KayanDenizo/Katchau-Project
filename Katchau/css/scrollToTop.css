@@ -10,7 +10,7 @@
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 1000; /* Para garantir que fique acima de outros elementos */
+    z-index: 6; /* Para garantir que fique acima de outros elementos */
     transition: .2s;
 }
 
