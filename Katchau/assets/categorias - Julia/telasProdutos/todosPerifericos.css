@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bgContainer: linear-gradient(90deg, rgba(33, 37, 43, 1) 0%, rgba(54, 54, 54, 1) 50%, rgba(79, 79, 79, 1) 87%);
+    --cinzaclaro: #393E46;
+    --cinzaescuro: #222831;
+    --laranja: #FD7014;
+    --laranjaTransparente: rgba(253, 112, 20, 0.4);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #222831;
+    color: #FFFF;
+}
+
+h1 {
+    font-size: 33px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+hr {
+    border: 1px solid #888888;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+    width: 100%;
+    height: 50px;
+}
+
+.header h2::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 1.8rem;
+    margin-right: 5px;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #FD7014;
+    position: absolute;
+    left: 35px;
+}
+
+.header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    font-size: 17px;
+    margin-right: 15px;
+}
+
+.header a:hover {
+    color: var(--laranja);
+    transition: 0.3s ease-in;
+}
+
+.header h2 {
+    margin-left: 15px;
+}
+
+.containerProdutos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 22px;
+}
+
+.container a {
+    width: 300px;
+    height: 500px;
+}
+
+.container p {
+    display: flex;
+}
+
+.stars,
+button,
+img {
+    cursor: pointer;
+}
+
+.imagem img{
+    transition: 0.2s ease-in-out;
+}
+
+img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+.container button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    background: #ccc;
+    color: #fbfbfb;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: .2s;
+}
+
+.container button:hover {
+    background: #01b392;
+    box-shadow: 5px 5px 10px #01b392;
+}
+
+p {
+    color: #ffffff;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.precos {
+    margin-top: 20px;
+}
+
+.precos p {
+    line-height: 0.3;
+}
+
+.precoAntigo {
+    font-size: 16px;
+    font-weight: 900;
+    color: #b6b6b6;
+    text-decoration: line-through;
+
+    & span {
+        font-weight: 100;
+    }
+}
+
+.precoOriginal {
+    font-weight: 900;
+    font-size: 20px;
+    color: #bdbdbd;
+    margin-bottom: 20px;
+}
+
+.precoNovo {
+    color: #db4444;
+    ;
+    font-weight: 900;
+
+    & span {
+        margin-right: 5px;
+    }
+}
+
+.containerProdutos img {
+    width: 300px;
+    border-radius: 17%;
+    box-shadow: 5px 5px 10px #0a0a0a;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #888888;
+}
+
+.mostrarmais {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mostrarmais button {
+    text-decoration: underline;
+    color: #FFFF;
+    font-size: 18px;
+    border-radius: 8px;
+    height: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.mostrarmais button:focus {
+    color: #888888;
+}
+
+#oculto {
+    display: none;
+}
+
+.popUpCart {
+    display: none;
+    height: 45px;
+    background-color: #393E46;
+    border-radius: 70px;
+    position: fixed;
+    bottom: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+
+#textAdded {
+    display: none;
+}
+
+.popUpCart img {
+    width: 45px;
+}
+
+.produtosComDesconto{
+    display: flex;
+}
+
+.porcentoDesconto {
+    display: flex;
+    justify-content: right;
+}
+
+.desconto {
+    padding: 3px;
+    position: absolute;
+    color: #fbfbfb;
+    background: #db4444;
+    max-height: 26px;
+    border-radius: 6px;
+    margin: 20px 16px 0 20px;
+}

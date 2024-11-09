@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -7,7 +8,221 @@ body {
     padding: 0;
 }
 
+:root {
+    --bgContainer: linear-gradient(90deg, rgba(33, 37, 43, 1) 0%, rgba(54, 54, 54, 1) 50%, rgba(79, 79, 79, 1) 87%);
+    --cinzaclaro: #393E46;
+    --cinzaescuro: #222831;
+    --laranja: #FD7014;
+    --laranjaTransparente: rgba(253, 112, 20, 0.4);
+}
+
+main {
+    padding: 30px;
+    background-color: #222831;
+    color: #FFFF;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+h1::after{
+    content: '';
+    width: 70px;
+    height: 0.3rem;
+    border-radius: 20px;
+    background-color: #FD7014;
+    display: block;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.header:nth-of-type(1){
+    margin-top: 50px;
+}
+
+.header h2::after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle; 
+    width: 5px;
+    height: 1.8rem;
+    margin-right: 5px;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #FD7014;
+    position: absolute;
+    left: 35px;
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 15px 0px 15px;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    font-size: 17px;
+    transition: 0.2s ease-in;
+}
+
+.header a:hover {
+    color: var(--laranja);
+    transition: 0.2s ease-in;
+}
+
+p{
+    font-size: 20px;
+    color: #d1cfcf;
+    display: flex;
+    line-height: 1.5;
+    text-align: center;
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCategorias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    
+}
+
+.container {
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 385px;
+    height: 165px;
+    border-radius: 30px;
+    background: var(--bgContainer);
+    border: 1px solid #454545;
+    margin: 0px 20px 0px 5px; 
+    transition: 0.2s;
+}
+
+.container:hover {
+    box-shadow: 5px 5px 30px var(--laranjaTransparente);
+    transition: 0.2s ease-in;
+}
+
+#monitor {
+    max-width: 165px;
+}
+
+#teclado {
+    max-width: 200px;
+}
+
+#headset {
+    margin-top: 15px;
+    max-width: 130px;
+    transform: rotate(13deg);
+}
+
+#microfone {
+    max-width: 150px;
+}
+
+#camera {
+    max-width: 140px;
+}
+
+#mouse{
+    max-width: 150px;
+}
+
+#mousepad{
+    max-width: 200px;
+}
+
+#controle{
+    max-width: 145px;
+}
+
+#impressora{
+    max-width: 200px;
+}
+
+#gabinete{
+    max-width: 150px;
+}
+
+#placadevideo{
+    max-width: 155px;
+}
+
+#processador{
+    max-width: 120px;
+}
+
+#placamae{
+    max-width: 190px;
+}
+
+#armazenamento{
+    max-width: 200px;
+    transform: rotate(15deg);
+}
+
+#cooler{
+    max-width: 210px;
+    transform: rotate(-10deg);
+    transform: translateX(15px);
+}
+
+#fontedealimentacao{
+    max-width: 190px;
+}
+
+#dispositivosderede{
+    max-width: 175px;
+}
+
+#videogame{
+    max-width: 240px;
+    transform: translateX(18px);
+}
+
+.container #skins #cadeira{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#skins{
+    max-width: 250px;
+    transform: translateX(50px);
+}
+
+#cadeira{
+    max-width: 100px;
+}
+
+#armazenamentoP p{
+    transform: translateX(27px);
+}
+/*  */
+
 /* Ja resetei o css pra vc, agora so estilize!! Boa programação!! */
 /* Se tiver uma duvida avisa */
 /* Por favor, evite o uso de position absolute KAKAKAKAK */
 
+/* Pronto, ja tirei oq eu fiz KKKKKKKKKKKK */
+/* Amanha eu vejo entao KKKKKKKKK GOOD NIGHT!! */
