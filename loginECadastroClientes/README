@@ -1,0 +1,6 @@
+# Passo a passo para rodar o projeto:
+
+1. Clone o repo do github na maquina
+2. Mova o projeto para a pasta htdocs do xampp
+3. Habilite o apache e o mysql do xampp
+4. Abra o projeto no localhost
