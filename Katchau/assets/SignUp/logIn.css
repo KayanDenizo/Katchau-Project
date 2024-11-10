@@ -78,11 +78,11 @@ form {
     color: #323232;
 }
 
-input::placeholder{
+input::placeholder {
     color: #454545;
 }
 
-.input #password{
+.input #password {
     margin-bottom: 3px;
 }
 
@@ -93,7 +93,7 @@ input::placeholder{
     color: #555555;
 }
 
-.lembrardemim{
+.lembrardemim {
     color: #ffff;
 }
 
@@ -103,13 +103,13 @@ input::placeholder{
     margin-bottom: 30px;
 }
 
-.options{
+.options {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.btn-options{
+.btn-options {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,26 +121,54 @@ input::placeholder{
     color: #b0b2b4;
 }
 
-.btn-options i{
+.btn-options i {
     font-size: 22px;
 }
 
-.orOptions{
+.orOptions {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
 
-.orLine{
+.orLine {
     width: 180px;
     height: 1px;
     background-color: #888888;
     border: none;
 }
 
-.or{
+.or {
     padding: 0px 12px 0px 12px;
     font-size: 17px;
     color: #b0b2b4;
+}
+
+.btn-options:hover {
+    background-color: #454545;
+    transition: 0.3s;
+}
+
+.bxl-google:hover {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+}
+
+.bxl-microsoft:hover {
+    background: conic-gradient(#F25022 90deg, #7FBA00 90deg 180deg, #00A4EF 180deg 270deg, #FFB900 270deg 360deg) 100% 100%/100% 100% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.bxl-linkedin:hover {
+    color: #00A4EF;
+    transition: 0.3s;
 }
