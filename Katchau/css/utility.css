@@ -9,3 +9,24 @@
 .gray {
     color: #808080;
 }
+
+.white {
+    color: #FFFFFF;
+}
+
+.margin-left-15 {
+    margin-left: 15px;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+.blue {
+    color: #7eaeee;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}

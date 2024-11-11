@@ -187,7 +187,7 @@ img {
     position: relative;
     display: flex;
     color: #ffffff;
-    margin: 0 50px 100px 50px;
+    margin: 0 30px 100px 30px;
     padding: 40px;
     background-color: #303b4a;
     border-radius: 6px;
@@ -390,9 +390,9 @@ img {
 .buy_container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid #3d5167;
     border-radius: 5px;
+    width: 300px;
 }
 
 .buy_container_1 {
@@ -410,35 +410,62 @@ img {
     width: 100%;
 }
 
-.dropdown-quantity {
+.dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content-quantity {
+.quantity-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdown-selected {
+    padding: 10px 0;
+    cursor: pointer;
+    user-select: none;
+    width: 150px;
+    font-weight: 700;
+}
+
+.dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 120px;
     z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.dropdown-content-quantity a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+.dropdown-menu div {
+    padding: 15px;
+    cursor: pointer;
+    color: #000;
+}
+
+.dropdown-menu div:hover {
+    background-color: #ccc;
+}
+
+.dropdown.active .dropdown-menu {
     display: block;
 }
 
-.dropdown-content-quantity a:hover {
-    background-color: #f1f1f1;
+.sell-for {
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+    gap: 5px;
 }
 
-.dropdown-quantity:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-quantity:hover .dropbtn {
-    background-color: #3e8e41;
+.buttons-buy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
