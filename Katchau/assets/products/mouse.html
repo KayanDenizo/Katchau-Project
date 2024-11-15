@@ -53,29 +53,30 @@
         <div class="container">
             <div class="container_images">
                 <div class="thumbnails">
-                    <a href="../../img/img-products/Caixa de som.png"
-                        data-standard="../../img/img-products/Caixa de som.png.png" class="thumbnail"
+                    <a href="../../img/img-products/mouse-razer/imagem1.png"
+                        data-standard="../../img/img-products/mouse-razer/imagem1.png" class="thumbnail"
                         onmouseover="changeImage(this)">
-                        <img src="../../img/img-products/Caixa de som.png" alt="Mouse 1">
+                        <img src="../../img/img-products/mouse-razer/imagem1.png" alt="Mouse 1">
                     </a>
-                    <a href="../../img/img-products/mouse.png" data-standard="../../img/img-products/mouse.png"
+                    <a href="../../img/img-products/mouse-razer/imagem2.png" data-standard="../../img/img-products/mouse-razer/imagem2.png"
                         class="thumbnail" onmouseover="changeImage(this)">
-                        <img src="../../img/img-products/mouse.png" alt="Mouse 2">
+                        <img src="../../img/img-products/mouse-razer/imagem2.png" alt="Mouse 2">
                     </a>
-                    <a href="../../img/img-products/mouse.png" data-standard="../../img/img-products/mouse.png"
+                    <a href="../../img/img-products/mouse-razer/imagem3.png" data-standard="../../img/img-products/mouse-razer/imagem3.png"
                         class="thumbnail" onmouseover="changeImage(this)">
-                        <img src="../../img/img-products/mouse.png" alt="Mouse 3">
+                        <img src="../../img/img-products/mouse-razer/imagem3.png" alt="Mouse 3">
                     </a>
                 </div>
 
 
                 <!-- Contêiner principal de imagem com zoom -->
                 <div class="image-container easyzoom easyzoom--overlay">
-                    <a id="zoomLink" href="../../img/img-products/mouse.png" data-original-src="../../img/img-products/mouse.png">
+                    <a id="zoomLink" href="../../img/img-products/mouse.png"
+                        data-original-src="../../img/img-products/mouse.png">
                         <img id="main-image" src="../../img/img-products/mouse.png" alt="Mouse Razer">
                     </a>
                 </div>
-                
+
             </div>
 
 
@@ -151,7 +152,8 @@
                         <p class="off">R$ <b> 300,00</b></p>
                         <p class="price">R$ <b>200,00</b></p>
                         <p class="parcelas">em 12x R$ 16,66</p>
-                        <a href="#" id="modalSell" class="meios_pagamentos blue">Ver meios de pagamento</a>
+                        <span id="unique-show-payment-modal" class="unique-payment-link blue">Ver meios de
+                            pagamento</span>
                     </div>
 
                     <div class="precisa_saber_produto margin-top-15">
@@ -344,19 +346,18 @@
     </div>
 
     <!-- Modal meios de pagamento -->
-     <div id="paymentModal" class="payment-modal">
-        <div class="payment-modal-container">
-            <span class="close-modal">&times;</span>
+    <div id="unique-payment-modal" class="unique-modal-container hidden">
+        <div class="unique-modal-box">
+            <span id="unique-close-payment-modal" class="unique-close-button">&times;</span>
             <h2>Meios de Pagamento</h2>
-            <div class="payment-methods">
-                <div class="payment-method">
-                    <img src="../../img/visa.png" alt="Visa">
-                    <span>Visa</span>
-                    
-                </div>
-            </div>
+            <ul class="unique-payment-options">
+                <li>Cartão de Crédito</li>
+                <li>Boleto Bancário</li>
+                <li>Pix</li>
+                <li>Transferência Bancária</li>
+            </ul>
         </div>
-     </div>
+    </div>
 
 
 
