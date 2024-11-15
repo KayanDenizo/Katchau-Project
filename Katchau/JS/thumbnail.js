@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     easyzoom.init();
 });
 
-const modal = document.getElementById('modal');
+const modal = document.getElementById('modalThumb');
 const modalImg = document.getElementById('modalImage');
 const closeModal = document.getElementById('closeModal');
 

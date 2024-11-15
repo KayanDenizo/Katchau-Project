@@ -81,6 +81,8 @@ document.querySelectorAll('.stars-rating').forEach(starContainer => {
     window.addEventListener('click', (event) => {
         if (event.target === modal || event.target === thankYouModal) {
             modal.classList.remove('show');
+            modal.style.display = 'none';
+
             thankYouModal.classList.remove('show');
             setTimeout(() => {
                 modal.style.display = 'none';

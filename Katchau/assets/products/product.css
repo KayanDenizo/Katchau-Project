@@ -1,4 +1,6 @@
 @import url(../../css/utility.css);
+@import url(../../css/starAvaliation.css);
+@import url(../../css/modal.css);
 
 * {
     box-sizing: border-box;
@@ -486,7 +488,7 @@ img {
     max-width: 250px;
 }
 /* Modal - fundo */
-.modal {
+.modal-thumb {
     display: none; /* Inicialmente o modal está oculto */
     position: fixed;
     z-index: 9999;
@@ -501,7 +503,7 @@ img {
 }
 
 /* Imagem dentro do modal */
-.modal-content {
+.modal-content-thumb {
     max-width: 80%;
     max-height: 80%;
     margin: auto;
@@ -525,4 +527,24 @@ img {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Payment Modal */
+.payment-modal {
+    display: none; 
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.payment-modal-container {
+    background-color: #fff;
+    
 }
