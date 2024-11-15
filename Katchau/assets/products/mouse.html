@@ -6,16 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="../../css/footer.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
-    <!-- Link para Zoom.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/zoom-js@1.7.21/zoom.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easyzoom@2.5.0/dist/easyzoom.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="../../img/logo-katchau-removebg-preview.png" type="image/x-icon">
+
     <title>Mouse Razer | Katchau</title>
 </head>
 
@@ -58,23 +53,29 @@
         <div class="container">
             <div class="container_images">
                 <div class="thumbnails">
-                    <a href="../../img/img-products/mouse.png" data-lightbox="product"
-                        data-title="Mouse Razer - Imagem 1">
-                        <img src="../../img/img-products/mouse.png" alt="Mouse 1">
+                    <a href="../../img/img-products/Caixa de som.png"
+                        data-standard="../../img/img-products/Caixa de som.png.png" class="thumbnail"
+                        onmouseover="changeImage(this)">
+                        <img src="../../img/img-products/Caixa de som.png" alt="Mouse 1">
                     </a>
-                    <a href="../../img/img-products/mouse.png" data-lightbox="product"
-                        data-title="Mouse Razer - Imagem 2">
+                    <a href="../../img/img-products/mouse.png" data-standard="../../img/img-products/mouse.png"
+                        class="thumbnail" onmouseover="changeImage(this)">
                         <img src="../../img/img-products/mouse.png" alt="Mouse 2">
                     </a>
-                    <a href="../../img/img-products/mouse.png" data-lightbox="product"
-                        data-title="Mouse Razer - Imagem 3">
+                    <a href="../../img/img-products/mouse.png" data-standard="../../img/img-products/mouse.png"
+                        class="thumbnail" onmouseover="changeImage(this)">
                         <img src="../../img/img-products/mouse.png" alt="Mouse 3">
                     </a>
                 </div>
-                <div class="image-container">
-                    <img id="main-image" src="../../img/img-products/mouse.png"
-                        data-zoom-image="../../img/img-products/mouse.png" alt="Mouse Razer">
+
+
+                <!-- Contêiner principal de imagem com zoom -->
+                <div class="image-container easyzoom easyzoom--overlay">
+                    <a id="zoomLink" href="../../img/img-products/mouse.png" data-original-src="../../img/img-products/mouse.png">
+                        <img id="main-image" src="../../img/img-products/mouse.png" alt="Mouse Razer">
+                    </a>
                 </div>
+                
             </div>
 
 
@@ -97,7 +98,7 @@
 
 
                     <div class="title-container">
-                        <h2 class="title">Mouse Razer</h2>
+                        <h2 class="title">Mouse Gamer Razer Deathadder Essential 6400dpi Cor Preto</h2>
                     </div>
 
 
@@ -142,8 +143,21 @@
                     <div class="price_container">
                         <p class="off">R$ <b> 300,00</b></p>
                         <p class="price">R$ <b>200,00</b></p>
-                        <p class="parcelas">12x R$ 16,66</p>
-                        <a href="#" id="modalSell" class="meios_pagamentos">Ver meios de pagamento</a>
+                        <p class="parcelas">em 12x R$ 16,66</p>
+                        <a href="#" id="modalSell" class="meios_pagamentos blue">Ver meios de pagamento</a>
+                    </div>
+
+                    <div class="precisa_saber_produto margin-top-15">
+                        <span class="bold">O que você precisa saber sobre este produto</span>
+                        <ul>
+                            <li>Usa cabo</li>
+                            <li>Possui uma roda de rolagem</li>
+                            <li>Com luzes para melhorar a experiência de uso</li>
+                            <li>Com sensor óptico</li>
+                            <li>Resolução de 6400dpi</li>
+                        </ul>
+
+                        <span class="blue">Ver características</span>
                     </div>
                 </div>
 
@@ -166,6 +180,7 @@
                             <div class="quantity-container margin-left-15">
                                 <span>Quantidade: </span>
                                 <div class="dropdown-selected">1 unidade</div>
+                                <span class="material-symbols-outlined arrowDrop">arrow_drop_down</span>
                             </div>
                             <div class="dropdown-menu">
                                 <div data-value="1 unidade">1 unidade</div>
@@ -194,7 +209,7 @@
 
                     <div class="devolution-container margin-left-15 margin-top-15">
                         <div class="flex">
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined margin-left-5">
                                 undo
                             </span>
                             <span class="blue">Devolução grátis. <span class="white">Você tem 30 dias a partir da data
@@ -203,11 +218,14 @@
                     </div>
 
                     <div class="compra_segura-container margin-left-15 margin-top-15">
-                        <span class="material-symbols-outlined">
-                            verified_user
-                        </span>
-                        <span class="blue">Compra garantida,</span>
-                        <span>receba o produto que está esperando ou devolvemos o dinheiro.</span>
+                        <div class="flex">
+
+                            <span class="material-symbols-outlined margin-left-5">
+                                verified_user
+                            </span>
+                            <span class="blue">Compra garantida, <span class="white">receba o produto que está esperando
+                                    ou devolvemos o dinheiro.</span></span>
+                        </div>
                     </div>
 
                 </div>
@@ -286,6 +304,21 @@
     </div>
 
 
+    <div id="lightbox" class="lightbox">
+        <a href="#">
+            <img src="../../img/img-products/mouse.png" alt="Imagem Grande">
+        </a>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span id="closeModal" class="close">&times;</span>
+        <img id="modalImage" class="modal-content" src="" alt="Imagem Ampliada">
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/easyzoom@2.5.0/dist/easyzoom.js"></script>
     <script src="../../JS/thumbnail.js"></script>
     <script src="../../JS/dropdownQuantity.js"></script>
 </body>
