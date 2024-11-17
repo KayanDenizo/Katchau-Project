@@ -557,23 +557,34 @@ img {
 
 .unique-modal-box {
     background: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
+    height: 500px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 60%;
     text-align: center;
     position: relative;
 }
 
+.unique-modal-box::-webkit-scrollbar {
+    display: none;
+    max-height: 10px;
+}
+
 .unique-close-button {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
+    font-size: 30px;
+    color: #f17030;
     position: absolute;
-    right: 15px;
-    top: 10px;
+    right: 30px;
+    top: 30px;
     cursor: pointer;
+
+    &:hover {
+        color: #f17030b4;
+    }
 }
 
 .unique-payment-options {
@@ -582,7 +593,53 @@ img {
     margin: 20px 0 0;
 }
 
-.unique-payment-options li {
+.metod span:not(.subtitle) {
     margin: 10px 0;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
 }
+
+.metod {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 10px;
+}
+
+.parcela-container {
+    margin: 40px 0;
+}
+
+.cards {
+    gap: 30px;
+    display: flex;
+}
+
+.card img:not(.caixa, .pix) {
+    max-width: 40px;
+    width: 100%;
+    margin: 0;
+    height: 15px;
+    padding: 0;
+}
+
+.caixa {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 50px;
+}
+
+.pix {
+    max-width: 80px;
+    padding: 0;
+    margin: 0;
+}
+
+.card p:not(.blue) {
+    margin: 5px 0 0 0 ;
+    color: #777;
+
+}
+

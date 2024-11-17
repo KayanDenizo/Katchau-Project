@@ -6,6 +6,10 @@
     color: #f17030;
 }
 
+.black {
+    color: #010202;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -41,4 +45,47 @@
 .flex {
     display: flex;
     align-items: center;
+}
+
+.padding-40 {
+    padding: 40px;
+}
+
+.bold-500 {
+    font-weight: 500;
+}
+
+.bold-600 {
+    font-weight: 600;
+}
+
+.font-20 {
+    font-size: 25px;
+}
+
+.subtitle {
+    color: #a39f9f;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.margin-bottom-20 {
+    margin: 0 0 20px 0;
+}
+
+.sticky {
+    position: sticky;
+
+}
+
+.size-16 {
+    font-size: 16px;
+}
+
+.size-14 {
+    font-size: 14px;
+}
+
+.align-start {
+    text-align: start;
 }
