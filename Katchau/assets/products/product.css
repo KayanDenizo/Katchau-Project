@@ -641,3 +641,66 @@ img {
 
 }
 
+.related-products {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track-wrapper {
+    overflow: hidden; /* Esconde itens que não estão visíveis */
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Animação suave ao mover os itens */
+}
+
+.carousel-item {
+    min-width: 25%; /* Exibir 4 produtos por vez */
+    flex: 0 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.carousel-btn {
+    background: #ccc;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background: #aaa;
+}
+
