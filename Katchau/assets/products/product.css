@@ -557,11 +557,13 @@ img {
 
 .unique-modal-box {
     background: #fff;
-    overflow-y: auto;
+    overflow-y: auto; /* Scroll só quando necessário */
     overflow-x: hidden;
+    box-sizing: border-box;
     padding: 20px;
     border-radius: 10px;
-    height: 500px;
+    height: auto;
+    max-height: 80vh; /* Limitar altura ao tamanho da janela */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 60%;
@@ -569,10 +571,6 @@ img {
     position: relative;
 }
 
-.unique-modal-box::-webkit-scrollbar {
-    display: none;
-    max-height: 10px;
-}
 
 .unique-close-button {
     font-size: 30px;
@@ -590,7 +588,7 @@ img {
 .unique-payment-options {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0;
+    margin: 0; /* Elimina margens verticais */
 }
 
 .metod span:not(.subtitle) {
