@@ -182,7 +182,7 @@ header {
 
 img {
     border-radius: 10px;
-    margin: 0 30px;
+    margin: 10px 30px;
 }
 
 .container-geral {
@@ -276,8 +276,24 @@ img {
     font-size: 26px;
 }
 
+.offPrice {
+    text-decoration: line-through #b6b6b6;
+    color: #b6b6b6;
+    margin: 10px 0 0 20px;
+    text-align: start;
+    font-size: 16px;
+    
+}
+
 .price {
     font-size: 36px;
+    color: #db4444;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.price-product {
+    font-size: 23px;
     color: #db4444;
     font-weight: bold;
     margin: 0 0 10px 0;
@@ -668,15 +684,24 @@ img {
 }
 
 .carousel-item {
+    cursor: pointer;
     min-width: 25%; /* Exibir 4 produtos por vez */
+    height: 480px;
     flex: 0 0 auto;
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
-    background: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin: 5px;
+    background: #222831;
+    border: 2px solid #393E46;
+    border-radius: 10%;
+    margin: 15px;
+    transition: .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: .2s ease-in-out;
+        background: #393E46;
+    }
 }
 
 .carousel-btn {
@@ -704,3 +729,37 @@ img {
     background: #aaa;
 }
 
+.price-product-container {
+    display: flex;
+    align-items: baseline;
+    gap: 19px;
+    margin-left: 20px;
+}
+
+.discount {
+    color: #01b392;
+    font-weight: 600;
+}
+
+.title-product {
+    text-align: start;
+    color: #fbfbfb;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.frete-gratis-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    max-width: 200px;
+    text-align: start;
+    margin-left: 20px;
+}
+
+.title-related-products {
+    color: #fbfbfb;
+    text-align: start;
+}
