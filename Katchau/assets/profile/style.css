@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -10,48 +11,43 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
 }
 
 .profile-card {
-    background-color: #393E46;
-    width: 300px;
+    background-color: rgba(57, 62, 70, 0.3);
+    border: 3px solid #393E46;
+    width: 350px;
+    height: 300px;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .profile-pic {
-    position: relative;
+    position: absolute;
+    padding: 3px;
     width: 150px;
     height: 150px;
+    bottom: 500px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto 20px;
     cursor: pointer;
     border: 2px solid #FD7014;
 }
 
 .profile-placeholder {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background-color: #EEEEEE;
-}
-
-.profile-pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background: url('../../img/logo-katchau-removebg-preview.png') center/cover;
+    background-color: #222831;
 }
 
 .editable {
     font-size: 28px;
-    margin-bottom: 15px;
-    color: #FD7014;
+    color: #ffff;
     cursor: pointer;
 }
 
@@ -68,8 +64,8 @@ body, html {
     color: #EEEEEE;
 }
 
-.link i {
-    font-size: 24px;
+.iconsProfile {
+    font-size: 150px;
     margin-right: 15px;
     color: #FD7014;
 }
@@ -101,3 +97,15 @@ a {
     border-radius: 100%;
     border: 1px solid #000;
 }
+
+.username input {
+    width: 200px;
+    font-size: 17px;
+    caret-color: #fdfdfd;
+    color: #ffff;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FD7014;
+}
+

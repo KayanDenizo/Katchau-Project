@@ -74,8 +74,9 @@ form {
     width: 300px;
     height: 40px;
     border-radius: 10px;
-    border: 2px solid rgba(253, 112, 20, 0.3);
+    /* border: 2px solid rgba(253, 112, 20, 0.3); */
     background-color: #CCCCCC;
+    border: none;
     text-indent: 25px;
     font-size: 16px;
     outline: none;
