@@ -187,18 +187,19 @@ img {
 
 .container-geral {
     display: flex;
+    width: 99%;
     justify-content: center;
 }
 
 .container {
     position: relative;
+    width: 100%;
     display: flex;
     color: #ffffff;
-    margin: 0 30px 100px 30px;
+    margin: 0 0 100px 30px;
     padding: 25px;
     background-color: #303b4a;
     border-radius: 6px;
-    max-width: 1500px;
 }
 
 .container_images {
@@ -416,10 +417,11 @@ img {
 
 .buy_container {
     display: flex;
+    margin-left: 40px;
+    padding: 20px;
     flex-direction: column;
     border: 1px solid #3d5167;
     border-radius: 5px;
-    width: 350px;
 }
 
 .buy_container_1 {
@@ -433,6 +435,7 @@ img {
 
 .product-content {
     display: flex;
+    width: 520px;
 }
 
 .dropdown {
@@ -625,6 +628,10 @@ img {
     margin: 40px 0;
 }
 
+.parcelas {
+    margin: 0 0 20px 0;
+}
+
 .cards {
     gap: 30px;
     display: flex;
@@ -659,7 +666,7 @@ img {
 
 .related-products {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
     text-align: center;
     position: relative;
