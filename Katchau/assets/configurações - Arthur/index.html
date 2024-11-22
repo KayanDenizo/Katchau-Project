@@ -56,7 +56,83 @@
     <!-- FimNavbar -->
 
     <main>
-        <!-- Programe Aqui -->
+        <h1 class="config-title">Configurações</h1>
+
+        <div class="settings-section">
+            <h2>Minha conta</h2>
+            <div class="settings-group">
+                <div class="setting-option" onclick="toggleDescription(this)">
+                    Conta e Segurança <span class="arrow">&#8250;</span>
+                </div>
+                <div class="description">Configurações de segurança e informações da conta.</div>
+
+                <div class="setting-option" onclick="toggleDescription(this)">
+                    Endereços cadastrados <span class="arrow">&#8250;</span>
+                </div>
+                <div class="description">Gerencie os endereços salvos.</div>
+
+                <div class="setting-option" onclick="toggleDescription(this)">
+                    Cartões / Contas Bancárias <span class="arrow">&#8250;</span>
+                </div>
+                <div class="description">Configurações de cartões e contas bancárias.</div>
+            </div>
+        </div>
+
+        <div class="settings-section">
+            <h2>Preferências</h2>
+            <div class="settings-group">
+                <div class="setting-option" onclick="toggleDescription(this)">
+                    Configurações de Privacidade e Segurança <span class="arrow">&#8250;</span>
+                </div>
+                <div class="description">Ajuste suas preferências de privacidade e segurança.</div>
+
+                <div class="setting-option" onclick="toggleDescription(this)">
+                    Idioma <span class="arrow">&#8250;</span>
+                </div>
+                <div class="description">Português / Brasil</div>
+
+                <div class="setting-option" onclick="toggleDescription(this)">
+                    Preferências de comunicação <span class="arrow">&#8250;</span>
+                </div>
+                <div class="description">Gerencie as configurações de comunicação.</div>
+            </div>
+        </div>
+
+        <div class="settings-section">
+            <h2>Assistência</h2>
+            <div class="settings-group">
+                <div class="setting-option" onclick="toggleDescription(this)">
+                    Ajuda <span class="arrow">&#8250;</span>
+                </div>
+                <div class="description">Perguntas frequentes e ajuda.</div>
+
+                <div class="setting-option" onclick="toggleDescription(this)">
+                    Nossas Políticas <span class="arrow">&#8250;</span>
+                </div>
+                <div class="description">Termos e condições de uso.</div>
+
+                <div class="setting-option" onclick="toggleDescription(this)">
+                    Sobre <span class="arrow">&#8250;</span>
+                </div>
+                <div class="description">Saiba mais sobre nós.</div>
+
+                <div class="setting-option" onclick="toggleDescription(this)">
+                    Exclusão da minha conta <span class="arrow">&#8250;</span>
+                </div>
+                <div class="description">Solicite a exclusão da sua conta.</div>
+            </div>
+        </div>
+
+        <button class="logout-button" onclick="showPopup()">SAIR</button>
+
+        <div class="details-popup" id="detailsPopup">
+            <div class="popup-content">
+                <p class="popup-text">Você realmente deseja sair?</p>
+                <button class="close-button" onclick="closePopup()">Sair</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
     </main>
 
     <!-- Footer -->
