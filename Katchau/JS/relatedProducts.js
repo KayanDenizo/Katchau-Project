@@ -28,6 +28,7 @@ function scrollToRight() {
     // Avançar apenas se houver itens restantes à direita
     if (currentIndex < totalItems - visibleItems) {
         currentIndex += visibleItems;
-        track.style.transform = `translateX(-${itemWidth * currentIndex}px)`;
+        const offset = itemWidth * currentIndex - (itemWidth * visibleItems); // Calcula o offset correto
+        track.style.transform = `translateX(-${offset}px)`;
     }
 }
