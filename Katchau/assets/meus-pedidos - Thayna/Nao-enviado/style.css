@@ -107,11 +107,9 @@ main{
     color: white;
 }
 
-
 .product {
     background: #393e45;    
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
     margin-block-end: 60px;
     align-items: center;
@@ -161,17 +159,6 @@ img {
     display: flex;
 }
 
-.preco3{
-    position: absolute;
-    left: 310px;
-    top: 165%;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #cdcdcd;
-    font-weight: bold;
-    font-size: 17px;
-    display: flex;
-}
-
 .button-rastrear {
     background: #6d6d6d;
     color: #ffffff;
@@ -202,7 +189,7 @@ img {
     font-weight: bold;
     font-size: 13px;   
     border: 0;
-    margin-right: 135px;
+    margin-right: 52px;
 }
 
 .status-button .texto2{
@@ -211,16 +198,7 @@ img {
     font-weight: bold;
     font-size: 13px;   
     border: 0;
-    margin-right: 155px;
-}
-
-.status-button .texto3{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 13px;   
-    border: 0;
-    margin-right: 52px;
+    margin-right: 65px;
 }
 
 .status-button ul {
@@ -242,65 +220,4 @@ img {
     display: inline;
     margin-right: 20px;
     justify-content: space-between;
-}
-
-.icons-container {
-    display: flex;
-    align-items: flex-start;
-    position: absolute;
-    left: 290px;
-    top: 75%;
-}
-
-.icons-container2 {
-    display: flex;
-    align-items: flex-start;
-    align-items: center;
-    gap: 10px;
-    padding-right: 78%;
-    margin-bottom: 100px;
-    position: absolute;
-    left: 290px;
-    top: 122%;
-}
-
-.icons-container3 {
-    display: flex;
-    align-items: flex-start;
-    align-items: center;
-    gap: 10px;
-    padding-right: 78%;
-    margin-bottom: 100px;
-    position: absolute;
-    left: 290px;
-    top: 168%;
-}
-
-.icon-item {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.tooltip {
-    font-size: 12px;
-    color: #ffffff;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-    align-items: center;
-    left: 15px;
-    padding-left: 5px;
-}
-
-.icon-item:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
-}
-
-.icon-img {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #ee5208;
-    margin-right: 5px;
 }
