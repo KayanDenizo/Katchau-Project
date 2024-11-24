@@ -90,3 +90,7 @@ main{
     width: 100%;
 }
 
+.imgProduto img{
+    width: 230px;
+    border-radius: 15px;
+}
