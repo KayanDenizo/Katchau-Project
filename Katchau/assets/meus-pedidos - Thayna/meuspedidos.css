@@ -114,12 +114,17 @@ hr {
 .infos {
     display: flex;
     flex-direction: column;
-    width: 32%;
+    width: 28%;
 }
 
 .statusPedido {
-    font-size: 15px;
+    font-size: 12px;
     color: #fff;
+}
+
+.statusPedido h1{
+    margin-bottom: 5px;
+    padding: 0;
 }
 
 .buttonOptionsStatus{
@@ -144,14 +149,15 @@ hr {
 
 .maininfos{
     display: flex;
-    width: 67%;
+    width: 70%;
     flex-direction: row;
 }
 
 .nomeProduto{
     color: #fff;
-    font-size: 19px;
-    padding: 0px 0px 0px  20px;
+    font-size: 18px;
+    padding: 0px 30px 0px  20px;
+    text-align: justify;
 }
 
 .informacoesProduto{
