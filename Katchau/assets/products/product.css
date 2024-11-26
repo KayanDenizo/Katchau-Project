@@ -418,6 +418,7 @@ img {
 .buy_container {
     display: flex;
     margin-left: 40px;
+    max-width: 350px;
     padding: 20px;
     flex-direction: column;
     border: 1px solid #3d5167;
@@ -435,7 +436,8 @@ img {
 
 .product-content {
     display: flex;
-    width: 520px;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .dropdown {
@@ -773,4 +775,12 @@ img {
 .title-related-products {
     color: #fbfbfb;
     text-align: start;
+}
+
+.related-title-contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 20px;
 }
