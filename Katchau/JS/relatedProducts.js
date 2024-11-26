@@ -8,14 +8,13 @@ function scrollToLeft() {
     const track = document.querySelector('.carousel-track');
     const items = document.querySelectorAll('.carousel-item');
     const itemWidth = items[0].offsetWidth; // Largura de um item
-
     // Voltar apenas se não estiver no início
     if (currentIndex > 0) {
         currentIndex -= visibleItems;
         if (currentIndex < 0) {
             currentIndex = 0;
         }
-        track.style.transform = `translateX(-${itemWidth * currentIndex}px)`;
+        track.style.transform = `translateX(-${(itemWidth + 20) + currentIndex}px)`;
     }
 }
 
@@ -28,7 +27,7 @@ function scrollToRight() {
     // Avançar apenas se houver itens restantes à direita
     if (currentIndex < totalItems - visibleItems) {
         currentIndex += visibleItems;
-        track.style.transform = `translateX(-${itemWidth * currentIndex}px)`;
+        track.style.transform = `translateX(-${(itemWidth + 20) * currentIndex}px)`;
     }
 }
 
