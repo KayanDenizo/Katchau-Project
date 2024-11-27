@@ -202,6 +202,18 @@ img {
     border-radius: 6px;
 }
 
+@media (width >= 1300px) {
+    .container {
+        width: auto;
+    }
+}
+
+@media (width <= 1280px) {
+    .container {
+        width: 90%;
+    }
+}
+
 .container_images {
     display: flex;
     align-items: flex-start;
@@ -417,7 +429,6 @@ img {
 
 .buy_container {
     display: flex;
-    margin-left: 40px;
     max-width: 350px;
     padding: 20px;
     flex-direction: column;
