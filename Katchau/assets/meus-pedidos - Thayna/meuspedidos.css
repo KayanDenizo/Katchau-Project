@@ -299,6 +299,7 @@ hr {
 }
 
 .quantidade{
+    cursor: default;
     border: 1px solid #999999;
     border-radius: 10px;
     width: 90px;
