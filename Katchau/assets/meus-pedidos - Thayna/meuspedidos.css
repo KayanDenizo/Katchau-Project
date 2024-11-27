@@ -292,3 +292,30 @@ hr {
     }
 }
 
+.opcoesInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quantidade{
+    border: 1px solid #999999;
+    border-radius: 10px;
+    width: 90px;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qntd{
+    font-size: 15px;
+    color: #999999;
+}
+
+.qntdNum{
+    color: #ccc;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
