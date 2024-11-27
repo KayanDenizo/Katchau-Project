@@ -14,7 +14,7 @@ function scrollToLeft() {
         if (currentIndex < 0) {
             currentIndex = 0;
         }
-        track.style.transform = `translateX(-${(itemWidth + 20) + currentIndex}px)`;
+        track.style.transform = `translateX(-${(itemWidth + 20) * currentIndex}px)`;
     }
 }
 
