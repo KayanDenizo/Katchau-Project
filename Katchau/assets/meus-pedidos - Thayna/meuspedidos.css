@@ -292,25 +292,3 @@ hr {
     }
 }
 
-.voltar{
-    display: flex;
-    margin-top: 130px;
-    color: #ccc;
-}
-
-.voltarIcon{
-    font-family: sans-serif;
-    font-size: 35px;
-    margin-right: 10px;
-}
-
-.voltarText{
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    transition: 0.3s;
-
-    &:hover{
-        text-decoration: underline;
-    }
-}
