@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Card</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../../assets/SignUp/navbar.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
     <link rel="stylesheet" href="../../css/footer.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=settings" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=settings" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -55,33 +56,50 @@
     <!-- Fim NavBar -->
 
     <!-- Main Content -->
-    <div class="container">
-         <div class="profile-pic" id="profile-pic">
-            <div class="profile-placeholder"></div>
-            <img src="#" id="profile-image">
-            <input type="file" id="upload" accept="image/*" style="display: none;">
+    <main>
+        <div class="voltar">
+            <span class="voltarIcon">&lsaquo;</span>
+            <a href="../profile/index.html" class="voltarText">Voltar</a>
         </div>
-        <div class="profile-card">
-           
-            <div class="username">
-                <h2 id="profile-name" class="editable">Seu Nome</h2>
-                <input type="text" id="edit-name-input" class="hidden">
-            </div>
 
-            <div class="link" id="settings">
-                <i class="material-symbols-outlined icon-input iconsProfile">settings</i>
-                <span>Configurações</span>
-            </div>
-            <div class="link" id="orders">
-                <i class="material-symbols-outlined icon-input iconsProfile">shopping_bag</i>
-                <span>Meus Pedidos</span>
-            </div>
-            <div class="link" id="contact">
-                <i class="material-symbols-outlined icon-input iconsProfile">call</i>
-                <span><a href="../contato/index.html">Contato</a></span>
+        <div class="container">
+            <div class="profile-card">
+
+                <div class="containerPic">
+                    <div class="profile-pic" id="profile-pic">
+                        <div class="profile-placeholder"></div>
+                        <img src="#" id="profile-image">
+                        <input type="file" id="upload" accept="image/*" style="display: none;">
+                    </div>
+                </div>
+
+                <div class="username">
+                    <h2 id="profile-name" class="editable">Seu Nome</h2>
+                    <input type="text" id="edit-name-input" class="hidden">
+                </div>
+
+                <div class="buttons">
+
+                    <div class="link" id="settings">
+                        <i class="material-symbols-outlined icon-input iconsProfile">settings</i>
+                        <span>Configurações</span>
+                    </div>
+                    <div class="link" id="orders">
+                        <i class="material-symbols-outlined icon-input iconsProfile">shopping_bag</i>
+                        <span>Meus Pedidos</span>
+                    </div>
+                    <div class="link" id="contact">
+                        <i class="material-symbols-outlined icon-input iconsProfile">call</i>
+                        <span><a href="../contato/index.html">Contato</a></span>
+                    </div>
+                    <div class="link" id="help">
+                        <i class="material-symbols-outlined icon-input iconsProfile">help</i>
+                        <span>Ajuda</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
 
     <!-- Footer -->
