@@ -63,10 +63,26 @@
     font-size: 25px;
 }
 
+.font-18 {
+    font-size: 18px;
+}
+
+.bg-color {
+    background-color: #303b4a;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 .subtitle {
     color: #a39f9f;
     font-size: 16px;
     font-weight: normal;
+}
+
+.font-weight-600 {
+    font-weight: 600;
 }
 
 .margin-bottom-20 {
