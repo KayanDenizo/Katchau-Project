@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="meuspedidos.css">
     <link rel="stylesheet" href="navMeusPedidos.css">
+    <link rel="stylesheet" href="starAvaliationMeusPedidos.css">
+
+    <link rel="stylesheet" href="../../css/starAvaliation.css">
+
+    <script defer src="../../JS/starAvaliation.js"></script>
+    <script defer src="../../JS/modal.js"></script>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -250,6 +256,26 @@
         </div>
 
     </main>
+
+    <!-- avaliação de estrelas -->
+    <div class="avaliacaoEstrela">
+        <div id="rating-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span> <!-- Deve estar aqui -->
+                <h2>Avalie nosso Produto</h2>
+                <p>Você está avaliando com <span id="selected-rating">0</span> estrelas.</p>
+                <textarea id="review-text" placeholder="Escreva seu comentário..."></textarea>
+                <button id="submit-review">Enviar Avaliação</button>
+            </div>
+        </div>
+
+        <div id="thank-you-popup" class="popup">
+            <div class="popup-content">
+                <span class="check-icon">✔</span>
+                <span class="popup-text">Agradecemos sua avaliação!!</span>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
