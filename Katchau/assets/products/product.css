@@ -854,10 +854,6 @@ hr {
     margin-bottom: 30px;
 }
 
-.desc-title {
-
-}
-
 .line-height-desc {
     line-height: 1.5;
 }
@@ -865,6 +861,28 @@ hr {
 .description {
     max-width: 800px;
     color: #666;
+    overflow: hidden;
+    max-height: 10em;
+    line-height: 1.5em;
+    transition: 0.5s ease;
+}
+
+.description.expanded {
+    max-height: 100%;
+    transition: 0.5s ease;
+}
+
+.toggle-button {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4caf50; /* Ajuste a cor conforme sua preferência */
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.toggle-button:hover {
+    color: #81c784; /* Cor ao passar o mouse */
 }
 
 .desc-product-container {
