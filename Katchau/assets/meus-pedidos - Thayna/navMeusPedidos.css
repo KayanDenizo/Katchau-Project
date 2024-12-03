@@ -9,6 +9,7 @@
     height: 0.3rem;
     background-color: #FD7014;
     display: block;
+    border-radius: 20px;
 }
 
 .category {
