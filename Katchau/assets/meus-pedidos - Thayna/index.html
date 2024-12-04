@@ -15,8 +15,11 @@
     <link rel="stylesheet" href="../../css/starAvaliation.css">
     <link rel="stylesheet" href="../../css/modal.css">
 
-    <script defer src="../../JS/starAvaliation.js"></script>
-    <script defer src="../../JS/modal.js"></script>
+    <!-- <script defer src="../../JS/starAvaliation.js"></script>
+    <script defer src="../../JS/modal.js"></script> -->
+
+    <script defer src="../../JS/starAvaliation-nostar.js"></script>
+    <script defer src="../../JS/modal-nostar.js"></script>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -188,7 +191,7 @@
                                     <h1>Pedido Entregue</h1>
                                 </div>
 
-                                <div class="buttonOptionsStatus">
+                                <div id="modalBtn" class="buttonOptionsStatus">
                                     <p class="textOptionsStatus">Avaliar o Produto</p>
                                 </div>
 
@@ -259,24 +262,112 @@
     </main>
 
     <!-- avaliação de estrelas -->
-    <div class="avaliacaoEstrela">
-        <div id="rating-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span> <!-- Deve estar aqui -->
-                <h2>Avalie nosso Produto</h2>
-                <p>Você está avaliando com <span id="selected-rating">0</span> estrelas.</p>
-                <textarea id="review-text" placeholder="Escreva seu comentário..."></textarea>
-                <button id="submit-review">Enviar Avaliação</button>
-            </div>
+    <div id="rating-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span> <!-- Deve estar aqui -->
+            <h2>Avalie nosso Produto</h2>
+            <p>Você está avaliando com <span id="selected-rating">0</span> estrelas.</p>
+            <textarea id="review-text" placeholder="Escreva seu comentário..."></textarea>
+            <button id="submit-review">Enviar Avaliação</button>
         </div>
+    </div>
 
-        <div id="thank-you-popup" class="popup">
-            <div class="popup-content">
-                <span class="check-icon">✔</span>
-                <span class="popup-text">Agradecemos sua avaliação!!</span>
+    <div id="thank-you-popup" class="popup">
+        <div class="popup-content">
+            <span class="check-icon">✔</span>
+            <span class="popup-text">Agradecemos sua avaliação!!</span>
+        </div>
+    </div>
+
+    <div id="modal-avaliacao" class="modal-teste">
+        <div class="modal-content">
+            <div class="avalie-container">
+                <h2>Avalie Nosso Produto</h2>
+                <div class="image-wrapper">
+                    <img src="../categorias - Julia/telasProdutos/imgs/headsetRedragonZeus.svg" alt="">
+                </div>
+                <h4 class="title-star-container">HeadSet Redragon</h4>
+                <div class="stars-rating">
+                    <span class="star" data-rating="1">
+                        <svg viewBox="0 0 24 24" class="star-icon">
+                            <path
+                                d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="star" data-rating="2">
+                        <svg viewBox="0 0 24 24" class="star-icon">
+                            <path
+                                d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="star" data-rating="3">
+                        <svg viewBox="0 0 24 24" class="star-icon">
+                            <path
+                                d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="star" data-rating="4">
+                        <svg viewBox="0 0 24 24" class="star-icon">
+                            <path
+                                d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="star" data-rating="5">
+                        <svg viewBox="0 0 24 24" class="star-icon">
+                            <path
+                                d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="rating-value">(0)</span>
+                </div>
             </div>
         </div>
     </div>
+
+    <style>
+        .modal-teste {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 6;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+
+        }
+
+        .modal-teste.show {
+            display: flex;
+            opacity: 1;
+        }
+
+        .avalie-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-wrapper img {
+            width: 150px;
+        }
+
+        .title-star-container {
+            font-size: 20px;
+            color: #662022;
+            margin: 0 0 20px;
+        }
+    </style>
 
     <!-- Footer -->
     <footer>
