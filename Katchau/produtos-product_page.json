@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Mouse Razer",
+        "description": "Mouse gamer Razer com RGB.",
+        "price": 200.00,
+        "image": "../../img/img-products/mouse.png",
+        "link": "mouse.html"
+    },
+    {
+        "id": 2,
+        "name": "Teclado Mecânico",
+        "description": "Teclado Mecânico Redragon.",
+        "price": 200.00,
+        "image": "../../img/img-products/teclado mecanico.png",
+        "link": "teclado.html"
+    },
+    {
+        "id": 3,
+        "name": "Gabinete Redragon",
+        "description": "Gabinete Redragon.",
+        "price": 250.00,
+        "image": "../../img/img-products/gabinete.png",
+        "link": "gabinete.html"
+    },
+    {
+        "id": 4,
+        "name": "Notebook Dell Gamer",
+        "description": "Notebook Dell Gamer.",
+        "price": 4999.00,
+        "image": "../../img/img-products/notebook gamer dell.png",
+        "link": "notebook-dell-gamer.html"
+    },
+    {
+        "id": 5,
+        "name": "Notebook Dell I5",
+        "description": "Notebook Dell I5.",
+        "price": 3200.00,
+        "image": "../../img/img-products/notebook dell.png",
+        "link": "computador-gamer-i5.html"
+    },
+    {
+        "id": 6,
+        "name": "Teclado Mecânico Gamer",
+        "description": "Teclado Mecânico Gamer K500.",
+        "price": 200.00,
+        "image": "../../img/img-products/teclado-gamer.png",
+        "link": "teclado-gamer-i5.html"
+    }
+]

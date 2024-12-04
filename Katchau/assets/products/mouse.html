@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="../../css/index2.css">
     <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/scrollbar.css">
+    <link rel="stylesheet" href="../../css/carrinho.css">
+
+    <link rel="stylesheet" href="../../css/scrollToTop.css">
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easyzoom@2.5.0/dist/easyzoom.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -16,253 +23,342 @@
 
 <body>
 
-    <!-- NavBar -->
-    <header>
-        <nav class="navbar">
-            <div class="logomarca">
-                <a href="../../index2.html">
-                    <img src="../../img/logo-katchau-removebg-preview.png" alt="Logo" class="logo-marca" />
-                </a>
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar_header_container">
+            <div class="close_sidebar">
+                <span class="material-symbols-outlined" id="closeSidebar">close</span>
             </div>
-
-            <div class="div-search">
-                <input class="searchBar" type="search" placeholder="Pesquisar produtos..." name="search"><i
-                    class="material-symbols-outlined">search</i>
+            <div class="header-container">
+                <h2 class="cart_title">Carrinho</h2>
+                <span class="showAll" id="selectAll">Marcar Todos</span>
             </div>
+        </div>
+        <div class="sidebar_subtotal_container">
+            <span class="subtotal"><strong>Subtotal:</strong>
+                <p id="subTotal">R$ 0.00</p>
+            </span>
+        </div>
+        <ul id="lista-produtos">
+            <!-- Produtos Listados Aqui -->
 
-            <nav class="navbar-menu">
-                <button>
-                    <a href="../../assets/profile/index.html" class="icon material-symbols-outlined">person</a>
-                </button>
-                <button>
-                    <a href="../Favoritos/favoritos.html" class="icon material-symbols-outlined">favorite</a>
-                </button>
-                <button>
-                    <a href="#" class="icon material-symbols-outlined" id="cart">shopping_cart</a>
-                </button>
-                <button>
-                    <a href="../contato/index.html" class="icon material-symbols-outlined">contact_support</a>
-                </button>
-                <button class="signUpBtn"><a href="../SignUp/signUp.html">Cadastrar</a></button>
-                <button class="loginBtn"><a href="../SignUp/logIn.html">Entrar</a></button>
-            </nav>
-        </nav>
-    </header>
-    <!-- Fim NavBar -->
-    <div class="container-geral">
-        <div class="container">
-            <div class="container_images">
-                <div class="thumbnails">
-                    <a href="../../img/img-products/mouse-razer/imagem1.svg"
-                        data-standard="../../img/img-products/mouse-razer/imagem1.svg" class="thumbnail"
-                        onmouseover="changeImage(this)">
-                        <img src="../../img/img-products/mouse-razer/imagem1.svg" alt="Mouse 1">
-                    </a>
-                    <a href="../../img/img-products/mouse-razer/imagem2.png"
-                        data-standard="../../img/img-products/mouse-razer/imagem2.png" class="thumbnail"
-                        onmouseover="changeImage(this)">
-                        <img src="../../img/img-products/mouse-razer/imagem2.png" alt="Mouse 2">
-                    </a>
-                    <a href="../../img/img-products/mouse-razer/imagem3.svg"
-                        data-standard="../../img/img-products/mouse-razer/imagem3.svg" class="thumbnail"
-                        onmouseover="changeImage(this)">
-                        <img src="../../img/img-products/mouse-razer/imagem3.svg" alt="Mouse 3">
-                    </a>
-                </div>
+        </ul>
 
-
-                <!-- Contêiner principal de imagem com zoom -->
-                <div class="image-container easyzoom easyzoom--overlay">
-                    <a id="zoomLink" href="../../img/img-products/mouse-razer/imagem1.svg"
-                        data-original-src="../../img/img-products/mouse-razer/imagem1.svg">
-                        <img id="main-image" src="../../img/img-products/mouse-razer/imagem1.svg" alt="Mouse Razer">
-                    </a>
-                </div>
-
-            </div>
-
-
-            <div class="product-content">
-                <div class="product-content-info">
-
-                    <div class="sell">
-                        <span class="product-sell">
-                            Novo | +1220 vendidos
+        <div class="sidebar_footer_container" id="footerSidebar">
+            <div class="frete_container">
+                <div class="header_container">
+                    <div class="frete_header_container">
+                        <span class="material-symbols-outlined">
+                            check_circle
                         </span>
+                        <p>Seu pedido é elegível para FRETE GRÁTIS.</p>
+                    </div>
+                    <p class="margin">Clique em Frete grátis após fechar o pedido.</p>
+                </div>
+
+                <div class="subtotal_container">
+                    <div class="header_subtotal_container">
+                        <h2>Subtotal</h2>
+                        <span class="quantidade_produtos" id="quantidade_produtos">Quantidade</span>
+                        <span class="preco_total" id="preco_total">Preco</span>
                     </div>
 
-
-                    <div class="recommended">
-                        <div class="recommended-container">
-                            <span class="material-symbols-outlined recommended-icon">verified</span><span
-                                class="recommended-content">RECOMENDADO</span>
-                        </div>
+                    <div class="fechar_pedido_container">
+                        <a href="#">
+                            <button type="button" class="fechar_pedido_btn">Fechar Pedido</button>
+                        </a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Informações do produto -->
+    <div id="produto" class="produto">
+        <img src="img/img-products/fone.png" alt="Foto do fone" id="foto-produto">
+        <h2 id="nome-produto">Lorem</h2>
+        <p id="descricao-produto">Headset Fone de Ouvido Havit HV-H2002d Pink, Gamer, com Microfone, Falante 53mm,
+            Plug
+            3, 5mm: compatível com XBOX ONE e PS4, HAVIT, HV-H2002d Cor Rosa</p>
+        <p id="preco-produto">R$ 800</p>
+    </div>
 
 
-                    <div class="title-container">
-                        <h2 class="title">Mouse Gamer Razer Deathadder Essential 6400dpi Cor Preto</h2>
-                    </div>
+    <!-- NavBar -->
+    <main id="page">
 
+        <header>
+            <nav class="navbar">
+                <div class="logomarca">
+                    <a href="index2.html"><img src="../../img/logo-katchau-removebg-preview.png" alt="logo"
+                            class="logo-marca"></a>
+                </div>
 
-                    <div class="stars-container">
-                        <div class="stars">
-                            <span class="rate">4.4</span>
-                            <div class="stars-rating">
-                                <span class="star" data-rating="1">
-                                    <svg viewBox="0 0 24 24" class="star-icon">
-                                        <path
-                                            d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span class="star" data-rating="2">
-                                    <svg viewBox="0 0 24 24" class="star-icon">
-                                        <path
-                                            d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span class="star" data-rating="3">
-                                    <svg viewBox="0 0 24 24" class="star-icon">
-                                        <path
-                                            d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span class="star" data-rating="4">
-                                    <svg viewBox="0 0 24 24" class="star-icon">
-                                        <path
-                                            d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span class="star" data-rating="5">
-                                    <svg viewBox="0 0 24 24" class="star-icon">
-                                        <path
-                                            d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span class="rating-value">(0)</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="div-search">
+                    <input id="search-bar" class="searchBar" type="search" autocomplete="off" autofill="off"
+                        placeholder="Pesquisar produtos..." name="search">
+                    <i class="material-symbols-outlined">search</i>
 
-
-                    <div class="price_container">
-                        <p class="off">R$ <b> 300,00</b></p>
-                        <p class="price">R$ <b>200,00</b></p>
-                        <p class="parcelas">em 12x R$ 16,66</p>
-                        <span id="unique-show-payment-modal" class="unique-payment-link blue">Ver meios de
-                            pagamento</span>
-                    </div>
-
-                    <div class="precisa_saber_produto margin-top-15">
-                        <span class="bold">O que você precisa saber sobre este produto</span>
-                        <ul>
-                            <li>Usa cabo</li>
-                            <li>Possui uma roda de rolagem</li>
-                            <li>Com luzes para melhorar a experiência de uso</li>
-                            <li>Com sensor óptico</li>
-                            <li>Resolução de 6400dpi</li>
-                        </ul>
-
-                        <span class="ver-caracteristicas-link blue" id="verDesc">Ver características</span>
+                    <!-- Container para a lista de produtos -->
+                    <div class="product-list-container">
+                        <ul id="product-list"></ul>
                     </div>
                 </div>
 
-
-                <div class="buy_container">
-                    <div class="buy_container_1">
-                        <span class="green bold">Chegará grátis entre terça-feira e quarta-feira</span>
-                        <span>por ser sua primeira compra</span>
-                    </div>
-
-                    <div class="buy_container_2">
-                        <span class="green bold">Retire grátis</span>
-                        <span>entre terça-feira e quinta-feira em uma agência Katchau</span>
-                    </div>
-
-                    <p class="bold margin-left-15">Estoque disponível</p>
-
-                    <div class="quantidade-container">
-                        <div class="dropdown">
-                            <div class="quantity-container margin-left-15">
-                                <span>Quantidade: </span>
-                                <div class="dropdown-selected">1 unidade</div>
-                                <span class="material-symbols-outlined arrowDrop">arrow_drop_down</span>
-                            </div>
-                            <div class="dropdown-menu">
-                                <div data-value="1 unidade">1 unidade</div>
-                                <div data-value="2 unidades">2 unidades</div>
-                                <div data-value="3 unidades">3 unidades</div>
-                                <div data-value="4 unidades">4 unidades</div>
-                                <div data-value="5 unidades">5 unidades</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="buttons-buy">
-                        <button class="product-btn">
-                            <a href="#">Comprar Agora</a>
-                        </button>
-
-                        <a href="#">
-                            <button class="addToCart-btn">Adicionar ao carrinho</button>
+                <nav class="navbar-menu">
+                    <button>
+                        <a href="assets/profile/index.html" class="icon material-symbols-outlined">person</a>
+                    </button>
+                    <button>
+                        <a href="assets/Favoritos/favoritos.html" class="icon material-symbols-outlined">favorite</a>
+                    </button>
+                    <button>
+                        <span class="icon material-symbols-outlined" id="botaoCarrinho">shopping_cart</span>
+                    </button>
+                    <button>
+                        <a href="assets/faq/faq.html" class="icon material-symbols-outlined">contact_support</a>
+                    </button>
+                    <button class="signUpBtn"><a href="../SignUp/signUp.html">Cadastrar</a></button>
+                    <button class="loginBtn"><a href="../SignUp/logIn.html">Entrar</a></button>
+                </nav>
+            </nav>
+        </header>
+        <!-- Fim NavBar -->
+        <div class="container-geral">
+            <div class="container-product">
+                <div class="container_images">
+                    <div class="thumbnails">
+                        <a href="../../img/img-products/mouse-razer/imagem1.svg"
+                            data-standard="../../img/img-products/mouse-razer/imagem1.svg" class="thumbnail"
+                            onmouseover="changeImage(this)">
+                            <img src="../../img/img-products/mouse-razer/imagem1.svg" alt="Mouse 1">
+                        </a>
+                        <a href="../../img/img-products/mouse-razer/imagem2.png"
+                            data-standard="../../img/img-products/mouse-razer/imagem2.png" class="thumbnail"
+                            onmouseover="changeImage(this)">
+                            <img src="../../img/img-products/mouse-razer/imagem2.png" alt="Mouse 2">
+                        </a>
+                        <a href="../../img/img-products/mouse-razer/imagem3.svg"
+                            data-standard="../../img/img-products/mouse-razer/imagem3.svg" class="thumbnail"
+                            onmouseover="changeImage(this)">
+                            <img src="../../img/img-products/mouse-razer/imagem3.svg" alt="Mouse 3">
                         </a>
                     </div>
 
-                    <div class="sell-for">
-                        <span class="margin-left-15 margin-top-15">Vendido por </span>
-                        <span class="blue">Katchau</span>
-                    </div>
 
-                    <div class="devolution-container margin-left-15 margin-top-15">
-                        <div class="flex">
-                            <span class="material-symbols-outlined margin-left-5">
-                                undo
-                            </span>
-                            <span class="blue">Devolução grátis. <span class="white">Você tem 30 dias a partir da data
-                                    de recebimento</span></span>
-                        </div>
-                    </div>
-
-                    <div class="compra_segura-container margin-left-15 margin-top-15">
-                        <div class="flex">
-
-                            <span class="material-symbols-outlined margin-left-5">
-                                verified_user
-                            </span>
-                            <span class="blue">Compra garantida, <span class="white">receba o produto que está esperando
-                                    ou devolvemos o dinheiro.</span></span>
-                        </div>
+                    <!-- Contêiner principal de imagem com zoom -->
+                    <div class="image-container easyzoom easyzoom--overlay">
+                        <a id="zoomLink" href="../../img/img-products/mouse-razer/imagem1.svg"
+                            data-original-src="../../img/img-products/mouse-razer/imagem1.svg">
+                            <img id="main-image" src="../../img/img-products/mouse-razer/imagem1.svg" alt="Mouse Razer">
+                        </a>
                     </div>
 
                 </div>
 
+
+                <div class="product-content">
+                    <div class="product-content-info">
+
+                        <div class="sell">
+                            <span class="product-sell">
+                                Novo | +1220 vendidos
+                            </span>
+                        </div>
+
+
+                        <div class="recommended">
+                            <div class="recommended-container">
+                                <span class="material-symbols-outlined recommended-icon">verified</span><span
+                                    class="recommended-content">RECOMENDADO</span>
+                            </div>
+                        </div>
+
+
+                        <div class="title-container">
+                            <h2 class="title">Mouse Gamer Razer Deathadder Essential 6400dpi Cor Preto</h2>
+                        </div>
+
+
+                        <div class="stars-container">
+                            <div class="stars">
+                                <span class="rate">4.4</span>
+                                <div class="stars-rating">
+                                    <span class="star" data-rating="1">
+                                        <svg viewBox="0 0 24 24" class="star-icon">
+                                            <path
+                                                d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="star" data-rating="2">
+                                        <svg viewBox="0 0 24 24" class="star-icon">
+                                            <path
+                                                d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="star" data-rating="3">
+                                        <svg viewBox="0 0 24 24" class="star-icon">
+                                            <path
+                                                d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="star" data-rating="4">
+                                        <svg viewBox="0 0 24 24" class="star-icon">
+                                            <path
+                                                d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="star" data-rating="5">
+                                        <svg viewBox="0 0 24 24" class="star-icon">
+                                            <path
+                                                d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="rating-value">(0)</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="price_container">
+                            <p class="off">R$ <b> 300,00</b></p>
+                            <p class="price">R$ <b>200,00</b></p>
+                            <p class="parcelas">em 12x R$ 16,66</p>
+                            <span id="unique-show-payment-modal" class="unique-payment-link blue">Ver meios de
+                                pagamento</span>
+                        </div>
+
+                        <div class="precisa_saber_produto margin-top-15">
+                            <span class="bold">O que você precisa saber sobre este produto</span>
+                            <ul>
+                                <li>Usa cabo</li>
+                                <li>Possui uma roda de rolagem</li>
+                                <li>Com luzes para melhorar a experiência de uso</li>
+                                <li>Com sensor óptico</li>
+                                <li>Resolução de 6400dpi</li>
+                            </ul>
+
+                            <span class="ver-caracteristicas-link blue" id="verDesc">Ver características</span>
+                        </div>
+                    </div>
+
+
+                    <div class="buy_container">
+                        <div class="buy_container_1">
+                            <span class="green bold">Chegará grátis entre terça-feira e quarta-feira</span>
+                            <span>por ser sua primeira compra</span>
+                        </div>
+
+                        <div class="buy_container_2">
+                            <span class="green bold">Retire grátis</span>
+                            <span>entre terça-feira e quinta-feira em uma agência Katchau</span>
+                        </div>
+
+                        <p class="bold margin-left-15">Estoque disponível</p>
+
+                        <div class="quantidade-container">
+                            <div class="dropdown">
+                                <div class="quantity-container margin-left-15">
+                                    <span>Quantidade: </span>
+                                    <div class="dropdown-selected">1 unidade</div>
+                                    <span class="material-symbols-outlined arrowDrop">arrow_drop_down</span>
+                                </div>
+                                <div class="dropdown-menu">
+                                    <div data-value="1 unidade">1 unidade</div>
+                                    <div data-value="2 unidades">2 unidades</div>
+                                    <div data-value="3 unidades">3 unidades</div>
+                                    <div data-value="4 unidades">4 unidades</div>
+                                    <div data-value="5 unidades">5 unidades</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buttons-buy">
+                            <button class="product-btn">
+                                <a href="#">Comprar Agora</a>
+                            </button>
+
+                            <a href="#">
+                                <button class="addToCart-btn">Adicionar ao carrinho</button>
+                            </a>
+                        </div>
+
+                        <div class="sell-for">
+                            <span class="margin-left-15 margin-top-15">Vendido por </span>
+                            <span class="blue">Katchau</span>
+                        </div>
+
+                        <div class="devolution-container margin-left-15 margin-top-15">
+                            <div class="flex">
+                                <span class="material-symbols-outlined margin-left-5">
+                                    undo
+                                </span>
+                                <span class="blue">Devolução grátis. <span class="white">Você tem 30 dias a partir da
+                                        data
+                                        de recebimento</span></span>
+                            </div>
+                        </div>
+
+                        <div class="compra_segura-container margin-left-15 margin-top-15">
+                            <div class="flex">
+
+                                <span class="material-symbols-outlined margin-left-5">
+                                    verified_user
+                                </span>
+                                <span class="blue">Compra garantida, <span class="white">receba o produto que está
+                                        esperando
+                                        ou devolvemos o dinheiro.</span></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
             </div>
-
-
         </div>
-    </div>
-    <div class="related-products">
-        <button class="carousel-btn2 left2" onclick="scrollToLeft()">
-            &lt;
-        </button>
-        <div class="related-title-contain">
-            <h2 class="title-related-products">Produtos Relacionados</h2>
-            <span class="title-related-products">Patrocinado</span>
-        </div>
-        <div class="carousel-container">
-            <!-- Botão para navegar para a esquerda -->
+        <div class="related-products">
+            <button class="carousel-btn2 left2" onclick="scrollToLeft()">
+                &lt;
+            </button>
+            <div class="related-title-contain">
+                <h2 class="title-related-products">Produtos Relacionados</h2>
+                <span class="title-related-products">Patrocinado</span>
+            </div>
+            <div class="carousel-container">
+                <!-- Botão para navegar para a esquerda -->
 
-            <!-- Contêiner para o carrossel -->
-            <div class="carousel-track-wrapper">
-                <div class="carousel-track">
-                    <div class="carousel-item">
-                        <a href="monitor2.html">
+                <!-- Contêiner para o carrossel -->
+                <div class="carousel-track-wrapper">
+                    <div class="carousel-track">
+                        <div class="carousel-item">
+                            <a href="monitor2.html">
 
+                                <img src="../../img/img-products/monitor-curvado.png" width="250px"
+                                    alt="monitor curvado">
+                                <h3 class="title-product">Monitor Curvado</h3>
+                                <div class="price-container">
+                                    <p class="offPrice">R$ 350,00</p>
+                                    <div class="price-product-container">
+                                        <p class="price-product">R$ 234,00</p>
+                                        <p class="discount">10% OFF</p>
+                                    </div>
+
+                                </div>
+                                <div class="frete-gratis-container">
+                                    <span class="green">Frete grátis <span class="white">por ser sua primeira
+                                            compra</span>
+                                    </span>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="carousel-item">
                             <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
                             <h3 class="title-product">Monitor Curvado</h3>
                             <div class="price-container">
@@ -277,300 +373,285 @@
                                 <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
                                 </span>
                             </div>
-                        </a>
 
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
-                        <h3 class="title-product">Monitor Curvado</h3>
-                        <div class="price-container">
-                            <p class="offPrice">R$ 350,00</p>
-                            <div class="price-product-container">
-                                <p class="price-product">R$ 234,00</p>
-                                <p class="discount">10% OFF</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
+                            <h3 class="title-product">Monitor Curvado</h3>
+                            <div class="price-container">
+                                <p class="offPrice">R$ 350,00</p>
+                                <div class="price-product-container">
+                                    <p class="price-product">R$ 234,00</p>
+                                    <p class="discount">10% OFF</p>
+                                </div>
+
+                            </div>
+                            <div class="frete-gratis-container">
+                                <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
+                                </span>
                             </div>
 
                         </div>
-                        <div class="frete-gratis-container">
-                            <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
-                            </span>
-                        </div>
+                        <div class="carousel-item">
+                            <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
+                            <h3 class="title-product">Monitor Curvado</h3>
+                            <div class="price-container">
+                                <p class="offPrice">R$ 350,00</p>
+                                <div class="price-product-container">
+                                    <p class="price-product">R$ 234,00</p>
+                                    <p class="discount">10% OFF</p>
+                                </div>
 
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
-                        <h3 class="title-product">Monitor Curvado</h3>
-                        <div class="price-container">
-                            <p class="offPrice">R$ 350,00</p>
-                            <div class="price-product-container">
-                                <p class="price-product">R$ 234,00</p>
-                                <p class="discount">10% OFF</p>
+                            </div>
+                            <div class="frete-gratis-container">
+                                <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
+                                </span>
                             </div>
 
                         </div>
-                        <div class="frete-gratis-container">
-                            <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
-                            </span>
-                        </div>
+                        <div class="carousel-item">
+                            <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
+                            <h3 class="title-product">Monitor Curvado</h3>
+                            <div class="price-container">
+                                <p class="offPrice">R$ 350,00</p>
+                                <div class="price-product-container">
+                                    <p class="price-product">R$ 234,00</p>
+                                    <p class="discount">10% OFF</p>
+                                </div>
 
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
-                        <h3 class="title-product">Monitor Curvado</h3>
-                        <div class="price-container">
-                            <p class="offPrice">R$ 350,00</p>
-                            <div class="price-product-container">
-                                <p class="price-product">R$ 234,00</p>
-                                <p class="discount">10% OFF</p>
+                            </div>
+                            <div class="frete-gratis-container">
+                                <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
+                                </span>
                             </div>
 
                         </div>
-                        <div class="frete-gratis-container">
-                            <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
-                            </span>
-                        </div>
+                        <div class="carousel-item">
+                            <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
+                            <h3 class="title-product">Monitor Curvado</h3>
+                            <div class="price-container">
+                                <p class="offPrice">R$ 350,00</p>
+                                <div class="price-product-container">
+                                    <p class="price-product">R$ 234,00</p>
+                                    <p class="discount">10% OFF</p>
+                                </div>
 
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
-                        <h3 class="title-product">Monitor Curvado</h3>
-                        <div class="price-container">
-                            <p class="offPrice">R$ 350,00</p>
-                            <div class="price-product-container">
-                                <p class="price-product">R$ 234,00</p>
-                                <p class="discount">10% OFF</p>
+                            </div>
+                            <div class="frete-gratis-container">
+                                <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
+                                </span>
                             </div>
 
                         </div>
-                        <div class="frete-gratis-container">
-                            <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
-                            </span>
-                        </div>
+                        <div class="carousel-item">
+                            <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
+                            <h3 class="title-product">Monitor Curvado</h3>
+                            <div class="price-container">
+                                <p class="offPrice">R$ 350,00</p>
+                                <div class="price-product-container">
+                                    <p class="price-product">R$ 234,00</p>
+                                    <p class="discount">10% OFF</p>
+                                </div>
 
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
-                        <h3 class="title-product">Monitor Curvado</h3>
-                        <div class="price-container">
-                            <p class="offPrice">R$ 350,00</p>
-                            <div class="price-product-container">
-                                <p class="price-product">R$ 234,00</p>
-                                <p class="discount">10% OFF</p>
+                            </div>
+                            <div class="frete-gratis-container">
+                                <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
+                                </span>
                             </div>
 
                         </div>
-                        <div class="frete-gratis-container">
-                            <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
-                            </span>
-                        </div>
+                        <div class="carousel-item">
+                            <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
+                            <h3 class="title-product">Monitor Curvado</h3>
+                            <div class="price-container">
+                                <p class="offPrice">R$ 350,00</p>
+                                <div class="price-product-container">
+                                    <p class="price-product">R$ 234,00</p>
+                                    <p class="discount">10% OFF</p>
+                                </div>
 
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
-                        <h3 class="title-product">Monitor Curvado</h3>
-                        <div class="price-container">
-                            <p class="offPrice">R$ 350,00</p>
-                            <div class="price-product-container">
-                                <p class="price-product">R$ 234,00</p>
-                                <p class="discount">10% OFF</p>
+                            </div>
+                            <div class="frete-gratis-container">
+                                <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
+                                </span>
                             </div>
 
                         </div>
-                        <div class="frete-gratis-container">
-                            <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
-                            </span>
-                        </div>
 
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
-                        <h3 class="title-product">Monitor Curvado</h3>
-                        <div class="price-container">
-                            <p class="offPrice">R$ 350,00</p>
-                            <div class="price-product-container">
-                                <p class="price-product">R$ 234,00</p>
-                                <p class="discount">10% OFF</p>
+                        <div class="carousel-item">
+                            <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
+                            <h3 class="title-product">Monitor Curvado</h3>
+                            <div class="price-container">
+                                <p class="offPrice">R$ 350,00</p>
+                                <div class="price-product-container">
+                                    <p class="price-product">R$ 234,00</p>
+                                    <p class="discount">10% OFF</p>
+                                </div>
+
+                            </div>
+                            <div class="frete-gratis-container">
+                                <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
+                                </span>
                             </div>
 
                         </div>
-                        <div class="frete-gratis-container">
-                            <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
-                            </span>
-                        </div>
-
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="../../img/img-products/monitor-curvado.png" width="250px" alt="monitor curvado">
-                        <h3 class="title-product">Monitor Curvado</h3>
-                        <div class="price-container">
-                            <p class="offPrice">R$ 350,00</p>
-                            <div class="price-product-container">
-                                <p class="price-product">R$ 234,00</p>
-                                <p class="discount">10% OFF</p>
-                            </div>
-
-                        </div>
-                        <div class="frete-gratis-container">
-                            <span class="green">Frete grátis <span class="white">por ser sua primeira compra</span>
-                            </span>
-                        </div>
-
                     </div>
                 </div>
+                <!-- Botão para navegar para a direita -->
             </div>
-            <!-- Botão para navegar para a direita -->
-        </div>
-        <button class="carousel-btn2 right2" onclick="scrollToRight()">
-            &gt;
-        </button>
-    </div>
-
-
-
-    <div class="features-product bg-color">
-        <h2 class="title-feature white">Características do produto</h2>
-        <div class="features-product-container">
-            <div class="feature-wrapper">
-                <div class="feature">
-                    <span class="material-symbols-outlined green">task_alt</span>
-                    <span class="white">Tipo de mouse: <strong>Para jogo</strong></span>
-                </div>
-
-                <div class="feature">
-                    <span class="material-symbols-outlined green">task_alt</span>
-                    <span class="white">Resolução do sensor: <strong>6400 dpi</strong></span>
-                </div>
-            </div>
-
-            <div class="feature-wrapper">
-                <div class="feature">
-                    <span class="material-symbols-outlined green">task_alt</span>
-                    <span class="white">Tipo de sensor: <strong>Óptico</strong></span>
-                </div>
-
-                <div class="feature">
-                    <span class="material-symbols-outlined green">task_alt</span>
-                    <span class="white">É sem fio: <strong>Não</strong></span>
-                </div>
-            </div>
+            <button class="carousel-btn2 right2" onclick="scrollToRight()">
+                &gt;
+            </button>
         </div>
 
-        <hr>
 
-        <div class="desc-product-container bg-color">
-            <h2 class="desc-title green">Descrição</h2>
-            <div class="description" id="description">
-                <p class="white font-18 line-height-desc font-weight-600">
-                    O MOUSE ESSENCIAL PARA JOGOS
-                    A linha Razer DeathAdder é reconhecida pela sua confiabilidade, durabilidade e ergonomia. O Razer
-                    DeathAdder Essential eleva essas qualidades, tornando-se uma escolha acessível.
-                    <br>
-                    <br>
-                    FORMATO ERGONÔMICO
-                    O design ergonômico do Razer DeathAdder Essential é mantido, assegurando conforto para longas
-                    sessões de jogo.
-                    <br>
-                    <br>
-                    5 Botões De Hiper-Resposta
-                    Botões Hyperesponse programáveis proporcionam controles avançados.
-                    <br>
-                    <br>
-                    Até 10 Milhões De Cliques
-                    Os interruptores mecânicos Razer ™ são duráveis e confiáveis.
-                    <br>
-                    <br>
-                    Sensor óptico de 6.400 DPI
-                    Permite movimentos rápidos e precisos, oferecendo controle nas partidas.
-                    <br>
-                    <br>
-                    ESPECIFICAÇÕES TÉCNICAS: <br>
-                    <br>
-                    FATOR DE FORMA: Destro <br>
-                    <br>
-                    CONECTIVIDADE: Com fio - cabo padrão <br>
-                    <br>
-                    ILUMINAÇÃO: Iluminação verde de uma cor <br>
-                    <br>
-                    SENSOR: Ótico <br>
-                    <br>
-                    SENSIBILIDADE MÁXIMA (DPI): 6400 <br>
-                    <br>
-                    VELOCIDADE MÁXIMA (IPS): 220 <br>
-                    <br>
-                    ACELERAÇÃO MÁXIMA (G): 30 <br>
-                    <br>
-                    BOTÕES PROGRAMÁVEIS: 5 <br>
-                    <br>
-                    TIPO DE MUDANÇA: Mecânico <br>
-                    <br>
-                    MUDAR O CICLO DE VIDA: 10 milhões de cliques <br>
-                    <br>
-                    PÉS DE RATO: Pés de estoque padrão <br>
-                    <br>
-                    CABO: Comprimento do cabo: 2,1 m / 6,89 pés <br>
-                    <br>
-                    TILT SCROLL WHEEL: Não <br>
-                    <br>
-                    TAMANHOS: Comprimento: 127,0 mm / 5 pol. / Largura do punho: 61,7 mm / 2,43 pol. / Altura: 42,7 mm / <br>
-                    <br>
-                    1,68 pol. <br>
-                    <br>
-                    PESO: 96 g <br>
-                    <br>
-                    COMPATIBILIDADE DE DOCK: Nenhum
-                </p>
+
+        <div class="features-product bg-color">
+            <h2 class="title-feature white">Características do produto</h2>
+            <div class="features-product-container">
+                <div class="feature-wrapper">
+                    <div class="feature">
+                        <span class="material-symbols-outlined green">task_alt</span>
+                        <span class="white">Tipo de mouse: <strong>Para jogo</strong></span>
+                    </div>
+
+                    <div class="feature">
+                        <span class="material-symbols-outlined green">task_alt</span>
+                        <span class="white">Resolução do sensor: <strong>6400 dpi</strong></span>
+                    </div>
+                </div>
+
+                <div class="feature-wrapper">
+                    <div class="feature">
+                        <span class="material-symbols-outlined green">task_alt</span>
+                        <span class="white">Tipo de sensor: <strong>Óptico</strong></span>
+                    </div>
+
+                    <div class="feature">
+                        <span class="material-symbols-outlined green">task_alt</span>
+                        <span class="white">É sem fio: <strong>Não</strong></span>
+                    </div>
+                </div>
             </div>
-            <span class="toggle-button" onclick="toggleDescription()">Ver mais &#x25BC;</span>
+
+            <hr>
+
+            <div class="desc-product-container bg-color">
+                <h2 class="desc-title green">Descrição</h2>
+                <div class="description" id="description">
+                    <p class="white font-18 line-height-desc font-weight-500">
+                        O MOUSE ESSENCIAL PARA JOGOS
+                        A linha Razer DeathAdder é reconhecida pela sua confiabilidade, durabilidade e ergonomia. O
+                        Razer
+                        DeathAdder Essential eleva essas qualidades, tornando-se uma escolha acessível.
+                        <br>
+                        <br>
+                        FORMATO ERGONÔMICO
+                        O design ergonômico do Razer DeathAdder Essential é mantido, assegurando conforto para longas
+                        sessões de jogo.
+                        <br>
+                        <br>
+                        5 Botões De Hiper-Resposta
+                        Botões Hyperesponse programáveis proporcionam controles avançados.
+                        <br>
+                        <br>
+                        Até 10 Milhões De Cliques
+                        Os interruptores mecânicos Razer ™ são duráveis e confiáveis.
+                        <br>
+                        <br>
+                        Sensor óptico de 6.400 DPI
+                        Permite movimentos rápidos e precisos, oferecendo controle nas partidas.
+                        <br>
+                        <br>
+                        ESPECIFICAÇÕES TÉCNICAS: <br>
+                        <br>
+                        FATOR DE FORMA: Destro <br>
+                        <br>
+                        CONECTIVIDADE: Com fio - cabo padrão <br>
+                        <br>
+                        ILUMINAÇÃO: Iluminação verde de uma cor <br>
+                        <br>
+                        SENSOR: Ótico <br>
+                        <br>
+                        SENSIBILIDADE MÁXIMA (DPI): 6400 <br>
+                        <br>
+                        VELOCIDADE MÁXIMA (IPS): 220 <br>
+                        <br>
+                        ACELERAÇÃO MÁXIMA (G): 30 <br>
+                        <br>
+                        BOTÕES PROGRAMÁVEIS: 5 <br>
+                        <br>
+                        TIPO DE MUDANÇA: Mecânico <br>
+                        <br>
+                        MUDAR O CICLO DE VIDA: 10 milhões de cliques <br>
+                        <br>
+                        PÉS DE RATO: Pés de estoque padrão <br>
+                        <br>
+                        CABO: Comprimento do cabo: 2,1 m / 6,89 pés <br>
+                        <br>
+                        TILT SCROLL WHEEL: Não <br>
+                        <br>
+                        TAMANHOS: Comprimento: 127,0 mm / 5 pol. / Largura do punho: 61,7 mm / 2,43 pol. / Altura: 42,7
+                        mm / <br>
+                        <br>
+                        1,68 pol. <br>
+                        <br>
+                        PESO: 96 g <br>
+                        <br>
+                        COMPATIBILIDADE DE DOCK: Nenhum
+                    </p>
+                </div>
+                <span class="toggle-button" onclick="toggleDescription()">Ver mais &#x25BC;</span>
+            </div>
         </div>
-    </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="exclusive">
+                        <h2>Exclusivo</h2>
+                        <h3>Se inscreva!</h3>
+                        <span>Garanta 10% de desconto no primeiro pedido</span>
+                        <div class="input-container">
+                            <input class="footer-input" type="email" placeholder="Insira seu e-mail" required>
+                            <!-- <i class="material-symbols-outlined">send</i> -->
+                            <button type="button" class="btn">ENVIAR</button>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <h2>Suporte</h2>
+                        <span><i class="material-symbols-outlined icon-footer-support">phone_in_talk</i>(11)
+                            98996-9652</span>
+                        <span><i
+                                class="material-symbols-outlined icon-footer-support">alternate_email</i>katchau.support@gmail.com</span>
+                    </div>
+                    <div class="account">
+                        <h2>Sua Conta</h2>
+                        <span><a href="../profile/index.html">Minha conta</a></span>
+                        <span><a href="../SignUp/logIn.html">Entrar / Cadastrar</a></span>
+                        <span><a href="../carrinho/carrinho.html">Carrinho</a></span>
+                        <span><a href="../Favoritos/favoritos.html">Favoritos</a></span>
+                        <span><a href="../../index2.html" class="hover-simple">Início</a></span>
+                    </div>
+                    <div class="quick-links">
+                        <h2>Links Rápidos</h2>
+                        <span><a href="../politica-de-privacidade/politica-de-privacidade.html">Política de
+                                privacidade</a></span>
+                        <span><a href="../termos-de-uso/termos-de-uso.html">Termos de uso</a></span>
+                        <span><a href="../faq/faq.html">FAQ</a></span>
+                        <span><a href="../contato/index.html">Contato</a></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright-container">
+            <span>&copy Copyright Katchau 2024 Todos os direitos reservados</span>
+        </div>
+    </main>
 
     <!-- Descrição Do produto -->
-    
+
 
     <!-- Section Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="exclusive">
-                    <h2>Exclusivo</h2>
-                    <h3>Se inscreva!</h3>
-                    <span>Garanta 10% de desconto no primeiro pedido</span>
-                    <div class="input-container">
-                        <input class="footer-input" type="email" placeholder="Insira seu e-mail" required>
-                        <!-- <i class="material-symbols-outlined">send</i> -->
-                        <button type="button" class="btn">ENVIAR</button>
-                    </div>
-                </div>
-                <div class="support">
-                    <h2>Suporte</h2>
-                    <span><i class="material-symbols-outlined icon-footer-support">phone_in_talk</i>(11)
-                        98996-9652</span>
-                    <span><i
-                            class="material-symbols-outlined icon-footer-support">alternate_email</i>katchau.support@gmail.com</span>
-                </div>
-                <div class="account">
-                    <h2>Sua Conta</h2>
-                    <span><a href="../profile/index.html">Minha conta</a></span>
-                    <span><a href="../SignUp/entrar-kayan.html">Entrar / Cadastrar</a></span>
-                    <span><a href="../carrinho/carrinho.html">Carrinho</a></span>
-                    <span><a href="../Favoritos/favoritos.html">Favoritos</a></span>
-                    <span><a href="../../index2.html" class="hover-simple">Início</a></span>
-                </div>
-                <div class="quick-links">
-                    <h2>Links Rápidos</h2>
-                    <span><a href="../politica-de-privacidade/politica-de-privacidade.html">Política de
-                            privacidade</a></span>
-                    <span><a href="../termos-de-uso/termos-de-uso.html">Termos de uso</a></span>
-                    <span><a href="../faq/faq.html">FAQ</a></span>
-                    <span><a href="../contato/index.html">Contato</a></span>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="copyright-container">
-        <span>&copy Copyright Katchau 2024 Todos os direitos reservados</span>
-    </div>
 
 
     <div id="lightbox" class="lightbox">
@@ -701,15 +782,21 @@
         </div>
     </div>
 
+    <button id="scrollToTopBtn" class="material-symbols-outlined" style="display: none;">arrow_upward</button>
 
-
+    <script src="../../JS/filtragemProdutos-ProductPage.js"></script>
+    <script src="../../JS/searchBar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/easyzoom@2.5.0/dist/easyzoom.js"></script>
     <script src="../../JS/starAvaliation.js"></script>
     <script src="../../JS/modal.js"></script>
     <script src="../../JS/description.js"></script>
     <script src="../../JS/scrollToDesc.js"></script>
     <script src="../../JS/paymentModal.js"></script>
+    <script src="../../JS/carrinho.js"></script>
     <script src="../../JS/thumbnail.js"></script>
+    <script src="../../JS/loader.js"></script>
+    <script src="../../JS/scrollToTop.js"></script>
+
     <script src="../../JS/dropdownQuantity.js"></script>
     <script src="../../JS/relatedProducts.js"></script>
 </body>
