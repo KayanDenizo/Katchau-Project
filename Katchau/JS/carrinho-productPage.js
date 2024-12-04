@@ -50,10 +50,10 @@ botoesAdicionar.forEach((botao) => {
 
         // Obtenha as informações do produto
         const produto = {
-            nome: botao.parentNode.querySelector('.title').textContent,
-            descricao: botao.parentNode.querySelector('.off').textContent,
-            preco: parseFloat(botao.parentNode.querySelector('.price').textContent.replace('R$ ', '')),
-            foto: botao.parentNode.querySelector('.imagem-product').src,
+            nome: document.querySelector('.title').textContent,
+            descricao: document.querySelector('.off').textContent,
+            preco: parseFloat(document.querySelector('.price').textContent.replace('R$ ', '')),
+            foto: document.querySelector('.imagem-product').src,
             quantidade: 1
         };
 
@@ -63,7 +63,7 @@ botoesAdicionar.forEach((botao) => {
      <input type="checkbox" class="input_check" id="input_check">
      <div class="container">
         <div class="produto-container">
-            <img src="${produto.foto}" alt="${produto.nome}" id="foto-produto">
+            <img src="${produto.foto}" style="margin: 0;" alt="${produto.nome}" id="foto-produto">
             <div class="info-produto">
                 <p>${produto.nome}</p>
                 <p>R$ ${produto.preco},00</p>
