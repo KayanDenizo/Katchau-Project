@@ -8,7 +8,8 @@
 
     <link rel="stylesheet" href="../../../css/navbar.css">
     <link rel="stylesheet" href="../../../css/footer.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../navMeusPedidos.css">
+    <link rel="stylesheet" href="../meuspedidos.css">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -57,66 +58,173 @@
 
     <main>
         <!--Topo-->
-        <div class="titulo">
-            <h1>Meus Pedidos</h1>
+       
+        <div class="voltar">
+            <span class="voltarIcon">&lsaquo;</span>
+            <a href="../profile/index.html" class="voltarText">Voltar</a>
         </div>
+
+        <!--Topo-->
+        <h1 class="titulo">Meus Pedidos</h1>
 
         <!--Menu de navegação-->
-<div class="category">
-    <ul>
-        <li class="nav-item">
-            <a class="nav-link" href="../index.html">Pedidos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="../Compre-novamente/comprenv.html">Compre novamente</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" href="../Nao-enviado/index.html">Ainda não enviado</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="../Pedidos-cancelado/index.html">Pedidos cancelados</a>
-        </li>
-    </ul>
-</div>
-    <div class="quadrado"></div>
+        <div class="category">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Pedidos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Compre-novamente/comprenv.html">Compre novamente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ative" href="Nao-enviado/index.html">Ainda não enviado</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Pedidos-cancelado/index.html">Pedidos cancelados</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <hr>
 <!--Final do topo-->
 
-<div class="product">
-    <img src="../imgs/notebook.jpeg" alt="">
-    <div class="title">
-        <h1>Headset Fone de Ouvido Havit HV-H2002d Pink, Gamer, com Microfone, Falante 53mm, Plug 3, 5mm: compatível com XBOX ONE e PS4, HAVIT, HV-H2002d Cor Rosa </h1>
-        <div class="status-button">
-            <div class="preco"><span>R$ 169,77</span></div>
-            <div class="texto1">
-                <h2>Pedido em Processamento</h2>
+<div class="containers">
+
+    <div class="containerProduto">
+
+        <img src="../categorias - Julia/telasProdutos/imgs/headsetRedragonZeus.svg" alt="">
+
+        <div class="maininfos">
+
+            <p class="nomeProduto">Headset Gamer Redragon Zeus X RGB, Surround 7.1, Driver de 53mm, USB,
+                Microfone com Redução de Ruído, Branco com Vermelho - H510RGB-RED</p>
+
+            <div class="blocoRowInfo">
+
+                <div class="blocoColumnInfo">
+                    
+                    <div class="opcoesInfo">
+                        <div class="precos">
+                            <!-- R$ <span class="precoRiscado">200,00</span> -->
+                            R$ <span class="precoOficial">140,00</span>
+                        </div>
+                        <div class="quantidade">
+                            <p class="qntd">Qntd. <span class="qntdNum">3</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blocoColumnInfo">
+                    <div class="informacoesProduto">
+                        <div class="statusPedido">
+                            <h1>Pedido a caminho</h1>
+                        </div>
+
+                        <div class="buttonOptionsStatus">
+                            <a href="Rastrear-pedido/index.html" class="textOptionsStatus">Rastrear Pedido</a>
+                        </div>
+
+                        <div class="rowBtnMore">
+                            <a href="#" class="linkRow">Ver detalhes do produto</a>
+                            <a href="#" class="linkRow">Cancelar pedido</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="../Detalhes-pedido/index.html"><button class="button-rastrear" type="button">Detalhes do pedido</button></a>
-            <ul>
-                <li>Ver detalhes do produto</li>
-                <li>Cancelar pedido</li>
-            </ul>
         </div>
     </div>
-</div>
 
-<div class="product">
-    <img src="../imgs/notebook.jpeg" alt="">
-    <div class="title">
-        <h1>Headset Fone de Ouvido Havit HV-H2002d Pink, Gamer, com Microfone, Falante 53mm, Plug 3, 5mm: compatível com XBOX ONE e PS4, HAVIT, HV-H2002d Cor Rosa </h1>
-        <div class="status-button">
-            <div class="preco2"><span>R$ 169,77</span></div>
-            <div class="texto2">
-                <h2>Processando Pagamento</h2>
+    <div class="containerProduto">
+
+        <img src="../categorias - Julia/telasProdutos/imgs/headsetRedragonZeus.svg" alt="">
+
+        <div class="maininfos">
+
+            <p class="nomeProduto">Headset Gamer Redragon Zeus X RGB, Surround 7.1, Driver de 53mm, USB,
+                Microfone com Redução de Ruído, Branco com Vermelho - H510RGB-RED</p>
+
+            <div class="blocoRowInfo">
+
+                <div class="blocoColumnInfo">
+                    <div class="precos">
+                        <!-- R$ <span class="precoRiscado">200,00</span> -->
+                        R$ <span class="precoOficial">140,00</span>
+                    </div>
+
+                    <div class="opcoesInfo">
+                        <div class="quantidade">
+                            <p class="qntd">Qntd. <span class="qntdNum">3</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blocoColumnInfo">
+                    <div class="informacoesProduto">
+                        <div class="statusPedido">
+                            <h1>Pedido Entregue</h1>
+                        </div>
+
+                        <div class="buttonOptionsStatus">
+                            <p class="textOptionsStatus">Avaliar o Produto</p>
+                        </div>
+
+                        <div class="rowBtnMore">
+                            <a href="#" class="linkRow">Ver detalhes do produto</a>
+                            <a href="#" class="linkRow">Arquivar pedido</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button class="button-rastrear" type="button">Histórico do pagamento</button>
-            <ul>
-                <li>Ver detalhes do produto</li>
-                <li>Cancelar pedido</li>
-            </ul>
         </div>
     </div>
-</div>
 
+    <div class="containerProduto">
+
+        <img src="../categorias - Julia/telasProdutos/imgs/headsetRedragonZeus.svg" alt="">
+
+        <div class="maininfos">
+
+            <p class="nomeProduto">Headset Gamer Redragon Zeus X RGB, Surround 7.1, Driver de 53mm, USB,
+                Microfone com Redução de Ruído, Branco com Vermelho - H510RGB-RED</p>
+
+            <div class="blocoRowInfo">
+
+                <div class="blocoColumnInfo">
+                    <div class="precos">
+                        <!-- R$ <span class="precoRiscado">200,00</span> -->
+                        R$ <span class="precoOficial">140,00</span>
+                    </div>
+
+                    <div class="opcoesInfo">
+                        <div class="quantidade">
+                            <p class="qntd">Qntd. <span class="qntdNum">3</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blocoColumnInfo">
+                    <div class="informacoesProduto">
+                        <div class="statusPedido">
+                            <h1>Pedido em Processamento</h1>
+                        </div>
+
+                        <div class="buttonOptionsStatus">
+                            <a href="Detalhes-pedido/index.html" class="textOptionsStatus">Detalhes do
+                                pedido</a>
+                        </div>
+
+                        <div class="rowBtnMore">
+                            <a href="#" class="linkRow">Ver detalhes do produto</a>
+                            <a href="#" class="linkRow">Cancelar pedido</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 </main>
 
     <!-- Footer -->

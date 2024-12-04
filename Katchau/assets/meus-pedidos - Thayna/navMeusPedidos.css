@@ -7,9 +7,9 @@
     content: '';
     width: 70px;
     height: 0.3rem;
-    border-radius: 20px;
     background-color: #FD7014;
     display: block;
+    border-radius: 20px;
 }
 
 .category {
@@ -44,7 +44,6 @@
     bottom: 0;
     height: 2px;
     background-color: #fd7014;
-    border-radius: 100%;
 }
 
 /* .nav-link:hover::after {
@@ -67,7 +66,6 @@
     transition: width 0.5s;
     background-color: #fd7014;
     transition: width 0.4s ease;
-    border-radius: 100%;
 }
 
 .nav-link:hover::after {
@@ -75,6 +73,7 @@
 }
 
 hr {
+    border: 1px solid #7b7b7b;
     margin-bottom: 30px;
 }
 
