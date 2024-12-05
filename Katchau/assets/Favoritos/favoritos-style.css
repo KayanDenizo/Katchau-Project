@@ -30,6 +30,13 @@ hr{
     width: 97%;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .header h1 {
     margin-left: 35px;
     font-size: 40px;
@@ -52,12 +59,10 @@ hr{
     margin-block-end: 60px;
     align-items: center;
     border-radius: 30px;
-    width: 82%;
+    width: 87%;
     height: 250px;
     object-fit: cover;
-    margin-left: 10%;
-    margin-right: 10%;
-    box-shadow: 2px 4px 5px #ee5208;
+    box-shadow: 3px 5px 5px rgba(238, 82, 8, 0.4);
 }
 
 .image-product {
