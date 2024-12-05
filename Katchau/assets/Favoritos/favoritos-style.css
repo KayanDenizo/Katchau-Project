@@ -25,11 +25,6 @@ a {
     color: inherit;
 }
 
-hr{
-    margin-bottom: 50px;
-    width: 97%;
-}
-
 main{
     display: flex;
     align-items: center;
@@ -120,4 +115,9 @@ img {
 .button-favorites:hover {
     background: #ee5208;
     transition: 0.4s;
+}
+
+hr {
+    border: 1px solid #7b7b7b;
+    margin-bottom: 30px;
 }
