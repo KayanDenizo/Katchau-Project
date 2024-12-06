@@ -25,9 +25,12 @@ a {
     color: inherit;
 }
 
-hr{
-    margin-bottom: 50px;
-    width: 97%;
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .header h1 {
@@ -52,12 +55,10 @@ hr{
     margin-block-end: 60px;
     align-items: center;
     border-radius: 30px;
-    width: 82%;
+    width: 87%;
     height: 250px;
     object-fit: cover;
-    margin-left: 10%;
-    margin-right: 10%;
-    box-shadow: 2px 4px 5px #ee5208;
+    box-shadow: 3px 5px 5px rgba(238, 82, 8, 0.4);
 }
 
 .image-product {
@@ -115,4 +116,10 @@ img {
 .button-favorites:hover {
     background: #ee5208;
     transition: 0.4s;
+}
+
+hr {
+    border: 1px solid #7b7b7b;
+    margin-bottom: 30px;
+    width: 98%;
 }
