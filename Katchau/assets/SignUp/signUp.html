@@ -63,133 +63,141 @@
                 <h1>SIGN UP</h1>
             </div>
 
-            <form action="../../../loginECadastroClientes/register_action.php" method="post" enctype="multipart/form-data">
+            <form action="../../../loginECadastroClientes/register_action.php" method="post"
+                enctype="multipart/form-data">
 
-                <div class="inputContainers">
+                <div class="form-wrapper">
 
-
-                    <label for="nomeCompleto">
-                        <div class="input">
-                            <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo">
-                            <i class="material-symbols-outlined icon-input">account_circle</i>
-                        </div>
-                    </label>
+                    <div class="inputContainers">
 
 
-                    <label for="cpf">
-                        <div class="input">
-                            <input type="text" id="cpf" name="cpf" placeholder="CPF" maxlength="14">
-                            <i class="material-symbols-outlined icon-input">id_card</i>
-                        </div>
-                    </label>
-
-
-                    <label for="phone">
-                        <div class="input">
-                            <input type="text" id="phone" name="phone" placeholder="Telefone" maxlength="15">
-                            <i class="material-symbols-outlined icon-input">phone</i>
-                        </div>
-                    </label>
-
-
-                    <label for="email">
-                        <div class="input">
-                            <input type="email" id="email" name="email" placeholder="E-mail">
-                            <i class="material-symbols-outlined icon-input" id="close" onblur="closeInvisible(this.value)">close</i>
-                            <i class="material-symbols-outlined icon-input" id="emailIcon">alternate_email</i>
-                        </div>
-                    </label>
-
-
-                    <label for="password">
-                        <div class="input">
-                            <input type="password" id="password" name="password" placeholder="Senha">
-                            <i class="material-symbols-outlined icon-input" id="cadeado">lock</i>
-                            <i class="material-symbols-outlined icon-input" id="eyesOn"> visibility</i>
-                            <i class="material-symbols-outlined icon-input" id="eyesOff">visibility_off</i>
-                        </div>
-                    </label>
-
-                </div>
-
-                <div class="inputContainers">
-
-                    <label for="cep">
-                        <div class="input">
-                            <input type="text" id="cep" name="cep" placeholder="CEP" maxlength="9"
-                                onblur="buscaCEP(this.value)">
-                            <i class="material-symbols-outlined icon-input">map</i>
-                        </div>
-                        <div class="naosei-cep">
-                            <a href="https://buscaceprua.com.br/">Não sei meu cep.</a>
-                        </div>
-
-                    </label>
-
-
-                    <label for="adress">
-                        <div class="input">
-                            <input type="text" id="adress" name="adress" placeholder="Endereço">
-                            <i class="material-symbols-outlined icon-input">location_on</i>
-                        </div>
-                    </label>
-
-
-                    <label for="bairro">
-                        <div class="input">
-                            <input type="text" id="bairro" name="bairro" placeholder="Bairro"
-                                onblur="buscaCEP(this.value)">
-                            <i class="material-symbols-outlined icon-input homepin">holiday_village</i>
-                        </div>
-                    </label>
-
-
-                    <div class="endereco-row">
-                        <label for="numero">
+                        <label for="nomeCompleto">
                             <div class="input">
-                                <input type="text" id="numero" name="numero" placeholder="nº">
+                                <input type="text" id="nomeCompleto" name="full_name" placeholder="Nome Completo">
+                                <i class="material-symbols-outlined icon-input">account_circle</i>
                             </div>
                         </label>
-                        <label for="complemento">
+
+
+                        <label for="cpf">
                             <div class="input">
-                                <input type="text" id="complemento" name="complemento" placeholder="Complemento">
-                                <i class="material-symbols-outlined icon-input homepin">home_pin</i>
+                                <input type="text" id="cpf" name="cpf" placeholder="CPF" maxlength="14">
+                                <i class="material-symbols-outlined icon-input">id_card</i>
                             </div>
                         </label>
+
+
+                        <label for="phone">
+                            <div class="input">
+                                <input type="text" id="phone" name="phone" placeholder="Telefone" maxlength="15">
+                                <i class="material-symbols-outlined icon-input">phone</i>
+                            </div>
+                        </label>
+
+
+                        <label for="email">
+                            <div class="input">
+                                <input type="email" id="email" name="email" placeholder="E-mail">
+                                <i class="material-symbols-outlined icon-input" id="close"
+                                    onblur="closeInvisible(this.value)">close</i>
+                                <i class="material-symbols-outlined icon-input" id="emailIcon">alternate_email</i>
+                            </div>
+                        </label>
+
+
+                        <label for="password">
+                            <div class="input">
+                                <input type="password" id="password" name="password" placeholder="Senha">
+                                <i class="material-symbols-outlined icon-input" id="cadeado">lock</i>
+                                <i class="material-symbols-outlined icon-input" id="eyesOn"> visibility</i>
+                                <i class="material-symbols-outlined icon-input" id="eyesOff">visibility_off</i>
+                            </div>
+                        </label>
+
                     </div>
 
-                    <div class="endereco-row">
-                        <label for="estado">
+                    <div class="inputContainers">
+
+                        <label for="cep">
                             <div class="input">
-                                <input type="text" id="estado" name="estado" placeholder="UF" maxlength="2">
-                            </div>
-                        </label>
-                        <label for="cidade">
-                            <div class="input">
-                                <input type="text" id="cidade" name="cidade" placeholder="Cidade"
+                                <input type="text" id="cep" name="cep" placeholder="CEP" maxlength="9"
                                     onblur="buscaCEP(this.value)">
-                                <i class="material-symbols-outlined icon-input homepin">location_city</i>
+                                <i class="material-symbols-outlined icon-input">map</i>
+                            </div>
+                            <div class="naosei-cep">
+                                <a href="https://buscaceprua.com.br/">Não sei meu cep.</a>
+                            </div>
+
+                        </label>
+
+
+                        <label for="adress">
+                            <div class="input">
+                                <input type="text" id="adress" name="adress" placeholder="Endereço">
+                                <i class="material-symbols-outlined icon-input">location_on</i>
                             </div>
                         </label>
+
+
+                        <label for="bairro">
+                            <div class="input">
+                                <input type="text" id="bairro" name="bairro" placeholder="Bairro"
+                                    onblur="buscaCEP(this.value)">
+                                <i class="material-symbols-outlined icon-input homepin">holiday_village</i>
+                            </div>
+                        </label>
+
+
+                        <div class="endereco-row">
+                            <label for="numero">
+                                <div class="input">
+                                    <input type="text" id="numero" name="numero" placeholder="nº">
+                                </div>
+                            </label>
+                            <label for="complemento">
+                                <div class="input">
+                                    <input type="text" id="complemento" name="complemento" placeholder="Complemento">
+                                    <i class="material-symbols-outlined icon-input homepin">home_pin</i>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="endereco-row">
+                            <label for="estado">
+                                <div class="input">
+                                    <input type="text" id="estado" name="estado" placeholder="UF" maxlength="2">
+                                </div>
+                            </label>
+                            <label for="cidade">
+                                <div class="input">
+                                    <input type="text" id="cidade" name="cidade" placeholder="Cidade"
+                                        onblur="buscaCEP(this.value)">
+                                    <i class="material-symbols-outlined icon-input homepin">location_city</i>
+                                </div>
+                            </label>
+                        </div>
+
+
                     </div>
-
-
                 </div>
 
+                    <div class="down-wrapper">
+
+                        <div class="termosdeuso">
+                            <label for="termosDeUso">
+                                <input type="checkbox" id="termosDeUso" name="termosdeuso" required>
+                                Li e aceito os <a href="../termos-de-uso/termos-de-uso.html">Termos de uso</a> e <a
+                                    href="../politica-de-privacidade/politica-de-privacidade.html">Política</a>.
+                            </label>
+                        </div>
+
+                        <div class="buttons">
+                            <button id="continuar" type="submit" value="Cadastrar" disabled>Continuar</button>
+                            <button id="temConta"> <a href="../SignUp/logIn.html">Já tem conta? Entre</a></button>
+                        </div>
+                    </div>
             </form>
 
-            <div class="termosdeuso">
-                <label for="termosDeUso">
-                    <input type="checkbox" id="termosDeUso" name="termosdeuso" required>
-                    Li e aceito os <a href="../termos-de-uso/termos-de-uso.html">Termos de uso</a> e <a
-                        href="../politica-de-privacidade/politica-de-privacidade.html">Política</a>.
-                </label>
-            </div>
-
-            <div class="buttons">
-                <button id="continuar" type="submit" value="Cadastrar" disabled>Continuar</button>
-                <button id="temConta"> <a href="../SignUp/logIn.html">Já tem conta? Entre</a></button>
-            </div>
 
 
         </div>

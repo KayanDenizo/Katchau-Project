@@ -3,7 +3,7 @@ include 'db.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $full_name = $_POST['full_name'];
-    $username = $_POST['username'];
+    $username = $_POST['cpf'];
     $email = $_POST['email'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $sql = "INSERT INTO users (full_name, username, email, password, profile_picture) VALUES (?, ?, ?, ?, ?)";
     $stmt = $pdo->prepare($sql);
     if ($stmt->execute([$full_name, $username, $email, $password, $profile_picture])) {
-        echo "Cadastro realizado com sucesso!";
+        header("Location: ../Katchau/assets/SignUp/cadastro-sucesso.html");
     } else {
         echo "Erro no cadastro!";
     }

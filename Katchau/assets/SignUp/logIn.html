@@ -91,47 +91,53 @@
                 <span class="orLine"></span>
             </div>
 
-            <form action="#">
-
-                <div class="inputContainers">
-
-                    <label for="email">
-                        <div class="input">
-                            <input type="email" id="email" name="email" placeholder="E-mail">
-                            <i class="material-symbols-outlined icon-input" id="close">close</i>
-                            <i class="material-symbols-outlined icon-input" id="emailIcon">alternate_email</i>
-                        </div>
-                    </label>
+            <form action="../../../loginECadastroClientes/login_action.php" method="post">
+                <div class="form-wrapper">
 
 
-                    <label for="password">
-                        <div class="input">
-                            <input type="password" id="password" name="password" placeholder="Senha">
-                            <i class="material-symbols-outlined icon-input" id="cadeado">lock</i>
-                            <i class="material-symbols-outlined icon-input" id="eyesOn"> visibility</i>
-                            <i class="material-symbols-outlined icon-input" id="eyesOff">visibility_off</i>
-                        </div>
-                    </label>
-                    <div class="lembrardemim">
-                        <label for="lembrardemim">
-                            <input type="checkbox" id="lembrardemim" name="lembrardemim">
-                            Lembrar de mim?
+                    <div class="inputContainers">
+
+                        <label for="email">
+                            <div class="input">
+                                <input type="email" id="email" name="email" placeholder="E-mail">
+                                <i class="material-symbols-outlined icon-input" id="close">close</i>
+                                <i class="material-symbols-outlined icon-input" id="emailIcon">alternate_email</i>
+                            </div>
                         </label>
+
+
+                        <label for="password">
+                            <div class="input">
+                                <input type="password" id="password" name="password" placeholder="Senha">
+                                <i class="material-symbols-outlined icon-input" id="cadeado">lock</i>
+                                <i class="material-symbols-outlined icon-input" id="eyesOn"> visibility</i>
+                                <i class="material-symbols-outlined icon-input" id="eyesOff">visibility_off</i>
+                            </div>
+                        </label>
+                        <div class="lembrardemim">
+                            <label for="lembrardemim">
+                                <input type="checkbox" id="lembrardemim" name="lembrardemim">
+                                Lembrar de mim?
+                            </label>
+                        </div>
+
+                        <div class="esqueceusenha">
+                            <a href="../esqueceu-senha/esqueceu-senha.html">Esqueceu sua senha?</a>
+                        </div>
+
                     </div>
 
-                    <div class="esqueceusenha">
-                        <a href="../esqueceu-senha/esqueceu-senha.html">Esqueceu sua senha?</a>
+                </div>
+                <div class="down-wrapper">
+                    <div class="buttons">
+                        <button id="continuar">Continuar</button>
+                        <button id="temConta"> <a href="../SignUp/signUp.html">Não tem conta? Cadastre</a></button>
                     </div>
-
                 </div>
 
             </form>
 
 
-            <div class="buttons">
-                <button id="continuar">Continuar</button>
-                <button id="temConta"> <a href="../SignUp/signUp.html">Não tem conta? Cadastre</a></button>
-            </div>
 
 
         </div>

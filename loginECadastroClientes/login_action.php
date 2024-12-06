@@ -3,17 +3,17 @@ session_start();
 include 'db.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['username'];
+    $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM users WHERE username = ?";
+    $sql = "SELECT * FROM users WHERE email = ?";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([$username]);
+    $stmt->execute([$email]);
     $user = $stmt->fetch();
 
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user_id'] = $user['id'];
-        echo "Login realizado com sucesso!";
+        header("Location: ../Katchau/index-atual.html");
     } else {
         echo "Nome de usuário ou senha incorretos!";
     }

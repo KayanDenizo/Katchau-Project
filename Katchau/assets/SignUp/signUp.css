@@ -50,10 +50,15 @@ main {
     margin-bottom: 20px;
 }
 
-form {
+.form-wrapper:not(.down-wrapper) {
     display: flex;
     justify-content: space-around;
     position: relative;
+
+    .down-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .inputContainers {
