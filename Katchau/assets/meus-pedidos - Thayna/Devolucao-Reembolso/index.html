@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Pedidos | Katchau</title>
 
-    <link rel="stylesheet" href="../../css/navbar.css">
-    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../../css/navbar.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
     <link rel="stylesheet" href="meuspedidos.css">
     <link rel="stylesheet" href="navMeusPedidos.css">
     <link rel="stylesheet" href="starAvaliationMeusPedidos.css">
+
+    <link rel="stylesheet" href="devolucao.css">
 
     <link rel="stylesheet" href="../../css/starAvaliation.css">
     <link rel="stylesheet" href="../../css/modal.css">
@@ -38,7 +40,7 @@
         <nav class="navbar">
             <div class="logomarca">
                 <a href="../../index-atual.html">
-                    <img src="../../img/logo-katchau-removebg-preview.png" alt="Logo" class="logo-marca" />
+                    <img src="../../../img/logo-katchau-removebg-preview.png" alt="Logo" class="logo-marca" />
                 </a>
             </div>
 
@@ -77,76 +79,89 @@
         <h1 class="titulo">Devolução / Reembolso</h1>
 
         <h3>Pedido <span class="codePedido">#171204</span> </h3>
+        
+        <div class="content">
+            
+            <div class="container">
 
-        <div class="container">
+                <div class="info">
 
-            <img src="../../categorias - Julia/telasProdutos/imgs/monitorOdysseyG30.svg" alt="">
-            <p class="nomeProduto">Monitor Samsung Odyssey G30</p>
+                    <img src="../../categorias - Julia/telasProdutos/imgs/monitorOdysseyG30.svg" alt=""
+                        class="imgProduto">
 
-            <div class="info">
+                    <div class="detalhesPedido">
+                        <p class="nomeProduto">Monitor Samsung Odyssey G30 24'', FULL HD, Tela Plana, 144Hz, Painel VA</p>
 
-                <div class="infoPrecos">
-                    <div class="precoRiscado">
-                        R$ 159,77
+                        <div class="containerRow">
+                            <div class="infoPrecos">
+                                <div class="precoRiscado">
+                                    R$ 949,00
+                                </div>
+                                <div class="precoOficial">
+                                    R$ 701,10
+                                </div>
+                            </div>
+
+                            <div class="qntdContainer">
+                                <div class="quantidade">
+                                    Qtnd. 3
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="pedidoStatus">
+                            Pedido entregue 13/11/2024
+                        </div>
                     </div>
-                    <div class="precoOficial">
-                        R$ 144,30
+                </div>
+
+                <hr>
+
+                <div class="descInput">
+
+                    <label for="motivo">Por que você quer retornar este produto? <span class="ast">*</span></label>
+                    <div class="input">
+                        <select name="motivo" id="motivo">
+                            <option value="defeito">Defeito no produto</option>
+                            <option value="erro">Erro no pedido</option>
+                            <option value="arrependimento">Arrependimento ou insatisfação</option>
+                            <option value="embalagem">Embalagem inadequada</option>
+                            <option value="engano">Comprei por engano</option>
+                            <option value="extraviado">Produto extraviado</option>
+                            <option value="garantia">Produto coberto pela garantia</option>
+                            <option value="barato">Achei mais barato em outro lugar</option>
+                        </select>
                     </div>
-                </div>
 
-                <div class="qntdContainer">
-                    <div class="quantidade">
-                        Qtnd. 3
+                    <label for="outroMotivo">Outro motivo</label>
+                    <div class="input">
+                        <input type="text" name="outroMotivo" placeholder="Digite sua justificativa">
                     </div>
-                </div>
 
-                <div class="pedidoStatus">
-                    Pedido entregue 13/11/2024
-                </div>
-            </div>
-
-            <hr>
-
-            <div class="descInput">
-
-                <label for="motivo">Por que você quer retornar este produto? <span class="ast">*</span></label>
-                <div class="input">
-                    <select name="motivo" id="motivo">
-                        <option value="defeito">Defeito no produto</option>
-                        <option value="erro">Erro no pedido</option>
-                        <option value="arrependimento">Arrependimento ou insatisfação</option>
-                        <option value="embalagem">Embalagem inadequada</option>
-                        <option value="engano">Comprei por engano</option>
-                        <option value="extraviado">Produto extraviado</option>
-                        <option value="garantia">Produto coberto pela garantia</option>
-                        <option value="barato">Achei mais barato em outro lugar</option>
-                    </select>
-                </div>
-
-                <label for="outroMotivo">Outro Motivo</label>
-                <div class="input">
-                    <input type="text" name="outroMotivo" placeholder="Digite sua justificativa">
-                </div>
-
-                <label for="metodoRetorno"></label>
+                    <label for="metodoRetorno">Metodo de retorno</label>
                     <div class="input">
                         <select name="metodo" id="metodo">
                             <option value="reembolso">Reembolso</option> <!-- a pessoa recebe o dinheiro apenas -->
-                            <option value="devolucao">Devolução do produto</option> <!-- avisar que devolução vc volta o produto e recebe um novo -->
+                            <option value="devolucao">Devolução do produto</option>
+                            <!-- avisar que devolução vc volta o produto e recebe um novo -->
                         </select>
                     </div>
 
                     <div class="legenda">
                         <p class="valorExtornado">O valor será extornado da mesma maneira que o produto foi pago.</p>
-                        <p class="avisoReembolso">O reembolso de compras com cartão de crédito ou boleto podem demorar de 3 dias úteis até 1  mês.</p>
+                        <p class="avisoReembolso">O reembolso de compras com cartão de crédito ou boleto podem demorar
+                            de 3
+                            dias úteis até 1 mês.</p>
                     </div>
 
                     <div class="btnConfirmar">
                         <button id="confirmarDevolucao">Confirmar solicitação</button>
                     </div>
 
-            </div>
+                </div>
 
+            </div>
         </div>
 
     </main>
