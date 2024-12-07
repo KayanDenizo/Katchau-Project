@@ -50,9 +50,22 @@ main {
 }
 
 .title {
-    font-size: 25px;
+    font-size: 27px;
     color: #dcdcdc;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.title::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 4px;
+    height: 1.5rem;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #FD7014;
+    position: absolute;
+    top: 298px;
+    left: 412px;
 }
 
 hr {
@@ -61,6 +74,7 @@ hr {
 }
 
 label {
+    font-weight: bold;
     font-size: 18px;
     color: #ccc;
 }
@@ -74,9 +88,10 @@ label {
     outline: none;
     margin-top: 5px;
     margin-bottom: 19px;
-    caret-color: #ccc;
+    caret-color: #adadad;
     color: #fff;
     font-size: 15px;
+    text-indent: 8px;
 }
 
 input::placeholder {
@@ -103,6 +118,7 @@ input::placeholder {
 textarea::placeholder {
     color: #989898;
     font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #btn {
@@ -123,10 +139,13 @@ textarea::placeholder {
 
 }
 
-#btn{
+#btn {
     border: none;
     cursor: pointer;
+    transition: 0.3s;
+
     &:hover {
+        border: 1px solid;
         box-shadow: 3px 3px 20px var(--laranjaTransparente);
     }
 }
