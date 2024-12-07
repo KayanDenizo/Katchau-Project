@@ -15,6 +15,7 @@ body {
 }
 
 main {
+    margin-top: 150px;
     padding: 50px;
 }
 
@@ -60,12 +61,11 @@ main {
     display: inline-block;
     vertical-align: middle;
     width: 4px;
-    height: 1.5rem;
+    height: 1.6rem;
     border-radius: 20px 0px 0px 20px;
     background-color: #FD7014;
     position: absolute;
-    top: 298px;
-    left: 412px;
+    left: 425px;
 }
 
 hr {
