@@ -11,7 +11,8 @@ body {
 }
 
 #page {
-    margin: 60px 0;
+    color: #fff;
+    padding-left: 50px;
 }
 
 .header-title-container {
@@ -39,6 +40,7 @@ p {
 .content-container {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .content {
@@ -52,4 +54,26 @@ p {
 .content h2 {
     color: #242e4c;
     font-weight: 500;
+}
+
+.voltar{
+    display: flex;
+    color: #ccc;
+}
+
+.voltarIcon{
+    font-family: sans-serif;
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.voltarText{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    transition: 0.3s;
+
+    &:hover{
+        text-decoration: underline;
+    }
 }
