@@ -107,9 +107,44 @@
 
             <hr>
 
-            <p class="pergunta">Por que você quer retornar este produto? <span class="ast">*</span></p>
-            <div class="input">
-                
+            <div class="descInput">
+
+                <label for="motivo">Por que você quer retornar este produto? <span class="ast">*</span></label>
+                <div class="input">
+                    <select name="motivo" id="motivo">
+                        <option value="defeito">Defeito no produto</option>
+                        <option value="erro">Erro no pedido</option>
+                        <option value="arrependimento">Arrependimento ou insatisfação</option>
+                        <option value="embalagem">Embalagem inadequada</option>
+                        <option value="engano">Comprei por engano</option>
+                        <option value="extraviado">Produto extraviado</option>
+                        <option value="garantia">Produto coberto pela garantia</option>
+                        <option value="barato">Achei mais barato em outro lugar</option>
+                    </select>
+                </div>
+
+                <label for="outroMotivo">Outro Motivo</label>
+                <div class="input">
+                    <input type="text" name="outroMotivo" placeholder="Digite sua justificativa">
+                </div>
+
+                <label for="metodoRetorno"></label>
+                    <div class="input">
+                        <select name="metodo" id="metodo">
+                            <option value="reembolso">Reembolso</option> <!-- a pessoa recebe o dinheiro apenas -->
+                            <option value="devolucao">Devolução do produto</option> <!-- avisar que devolução vc volta o produto e recebe um novo -->
+                        </select>
+                    </div>
+
+                    <div class="legenda">
+                        <p class="valorExtornado">O valor será extornado da mesma maneira que o produto foi pago.</p>
+                        <p class="avisoReembolso">O reembolso de compras com cartão de crédito ou boleto podem demorar de 3 dias úteis até 1  mês.</p>
+                    </div>
+
+                    <div class="btnConfirmar">
+                        <button id="confirmarDevolucao">Confirmar solicitação</button>
+                    </div>
+
             </div>
 
         </div>
