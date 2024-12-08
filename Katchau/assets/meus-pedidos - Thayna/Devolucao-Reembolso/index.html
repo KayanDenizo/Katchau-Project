@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" href="devolucao.css">
 
+    <script defer src="devolucao.js"></script>
+
     <link rel="stylesheet" href="../../css/starAvaliation.css">
     <link rel="stylesheet" href="../../css/modal.css">
 
@@ -79,9 +81,9 @@
         <h1 class="titulo">Devolução / Reembolso</h1>
 
         <h3>Pedido <span class="codePedido">#171204</span> </h3>
-        
+
         <div class="content">
-            
+
             <div class="container">
 
                 <div class="info">
@@ -90,7 +92,8 @@
                         class="imgProduto">
 
                     <div class="detalhesPedido">
-                        <p class="nomeProduto">Monitor Samsung Odyssey G30 24'', FULL HD, Tela Plana, 144Hz, Painel VA</p>
+                        <p class="nomeProduto">Monitor Samsung Odyssey G30 24'', FULL HD, Tela Plana, 144Hz, Painel VA
+                        </p>
 
                         <div class="containerRow">
                             <div class="infoPrecos">
@@ -120,48 +123,85 @@
 
                 <div class="descInput">
 
-                    <label for="motivo">Por que você quer retornar este produto? <span class="ast">*</span></label>
-                    <div class="input">
-                        <select name="motivo" id="motivo">
-                            <option value="defeito">Defeito no produto</option>
-                            <option value="erro">Erro no pedido</option>
-                            <option value="arrependimento">Arrependimento ou insatisfação</option>
-                            <option value="embalagem">Embalagem inadequada</option>
-                            <option value="engano">Comprei por engano</option>
-                            <option value="extraviado">Produto extraviado</option>
-                            <option value="garantia">Produto coberto pela garantia</option>
-                            <option value="barato">Achei mais barato em outro lugar</option>
-                        </select>
+                    <div class="motivoSelect">
+
+                        <label for="motivo">Por que você quer retornar este produto? <span class="ast">*</span></label>
+                        <input type="checkbox" id="motivo">
+
+                        <div class="select">
+                            
+                            <div id="estaSelecionado">Selecione um motivo</div>
+                            <div class="icons">
+                                <i data-lucide="chevron-down"></i>
+                                <i data-lucide="chevron-up"></i>
+                            </div>
+                        </div>
                     </div>
 
-                    <label for="outroMotivo">Outro motivo</label>
-                    <div class="input">
-                        <input type="text" name="outroMotivo" placeholder="Digite sua justificativa">
-                    </div>
+                        <ul class="opcoes">
+                            <li class="opcao">
+                                <input type="radio" name="motivo" value="defeito">
+                                <span class="label">Defeito no produto</span>
+                            </li>
+                            <li class="opcao">
+                                <input type="radio" name="motivo" value="erro">
+                                <span class="label">Erro no pedido</span>
+                            </li>
+                            <li class="opcao">
+                                <input type="radio" name="motivo" value="arrependimento">
+                                <span class="label">Arrependimento ou insatisfação</span>
+                            </li>
+                            <li class="opcao">
+                                <input type="radio" name="motivo" value="embalagem">
+                                <span class="label">Embalagem inadequada</span>
+                            </li>
+                            <li class="opcao">
+                                <input type="radio" name="motivo" value="engano">
+                                <span class="label">Comprei por engano</span>
+                            </li>
+                            <li class="opcao">
+                                <input type="radio" name="motivo" value="extraviado">
+                                <span class="label">Produto extraviado</span>
+                            </li>
+                            <li class="opcao">
+                                <input type="radio" name="motivo" value="garantia">
+                                <span class="label">Produto coberto pela garantia</span>
+                            </li>
+                            <li class="opcao">
+                                <input type="radio" name="motivo" value="barato">
+                                <span class="label">Achei mais barato em outro lugar</span>
+                            </li>
+                        </ul>
+                </div>
 
-                    <label for="metodoRetorno">Metodo de retorno</label>
-                    <div class="input">
-                        <select name="metodo" id="metodo">
-                            <option value="reembolso">Reembolso</option> <!-- a pessoa recebe o dinheiro apenas -->
-                            <option value="devolucao">Devolução do produto</option>
-                            <!-- avisar que devolução vc volta o produto e recebe um novo -->
-                        </select>
-                    </div>
+                <label for="outroMotivo">Outro motivo</label>
+                <div class="input">
+                    <input type="text" name="outroMotivo" placeholder="Digite sua justificativa">
+                </div>
 
-                    <div class="legenda">
-                        <p class="valorExtornado">O valor será extornado da mesma maneira que o produto foi pago.</p>
-                        <p class="avisoReembolso">O reembolso de compras com cartão de crédito ou boleto podem demorar
-                            de 3
-                            dias úteis até 1 mês.</p>
-                    </div>
+                <label for="metodoRetorno">Metodo de retorno</label>
+                <div class="input">
+                    <select name="metodo" id="metodo">
+                        <option value="reembolso">Reembolso</option> <!-- a pessoa recebe o dinheiro apenas -->
+                        <option value="devolucao">Devolução do produto</option>
+                        <!-- avisar que devolução vc volta o produto e recebe um novo -->
+                    </select>
+                </div>
 
-                    <div class="btnConfirmar">
-                        <button id="confirmarSolicitacao">Confirmar solicitação</button>
-                    </div>
+                <div class="legenda">
+                    <p class="valorExtornado">O valor será extornado da mesma maneira que o produto foi pago.</p>
+                    <p class="avisoReembolso">O reembolso de compras com cartão de crédito ou boleto podem demorar
+                        de 3
+                        dias úteis até 1 mês.</p>
+                </div>
 
+                <div class="btnConfirmar">
+                    <button id="confirmarSolicitacao">Confirmar solicitação</button>
                 </div>
 
             </div>
+
+        </div>
         </div>
 
     </main>
@@ -212,6 +252,7 @@
     </div>
     <!-- FimFooter -->
     <script src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </body>
 
 </html>
