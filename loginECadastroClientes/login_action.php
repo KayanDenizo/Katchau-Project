@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user_id'] = $user['id'];
-        header("Location: ../Katchau/index-atual.html");
+        header("Location: ../Katchau/index-account.html");
     } else {
         echo "Nome de usuário ou senha incorretos!";
     }
