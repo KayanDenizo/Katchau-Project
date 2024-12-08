@@ -17,17 +17,18 @@ a {
 
 .navbar {
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px; /* Defina uma altura fixa 9tava 170) */
+    background: linear-gradient(to bottom, #ccc, #eee);
     z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background: #ccc; */
-    background: linear-gradient(to bottom, #ccc, #eee);
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+    padding: 1em; /* Padding interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    overflow: hidden; /* Evita expansão indesejada */
 }
 
 #page {
@@ -42,7 +43,7 @@ a {
 
 .logo-marca {
     border-radius: 5px;
-    height: 100px;
+    height: 110px /* (tava 100) */;
     width: 100%;
 }
 
@@ -93,7 +94,7 @@ a {
     cursor: pointer;
     font-size: 30px;
     margin: 0 10px 0 0;
-    font-weight: 300;
+    /* font-weight: 300; */
 }
 
 button {
