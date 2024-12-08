@@ -13,6 +13,7 @@ body {
 main {
     padding: 50px;
     color: #fff;
+    z-index: 1;
 }
 
 .content {
@@ -143,6 +144,7 @@ label {
 }
 
 #outro{
+    font-size: 16px;
     padding-left: 17px;
 }
 
@@ -223,7 +225,7 @@ p {
     color: #ccc;
     border: 1px solid #7B7B7B;
     width: 500px;
-    padding: 10px;
+    padding: 12px;
     font-size: 15px;
     border-radius: 10px;
     transition: 0.3s;
@@ -257,7 +259,7 @@ p {
 
 #motivo:checked + .select,
 #metodo:checked + .select{
-    border: 1px solid #222831;
+    border: 1px solid #5d5d5d;
 }
 
 #motivo:checked + .select .icons [data-lucide="chevron-down"],
@@ -281,19 +283,15 @@ p {
     inset: 0;
 }
 
-.select{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
 .input input{
     padding: 9px;
 }
 
 
 .select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 0.5rem;
     margin-bottom: 0.4rem;
     font-size: 16px;
@@ -306,7 +304,7 @@ p {
 
     padding: 0;
     margin: 0;
-    border: 1px solid #222831;
+    border: 1px solid #5d5d5d;
 }
 
 .opcao,
@@ -317,7 +315,7 @@ p {
     background-color: transparent;
     gap: 12px;
     font-size: 16px;
-    border-bottom: 1px solid #222831;
+    border-bottom: 1px solid #5d5d5d; /* cor border bottom opcao */
     padding: 10px;
     width: 100%;
     transition: 0.2s;
@@ -329,6 +327,7 @@ p {
 .opcaoMetodo:has(input:checked),
 .opcaoMetodo:hover{
     background-color: #222831;
+    border-bottom: 1px solid #222831;
 }
 
 /* .opcao:has(input:focus){
@@ -359,7 +358,8 @@ p {
     display: block;
 }
 
-#estaSelecionado{
+#estaSelecionado,
+#estaSelecionadoMetodo{
     font-size: 16px;
     margin-left: 10px;
     color: #ccc;
@@ -368,4 +368,153 @@ p {
 .selectContainer:has(.opcao input:checked) #estaSelecionado,
 .selectContainer:has(.opcaoMetodo input:checked) #estaSelecionado{
     color: #fff;
+}
+
+#eventBtnConfirmar{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 999;
+}
+
+.containerModal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.overlay{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.47);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.popContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #454E59;
+    width: 700px;
+    height: 500px;
+    border-radius: 50px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#solicitacaoCancelada{
+    margin: 0;
+}
+
+.header h1{
+    font-size: 27px;
+    color: #fff;
+    margin: 0;
+}
+
+.lineHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.close{
+    cursor: pointer;
+    color: #888888;
+    transform: translate(20px, -30px);
+}
+
+.acaoDesfeita{
+    color: #ccc;
+    font-size: 16px;
+    margin-left: 13px;
+}
+
+.infoPedido{
+    color: #fff;
+    padding: 30px;
+    font-size: 18px;
+}
+
+.pedidoCode{
+    font-weight: 600;
+}
+
+.produtoNome{
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.btnSN{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.sn{
+    color: #ccc;
+    font-size: 20px;
+    box-shadow: 3px 3px 10px rgba(32, 32, 32, 1);
+    width: 265px;
+    height: 70px;
+    border-radius: 13px;
+}
+
+#naoBtn{
+    background-color: rgba(255, 35, 35, 0.85);
+    transition: 0.3s;
+
+    &:hover{
+        background-color: #c80d0d;
+    }
+}
+
+#simBtn{
+    background-color: rgba(0, 184, 31, 0.85);
+    transition: 0.3s;
+
+    &:hover{
+    background-color: #04911d;
+    }
+}
+
+.popContainerProgress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    flex-direction: column;
+    background-color: #454E59;
+    height: 170px;
+    border-radius: 50px;;
+    position: relative;
+    /* border-bottom: 10px solid #FD7014; */
+}
+
+.barraProgresso{
+    position: absolute;
+    bottom: 0.2px;
+    left: 24px;
+    height: 10px;
+    width: 91.6%;
+}
+
+.progresso{
+    width: 100%;
+    height: 100%;
+    background-color: #FD7014;
+    border-radius: 0 0 100px 100px;
 }

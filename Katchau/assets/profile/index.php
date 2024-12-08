@@ -100,7 +100,7 @@ $user = $stmt->fetch();
                     </div>
                     <div class="link" id="orders">
                         <i class="material-symbols-outlined icon-input iconsProfile">shopping_bag</i>
-                        <span>Meus Pedidos</span>
+                        <span><a href="../meus-pedidos - Thayna/index.html">Meus Pedidos</a></span>
                     </div>
                     <div class="link" id="contact">
                         <i class="material-symbols-outlined icon-input iconsProfile">call</i>

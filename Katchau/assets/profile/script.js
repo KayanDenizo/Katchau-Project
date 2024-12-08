@@ -39,19 +39,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    settings.addEventListener('click', function() {
-        alert('Configurações clicadas!');
-    });
 
-    orders.addEventListener('click', function() {
-        alert('Meus Pedidos clicados!');
-    });
-
-    feedback.addEventListener('click', function() {
-        alert('Feedback clicado!');
-    });
-
-    contact.addEventListener('click', function() {
-        alert('Contato clicado!');
-    });
 });

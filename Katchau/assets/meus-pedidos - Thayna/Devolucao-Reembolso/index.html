@@ -41,7 +41,7 @@
     <header>
         <nav class="navbar">
             <div class="logomarca">
-                <a href="../../index-atual.html">
+                <a href="../../../index-atual.html">
                     <img src="../../../img/logo-katchau-removebg-preview.png" alt="Logo" class="logo-marca" />
                 </a>
             </div>
@@ -83,7 +83,7 @@
         <div class="codigoDoPedido">
             <h3>Pedido <span class="codePedido">#171204</span> </h3>
         </div>
-        
+
         <div class="content">
 
             <div class="container">
@@ -199,7 +199,7 @@
 
                             <div class="select">
 
-                                <div id="estaSelecionado">Selecione um metodo</div>
+                                <div id="estaSelecionadoMetodo">Selecione um metodo</div>
                                 <div class="icons">
                                     <i data-lucide="chevron-down"></i>
                                     <i data-lucide="chevron-up"></i>
@@ -210,11 +210,11 @@
                         <ul class="opcoes">
                             <li class="opcaoMetodo">
                                 <input type="radio" name="motivo" value="reembolso" data-label="Reembolso">
-                                <span class="label">Defeito no produto</span>
+                                <span class="label">Reembolso</span>
                             </li>
                             <li class="opcaoMetodo">
-                                <input type="radio" name="motivo" value="erro" data-label="Erro no pedido">
-                                <span class="label">Erro no pedido</span>
+                                <input type="radio" name="motivo" value="Devolucao" data-label="Devolução">
+                                <span class="label">Devolução</span>
                             </li>
                         </ul>
                     </div>
@@ -237,6 +237,72 @@
         </div>
 
     </main>
+
+    <section id="eventBtnConfirmar">
+        <div class="overlay"></div>
+
+        <div class="containerModal" id="containerModalConfirmar">
+            <div class="popContainer">
+                <div class="header">
+
+                    <div class="lineHeader">
+                        <h1>Deseja devolver/reembolsar pedido?</h1>
+
+                        <button id="closePop"> <span class="material-symbols-outlined close">
+                                close
+                            </span>
+                        </button>
+                    </div>
+
+                    <p class="acaoDesfeita">Ação não pode ser desfeita</p>
+                </div>
+
+                <div class="infoPedido">
+                    <div class="pedidoCode">
+                        Pedido #171204
+                    </div>
+                    <div class="produtoNome">
+                        Headset Fone de Ouvido Havit HV-H2002d Pink, Gamer (...)
+                    </div>
+                </div>
+
+                <div class="btnSN">
+                    <button class="sn" id="naoBtn">Não</button>
+                    <button class="sn" id="simBtn">Sim</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="eventBtnNegar">
+        <div class="overlay"></div>
+
+        <div class="containerModal" id="containerModalNegar">
+            <div class="popContainerProgress">
+
+                <!-- <div class="popProgress"> -->
+                    
+                    <div class="header" id="solicitacaoCancelada">
+
+                        <div class="lineHeader">
+                            <h1>Solicitação foi cancelada</h1>
+
+                            <button id="closePop">
+                                <span class="material-symbols-outlined close">
+                                    close
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="barraProgresso">
+                        <div class="progresso" id="progresso"></div>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- popup -->
+
 
 
 
