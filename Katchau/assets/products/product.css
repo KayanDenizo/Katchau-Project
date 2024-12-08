@@ -686,9 +686,9 @@ img:not(.logo-marca) {
 }
 
 .carousel-btn2 {
+
     background: #888;
     border: none;
-    padding: 10px 20px;
     border-radius: 50%;
     cursor: pointer;
     color: #f1f1f1;
@@ -698,6 +698,15 @@ img:not(.logo-marca) {
     transform: translateY(-50%);
     transition: .3s ease-in-out;
     z-index: 2;
+
+}
+
+.left-btn {
+    padding: 12px 10px 12px 19px;
+}
+
+.right-btn {
+    padding: 12px 12px 12px 15px;
 }
 
 .carousel-btn2.left2 {
