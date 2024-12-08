@@ -241,7 +241,7 @@
     <section id="eventBtnConfirmar">
         <div class="overlay"></div>
 
-        <div id="containerConfirmar">
+        <div class="containerModal" id="containerModalConfirmar">
             <div class="popContainer">
                 <div class="header">
 
@@ -270,6 +270,34 @@
                     <button class="sn" id="naoBtn">Não</button>
                     <button class="sn" id="simBtn">Sim</button>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="eventBtnNegar">
+        <div class="overlay"></div>
+
+        <div class="containerModal" id="containerModalNegar">
+            <div class="popContainerProgress">
+
+                <!-- <div class="popProgress"> -->
+                    
+                    <div class="header" id="solicitacaoCancelada">
+
+                        <div class="lineHeader">
+                            <h1>Solicitação foi cancelada</h1>
+
+                            <button id="closePop">
+                                <span class="material-symbols-outlined close">
+                                    close
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="barraProgresso">
+                        <div class="progresso" id="progresso"></div>
+                    </div>
+                <!-- </div> -->
             </div>
         </div>
     </section>
