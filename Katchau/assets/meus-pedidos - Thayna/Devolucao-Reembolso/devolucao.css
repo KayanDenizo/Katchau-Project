@@ -44,10 +44,15 @@ main {
     box-shadow: 1px solid ;
 }
 
+.codigoDoPedido{
+    width: 100px;
+}
+
 h3 {
+    display: flex;
+    align-items: center;
     font-size: 22px;
     margin-top: 50px;
-    margin-left: 200px;
     cursor: default;
 }
 
@@ -116,29 +121,37 @@ hr {
     border: 0.3px solid #7b7b7b;
 }
 
+.descricaoContainer{
+    padding: 22px 0 20px 40px ;
+}
+
 .pedidoStatus {
     font-size: 18px;
     color: #FD7014;
     font-weight: 600;
 }
 
-.descInput {
-    padding: 20px;
+.selectContainer,
+.textContainer {
+    padding: 5px;
+    margin-bottom: 13px;
 }
+
 
 label {
     font-size: 18px;
 }
 
-.input {
-    margin-top: 5px;
-    margin-bottom: 20px;
+#outro{
+    padding-left: 17px;
 }
 
+/* estilização do container input */
 .select,
 .opcoes,
 .input input {
-    width: 400px;
+    /* margin-left: 12px; */
+    width: 357px;
     background-color: transparent;
     border: 1px solid #7B7B7B;
     color: #ccc;
@@ -147,6 +160,9 @@ label {
     font-size: 15px;
 }
 
+.input{
+    margin-top: 0.5rem;
+}
 
 .input input::placeholder {
     color: #ccc;
@@ -198,7 +214,6 @@ p {
 }
 
 .btnConfirmar{
-    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,20 +255,25 @@ p {
     display: none;
 }
 
-#motivo:checked + .select{
+#motivo:checked + .select,
+#metodo:checked + .select{
     border: 1px solid #222831;
 }
 
-#motivo:checked + .select .icons [data-lucide="chevron-down"]/*  atributo especifico */{
+#motivo:checked + .select .icons [data-lucide="chevron-down"],
+#metodo:checked + .select .icons [data-lucide="chevron-down"]/*  atributo especifico */{
     display: none;
 }
 
-#motivo:checked + .select .icons [data-lucide="chevron-up"]{
+#motivo:checked + .select .icons [data-lucide="chevron-up"],
+#metodo:checked + .select .icons [data-lucide="chevron-up"]{
     display: block;
 }
 
-#motivo{/*  esconder a caixa e fazer com que seja clicavel em qlqr lugar do label */
+#motivo,
+#metodo{/*  esconder a caixa e fazer com que seja clicavel em qlqr lugar do label */
     all: unset;
+    width: 48%;
     cursor: pointer;
     z-index: 3;
     position: absolute;
@@ -276,7 +296,7 @@ p {
 .select{
     margin-top: 0.5rem;
     margin-bottom: 0.4rem;
-    font-size: 17px;
+    font-size: 16px;
     padding: 9px;
 }
 
@@ -289,7 +309,8 @@ p {
     border: 1px solid #222831;
 }
 
-.opcao{
+.opcao,
+.opcaoMetodo{
     display: flex;
     align-items: center;
     
@@ -304,7 +325,9 @@ p {
 }
 
 .opcao:has(input:checked),
-.opcao:hover{
+.opcao:hover,
+.opcaoMetodo:has(input:checked),
+.opcaoMetodo:hover{
     background-color: #222831;
 }
 
@@ -312,22 +335,37 @@ p {
     outline: 1px solid #222831;
 } */
 
-.opcao:first-child{
+.opcao:first-child,
+.opcaoMeotdo:first-child{
     border-radius: 7px 7px 0 0;
 }
 
-.opcao:last-child{
+.opcao:last-child,
+.opcaoMetodo:last-child{
     border-bottom: 0px;
     border-radius: 0 0 7px 7px;
 }
 
-.opcao input[type="radio"]{
+.opcao input[type="radio"],
+.opcaoMetodo input[type="radio"]{
     all: unset;
     cursor: pointer;
     position: absolute;
     inset: 0;
 }
 
-.motivoSelect:has(#motivo:checked) + .opcoes{
+.motivoSelect:has(#motivo:checked) + .opcoes,
+.motivoSelect:has(#metodo:checked) + .opcoes{
     display: block;
+}
+
+#estaSelecionado{
+    font-size: 16px;
+    margin-left: 10px;
+    color: #ccc;
+}
+
+.selectContainer:has(.opcao input:checked) #estaSelecionado,
+.selectContainer:has(.opcaoMetodo input:checked) #estaSelecionado{
+    color: #fff;
 }
