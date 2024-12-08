@@ -135,17 +135,18 @@ label {
     margin-bottom: 20px;
 }
 
-.input select,
+.select,
+.opcoes,
 .input input {
+    width: 400px;
     background-color: transparent;
     border: 1px solid #7B7B7B;
-    padding: 9px;
     color: #ccc;
     border-radius: 8px;
-    min-width: 370px;
     outline: none;
     font-size: 15px;
 }
+
 
 .input input::placeholder {
     color: #ccc;
@@ -190,7 +191,7 @@ p {
     align-items: center;
     font-size: 18px;
     transition: 0.3s;
-
+    
     &:hover {
         text-decoration: underline;
     }
@@ -211,13 +212,122 @@ p {
     font-size: 15px;
     border-radius: 10px;
     transition: 0.3s;
-
+    
     &:hover{
         background-color: #222831;
         border: 1px solid transparent;
     }
-
+    
     &:focus{
         text-decoration: underline;
     }
+}
+
+.motivoSelect{
+    position: relative;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.icons svg{
+    width: 1.2rem;
+}
+
+.icons [data-lucide="chevron-up"]{
+    display: none;
+}
+
+#motivo:checked + .select{
+    border: 1px solid #222831;
+}
+
+#motivo:checked + .select .icons [data-lucide="chevron-down"]/*  atributo especifico */{
+    display: none;
+}
+
+#motivo:checked + .select .icons [data-lucide="chevron-up"]{
+    display: block;
+}
+
+#motivo{/*  esconder a caixa e fazer com que seja clicavel em qlqr lugar do label */
+    all: unset;
+    cursor: pointer;
+    z-index: 3;
+    position: absolute;
+    
+    inset: 0;
+}
+
+.select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.input input{
+    padding: 9px;
+}
+
+
+.select{
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 17px;
+    padding: 9px;
+}
+
+.opcoes{
+
+    display: none;
+
+    padding: 0;
+    margin: 0;
+    border: 1px solid #222831;
+}
+
+.opcao{
+    display: flex;
+    align-items: center;
+    
+    background-color: transparent;
+    gap: 12px;
+    font-size: 16px;
+    border-bottom: 1px solid #222831;
+    padding: 10px;
+    width: 100%;
+    transition: 0.2s;
+    position: relative;
+}
+
+.opcao:has(input:checked),
+.opcao:hover{
+    background-color: #222831;
+}
+
+/* .opcao:has(input:focus){
+    outline: 1px solid #222831;
+} */
+
+.opcao:first-child{
+    border-radius: 7px 7px 0 0;
+}
+
+.opcao:last-child{
+    border-bottom: 0px;
+    border-radius: 0 0 7px 7px;
+}
+
+.opcao input[type="radio"]{
+    all: unset;
+    cursor: pointer;
+    position: absolute;
+    inset: 0;
+}
+
+.motivoSelect:has(#motivo:checked) + .opcoes{
+    display: block;
 }
