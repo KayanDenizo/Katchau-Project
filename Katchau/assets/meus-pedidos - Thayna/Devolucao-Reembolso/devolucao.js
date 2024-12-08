@@ -14,3 +14,16 @@ inputOpcao.forEach(input => {
     });
 
 });
+
+
+const btnConfirmacao = document.getElementById('confirmarSolicitacao');
+const containerPop = document.getElementById('eventBtnConfirmar');
+const btnClose = document.getElementById('closePop');
+
+btnConfirmacao.addEventListener('click', () =>{
+    containerPop.style.display = 'flex';
+});
+
+btnClose.addEventListener('click', () => {
+    containerPop.style.display = 'none';
+})
