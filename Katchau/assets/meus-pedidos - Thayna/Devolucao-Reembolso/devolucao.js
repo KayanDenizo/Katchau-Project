@@ -2,7 +2,7 @@ lucide.createIcons()
 
 const inputOpcao = document.querySelectorAll('.opcao input');
 const valorSelecionado = document.getElementById('estaSelecionado');
-const selectInput = document.getElementById('motivo');
+const motivoInput = document.getElementById('motivo');
 
 inputOpcao.forEach(input => {
 
@@ -10,9 +10,23 @@ inputOpcao.forEach(input => {
         valorSelecionado.textContent = input.dataset.label;
 
         const isMouse = event.pointerType == "mouse";
-        isMouse && selectInput.click();
+        isMouse && motivoInput.click();
     });
 
+});
+
+const valorSelecionadoMetodo = document.getElementById('estaSelecionadoMetodo');
+const inputOpcaoMetodo = document.querySelectorAll('.opcaoMetodo input');
+const metodoInput = document.getElementById('metodo');
+
+inputOpcaoMetodo.forEach(input => {
+
+    input.addEventListener('click', event => {
+        valorSelecionadoMetodo.textContent = input.dataset.label;
+
+        const isMouse = event.pointerType == "mouse";
+        isMouse && metodoInput.click();
+    });
 });
 
 

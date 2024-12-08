@@ -225,7 +225,7 @@ p {
     color: #ccc;
     border: 1px solid #7B7B7B;
     width: 500px;
-    padding: 10px;
+    padding: 12px;
     font-size: 15px;
     border-radius: 10px;
     transition: 0.3s;
@@ -259,7 +259,7 @@ p {
 
 #motivo:checked + .select,
 #metodo:checked + .select{
-    border: 1px solid #222831;
+    border: 1px solid #5d5d5d;
 }
 
 #motivo:checked + .select .icons [data-lucide="chevron-down"],
@@ -283,19 +283,15 @@ p {
     inset: 0;
 }
 
-.select{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
 .input input{
     padding: 9px;
 }
 
 
 .select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 0.5rem;
     margin-bottom: 0.4rem;
     font-size: 16px;
@@ -308,7 +304,7 @@ p {
 
     padding: 0;
     margin: 0;
-    border: 1px solid #222831;
+    border: 1px solid #5d5d5d;
 }
 
 .opcao,
@@ -319,7 +315,7 @@ p {
     background-color: transparent;
     gap: 12px;
     font-size: 16px;
-    border-bottom: 1px solid #222831;
+    border-bottom: 1px solid #5d5d5d; /* cor border bottom opcao */
     padding: 10px;
     width: 100%;
     transition: 0.2s;
@@ -331,6 +327,7 @@ p {
 .opcaoMetodo:has(input:checked),
 .opcaoMetodo:hover{
     background-color: #222831;
+    border-bottom: 1px solid #222831;
 }
 
 /* .opcao:has(input:focus){
@@ -361,7 +358,8 @@ p {
     display: block;
 }
 
-#estaSelecionado{
+#estaSelecionado,
+#estaSelecionadoMetodo{
     font-size: 16px;
     margin-left: 10px;
     color: #ccc;
@@ -376,6 +374,8 @@ p {
     display: none;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    z-index: 999;
 }
 
 #containerConfirmar{
@@ -403,7 +403,7 @@ p {
     width: 700px;
     height: 500px;
     padding: 75px;
-    border-radius: 20px;;
+    border-radius: 50px;;
 }
 
 .header{
@@ -411,6 +411,7 @@ p {
 }
 
 .header h1{
+    font-size: 27px;
     color: #fff;
     margin: 0;
 }
@@ -460,7 +461,7 @@ p {
     box-shadow: 3px 3px 10px rgba(32, 32, 32, 1);
     width: 265px;
     height: 70px;
-    border-radius: 10px;
+    border-radius: 13px;
 }
 
 #naoBtn{
