@@ -73,7 +73,7 @@ $user = $stmt->fetch();
     <main>
         <div class="voltar">
             <span class="voltarIcon">&lsaquo;</span>
-            <a href="../profile/index.html" class="voltarText">Voltar</a>
+            <a href="../../index-account.html" class="voltarText">Voltar</a>
         </div>
 
         <div class="container">
@@ -89,7 +89,6 @@ $user = $stmt->fetch();
 
                 <div class="username">
                     <h2 id="profile-name" class="editable"><?php echo htmlspecialchars($user['full_name']); ?></h2>
-                    <input type="text" id="edit-name-input" class="hidden">
                 </div>
 
                 <div class="buttons">
