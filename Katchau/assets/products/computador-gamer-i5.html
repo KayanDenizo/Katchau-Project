@@ -5,186 +5,784 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="../../css/index2.css">
     <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/loader.css">
+    <link rel="stylesheet" href="../../css/scrollbar.css">
+    <link rel="stylesheet" href="../../css/carrinho.css">
+
+    <link rel="stylesheet" href="../../css/scrollToTop.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easyzoom@2.5.0/dist/easyzoom.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="../../img/logo-katchau-removebg-preview.png" type="image/x-icon">
-    <title>Computador Gamer | Katchau</title>
+
+    <title>Computador Gamer I5 | Katchau</title>
 </head>
 
 <body>
 
-    <!-- NavBar -->
-    <header>
-        <nav class="navbar">
-            <div class="logomarca">
-                <a href="../../index2.html">
-                    <img src="../../img/logo-katchau-removebg-preview.png" alt="Logo" class="logo-marca" />
-                </a>
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar_header_container">
+            <div class="close_sidebar">
+                <span class="material-symbols-outlined" id="closeSidebar">close</span>
             </div>
-
-            <div class="div-search">
-                <input class="searchBar" type="search" placeholder="Pesquisar produtos..." name="search"><i
-                    class="material-symbols-outlined">search</i>
+            <div class="header-container">
+                <h2 class="cart_title">Carrinho</h2>
+                <span class="showAll" id="selectAll">Marcar Todos</span>
             </div>
-
-            <nav class="navbar-menu">
-                <button>
-                    <a href="../../assets/profile/index.html" class="icon material-symbols-outlined">person</a>
-                </button>
-                <button>
-                    <a href="../Favoritos/favoritos.html" class="icon material-symbols-outlined">favorite</a>
-                </button>
-                <button>
-                    <a href="#" class="icon material-symbols-outlined" id="cart">shopping_cart</a>
-                </button>
-                <button>
-                    <a href="../contato/index.html" class="icon material-symbols-outlined">contact_support</a>
-                </button>
-                <button class="signUpBtn"><a href="../SignUp/cadastro.html">Cadastrar</a></button>
-                <button class="loginBtn"><a href="../SignUp/entrar-kayan.html">Entrar</a></button>
-            </nav>
-        </nav>
-    </header>
-    <!-- Fim NavBar -->
-
-    <div class="container">
-        <div class="image-container">
-            <img src="../../img/img-products/pc-i5.png" alt="">
         </div>
-        <div class="product-content">
-            <div class="sell">
-                <span class="product-sell">
-                    Novo | +1390 vendidos
-                </span>
-            </div>
+        <div class="sidebar_subtotal_container">
+            <span class="subtotal"><strong>Subtotal:</strong>
+                <p id="subTotal">R$ 0.00</p>
+            </span>
+        </div>
+        <ul id="lista-produtos">
+            <!-- Produtos Listados Aqui -->
 
+        </ul>
 
-            <div class="recommended">
-                <div class="recommended-container">
-                    <span class="material-symbols-outlined recommended-icon">verified</span><span
-                        class="recommended-content">RECOMENDADO</span>
+        <div class="sidebar_footer_container" id="footerSidebar">
+            <div class="frete_container">
+                <div class="header_container">
+                    <div class="frete_header_container">
+                        <span class="material-symbols-outlined">
+                            check_circle
+                        </span>
+                        <p>Seu pedido é elegível para FRETE GRÁTIS.</p>
+                    </div>
+                    <p class="margin">Clique em Frete grátis após fechar o pedido.</p>
+                </div>
+
+                <div class="subtotal_container">
+                    <div class="header_subtotal_container">
+                        <h2>Subtotal</h2>
+                        <span class="quantidade_produtos" id="quantidade_produtos">Quantidade</span>
+                        <span class="preco_total" id="preco_total">Preco</span>
+                    </div>
+
+                    <div class="fechar_pedido_container">
+                        <a href="#">
+                            <button type="button" class="fechar_pedido_btn">Fechar Pedido</button>
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Informações do produto -->
+    <div id="produto" class="produto">
+        <img src="img/img-products/fone.png" alt="Foto do fone" id="foto-produto">
+        <h2 id="nome-produto">Lorem</h2>
+        <p id="descricao-produto">Headset Fone de Ouvido Havit HV-H2002d Pink, Gamer, com Microfone, Falante 53mm,
+            Plug
+            3, 5mm: compatível com XBOX ONE e PS4, HAVIT, HV-H2002d Cor Rosa</p>
+        <p id="preco-produto">R$ 800</p>
+    </div>
 
 
-            <div class="title-container">
-                <h2 class="title">Computador Gamer I5</h2>
-            </div>
+    <!-- NavBar -->
+    <main id="page">
 
-
-            <div class="stars-container">
-                <div class="stars">
-                    <span class="rate">4.7</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        style="fill: #ffad33;">
-                        <path
-                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
-                        </path>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        style="fill: #ffad33;">
-                        <path
-                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
-                        </path>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        style="fill: #ffad33;">
-                        <path
-                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
-                        </path>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        style="fill: #ffad33;">
-                        <path
-                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
-                        </path>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        style="fill: #ffad33;">
-                        <path
-                            d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107-1.491 6.452zM12 5.429l2.042 4.521.588.047h.001l3.972.315-3.271 2.944-.001.002-.463.416.171.597v.003l1.253 4.385L12 15.798V5.429z">
-                        </path>
-                    </svg>
-                    <span class="number-rate">(65)</span>
+        <header>
+            <nav class="navbar">
+                <div class="logomarca">
+                    <a href="../../index-atual.html"><img src="../../img/logo-katchau-removebg-preview.png" alt="logo"
+                            class="logo-marca"></a>
                 </div>
+
+                <div class="div-search">
+                    <input id="search-bar" class="searchBar" type="search" autocomplete="off" autofill="off"
+                        placeholder="Pesquisar produtos..." name="search">
+                    <i class="material-symbols-outlined">search</i>
+
+                    <!-- Container para a lista de produtos -->
+                    <div class="product-list-container">
+                        <ul id="product-list"></ul>
+                    </div>
+                </div>
+
+                <nav class="navbar-menu">
+                    <button>
+                        <a href="assets/profile/index.html" class="icon material-symbols-outlined">person</a>
+                    </button>
+                    <button>
+                        <a href="assets/Favoritos/favoritos.html" class="icon material-symbols-outlined">favorite</a>
+                    </button>
+                    <button>
+                        <span class="icon material-symbols-outlined" id="botaoCarrinho">shopping_cart</span>
+                    </button>
+                    <button>
+                        <a href="assets/faq/faq.html" class="icon material-symbols-outlined">contact_support</a>
+                    </button>
+                    <button class="signUpBtn"><a href="../SignUp/signUp.html">Cadastrar</a></button>
+                    <button class="loginBtn"><a href="../SignUp/logIn.html">Entrar</a></button>
+                </nav>
+            </nav>
+        </header>
+        <!-- Fim NavBar -->
+        <div class="container-geral">
+            <div class="container-product">
+                <div class="container_images">
+                    <div class="thumbnails">
+                        <a href="../../img/img-products/computador-gamer-i5/Imagem-1-principal.svg"
+                            data-standard="../../img/img-products/computador-gamer-i5/Imagem-1-principal.svg"
+                            class="thumbnail" onmouseover="changeImage(this)">
+                            <img src="../../img/img-products/computador-gamer-i5/Imagem-1-principal.svg"
+                                alt="Caixa de som 1">
+                        </a>
+                        <a href="../../img/img-products/computador-gamer-i5/Imagem-2.svg"
+                            data-standard="../../img/img-products/computador-gamer-i5/Imagem-2.svg" class="thumbnail"
+                            onmouseover="changeImage(this)">
+                            <img src="../../img/img-products/computador-gamer-i5/Imagem-2.svg" alt="Caixa de som 2">
+                        </a>
+                        <a href="../../img/img-products/computador-gamer-i5/Imagem-3.svg"
+                            data-standard="../../img/img-products/computador-gamer-i5/Imagem-3.svg" class="thumbnail"
+                            onmouseover="changeImage(this)">
+                            <img src="../../img/img-products/computador-gamer-i5/Imagem-3.svg" alt="Caixa de som 3">
+                        </a>
+                    </div>
+
+
+                    <!-- Contêiner principal de imagem com zoom -->
+                    <div class="image-container easyzoom easyzoom--overlay">
+                        <a id="zoomLink" href="../../img/img-products/computador-gamer-i5/Imagem-1-principal.svg"
+                            data-original-src="../../img/img-products/computador-gamer-i5/Imagem-1-principal.svg">
+                            <img id="main-image" class="imagem-product"
+                                src="../../img/img-products/computador-gamer-i5/Imagem-1-principal.svg"
+                                alt="Caixa de som">
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="product-content">
+                    <div class="product-content-info">
+
+                        <div class="sell">
+                            <span class="product-sell">
+                                Novo | +1333 vendidos
+                            </span>
+                        </div>
+
+
+                        <div class="recommended">
+                            <div class="recommended-container">
+                                <span class="material-symbols-outlined recommended-icon">verified</span><span
+                                    class="recommended-content">RECOMENDADO</span>
+                            </div>
+                        </div>
+
+
+                        <div class="title-container">
+                            <h2 class="title">PC Gamer Mancer, Intel Core i5, GTX 1650 4GB, 16GB DE MEMÓRIA RAM, HD 1TB,
+                                Fonte 500W 80 Plus</h2>
+                        </div>
+
+
+                        <div class="stars-container">
+                            <div class="stars">
+                                <span class="rate">4.6</span>
+                                <div class="stars-rating">
+                                    <span class="star" data-rating="1">
+                                        <svg viewBox="0 0 24 24" class="star-icon">
+                                            <path
+                                                d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="star" data-rating="2">
+                                        <svg viewBox="0 0 24 24" class="star-icon">
+                                            <path
+                                                d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="star" data-rating="3">
+                                        <svg viewBox="0 0 24 24" class="star-icon">
+                                            <path
+                                                d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="star" data-rating="4">
+                                        <svg viewBox="0 0 24 24" class="star-icon">
+                                            <path
+                                                d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="star" data-rating="5">
+                                        <svg viewBox="0 0 24 24" class="star-icon">
+                                            <path
+                                                d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="rating-value">(0)</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="price_container">
+                            <p class="off">R$ <b> 3500,00</b></p>
+                            <p class="price">R$ <b>2.746,00</b></p>
+                            <p class="parcelas">em 12x R$ 228,0</p>
+                            <span id="unique-show-payment-modal" class="unique-payment-link blue">Ver meios de
+                                pagamento</span>
+                        </div>
+
+                        <div class="precisa_saber_produto margin-top-15">
+                            <span class="bold">O que você precisa saber sobre este produto</span>
+                            <ul>
+                                <li>Processador: Intel i5 3º Geração</li>
+                                <li>Placa de Vídeo: GTX 1650 4GB</li>
+                                <li>Memória: 16GB Tipo:DDR3</li>
+                                <li>Armazenamento: HD 1TB</li>
+                            </ul>
+
+                            <span class="ver-caracteristicas-link blue" id="verDesc">Ver características</span>
+                        </div>
+                    </div>
+
+
+                    <div class="buy_container">
+                        <div class="buy_container_1">
+                            <span class="green bold">Chegará grátis entre terça-feira e quarta-feira</span>
+                            <span>por ser sua primeira compra</span>
+                        </div>
+
+                        <div class="buy_container_2">
+                            <span class="green bold">Retire grátis</span>
+                            <span>entre terça-feira e quinta-feira em uma agência Katchau</span>
+                        </div>
+
+                        <p class="bold margin-left-15">Estoque disponível</p>
+
+                        <div class="quantidade-container">
+                            <div class="dropdown">
+                                <div class="quantity-container margin-left-15">
+                                    <span>Quantidade: </span>
+                                    <div class="dropdown-selected">1 unidade</div>
+                                    <span class="material-symbols-outlined arrowDrop">arrow_drop_down</span>
+                                </div>
+                                <div class="dropdown-menu">
+                                    <div data-value="1 unidade">1 unidade</div>
+                                    <div data-value="2 unidades">2 unidades</div>
+                                    <div data-value="3 unidades">3 unidades</div>
+                                    <div data-value="4 unidades">4 unidades</div>
+                                    <div data-value="5 unidades">5 unidades</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buttons-buy">
+                            <button class="product-btn">
+                                <a href="#">Comprar Agora</a>
+                            </button>
+
+                            <button id="botaoCarrinho" class="addToCart-btn">Adicionar ao carrinho</button>
+                        </div>
+
+                        <div class="sell-for">
+                            <span class="margin-left-15 margin-top-15">Vendido por </span>
+                            <span class="blue">Katchau</span>
+                        </div>
+
+                        <div class="devolution-container margin-left-15 margin-top-15">
+                            <div class="flex">
+                                <span class="material-symbols-outlined margin-left-5">
+                                    undo
+                                </span>
+                                <span class="blue">Devolução grátis. <span class="white">Você tem 30 dias a partir da
+                                        data
+                                        de recebimento</span></span>
+                            </div>
+                        </div>
+
+                        <div class="compra_segura-container margin-left-15 margin-top-15">
+                            <div class="flex">
+
+                                <span class="material-symbols-outlined margin-left-5">
+                                    verified_user
+                                </span>
+                                <span class="blue">Compra garantida, <span class="white">receba o produto que está
+                                        esperando
+                                        ou devolvemos o dinheiro.</span></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
             </div>
-
-
-            <div class="price">
-                <p class="off">R$ <b> 5000,00</b></p>
-                <p class="price">R$ <b>4500,00</b></p>
+        </div>
+        <div class="related-products">
+            <button class="carousel-btn2 left-btn left2 material-symbols-outlined" onclick="scrollToLeft()">
+                arrow_back_ios
+            </button>
+            <div class="related-title-contain">
+                <h2 class="title-related-products">Produtos Relacionados</h2>
+                <span class="title-related-products">Patrocinado</span>
             </div>
+            <div class="carousel-container">
+                <!-- Botão para navegar para a esquerda -->
 
+                <!-- Contêiner para o carrossel -->
+                <div class="carousel-track-wrapper">
+                    <div class="carousel-track">
+                        <div class="carousel-item">
+                            <a href="monitor2.html">
 
-            <div class="desc">
-                <h3>Sobre este item</h3>
-                <p>
-                    Este PC da Pichau apresenta um processador Intel Core i5-10400F de 6 núcleos, 12 threads, com
-                    velocidade base de 2.9GHz (turbo até 4.3GHz) e 12MB de cache. A placa mãe é uma ASRock H510M-HVS
-                    R2.0 compatível com DDR4.
-                </p>
+                                <img src="../../img/img-products/monitor-curvado.png" width="250px"
+                                    alt="monitor curvado">
+                                <h3 class="title-product">Monitor Curvado</h3>
+                                <div class="price-container">
+                                    <p class="offPrice">R$ 979,00</p>
+                                    <div class="price-product-container">
+                                        <p class="price-product">R$ 881,00</p>
+                                        <p class="discount">10% OFF</p>
+                                    </div>
 
-                <p>
-                    Ele vem equipado com 16GB de memória RAM DDR4 a 3200MHz (2x8GB), um HD WD Blue de 1TB SATA III e um
-                    SSD TGT Seal ST de 240GB SATA III com velocidades de até 500MB/s de leitura e 450MB/s de gravação.
-                </p>
-                <p>
-                    A Placa de Vídeo Galax GeForce RTX 4060 OC possui 8GB de memória GDDR6 e interface de 128-bit. A
-                    fonte Mancer Thunder 600W 80 Plus Bronze e o gabinete Mancer Ward, Mid-Tower com lateral de vidro e
-                    quatro fans inclusos, garantem a alimentação e o resfriamento adequados.
-                </p>
+                                </div>
+                                <div class="frete-gratis-container">
+                                    <span class="green">Frete grátis <span class="white">por ser sua primeira
+                                            compra</span>
+                                    </span>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="carousel-item">
+                            <a href="kit-limpeza.html">
+
+                                <img src="../../img/img-products/kit-de-limpeza-pc.png" width="250px" alt="Kit Limpeza">
+                                <h3 class="title-product">Kit Limpeza</h3>
+                                <div class="price-container">
+                                    <p class="offPrice">R$ 34,00</p>
+                                    <div class="price-product-container">
+                                        <p class="price-product">R$ 30,60</p>
+                                        <p class="discount">10% OFF</p>
+                                    </div>
+
+                                </div>
+                                <div class="frete-gratis-container">
+                                    <span class="green">Frete grátis <span class="white">por ser sua primeira
+                                            compra</span>
+                                    </span>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="carousel-item">
+                            <a href="gabinete.html">
+
+                                <img src="../../img/img-products/gabinete-redragon/imagem-2-principal.svg" width="250px"
+                                    alt="Pc i5">
+                                <h3 class="title-product">Gabinete Redragon</h3>
+                                <div class="price-container">
+                                    <p class="offPrice">R$ 520,00</p>
+                                    <div class="price-product-container">
+                                        <p class="price-product">R$ 410,00</p>
+                                        <p class="discount">10% OFF</p>
+                                    </div>
+
+                                </div>
+                                <div class="frete-gratis-container">
+                                    <span class="green">Frete grátis <span class="white">por ser sua primeira
+                                            compra</span>
+                                    </span>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="carousel-item">
+                            <a href="fone.html">
+
+                                <img src="../../img/img-products/fone.png" width="250px" alt="Fone">
+                                <h3 class="title-product">HeadSet Redragon</h3>
+                                <div class="price-container">
+                                    <p class="offPrice">R$ 600,00</p>
+                                    <div class="price-product-container">
+                                        <p class="price-product">R$ 540,00</p>
+                                        <p class="discount">10% OFF</p>
+                                    </div>
+
+                                </div>
+                                <div class="frete-gratis-container">
+                                    <span class="green">Frete grátis <span class="white">por ser sua primeira
+                                            compra</span>
+                                    </span>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="carousel-item">
+                            <a href="headset-gamer2.html">
+
+                                <img src="../../img/img-products/Headset-gamer.png" width="250px" alt="headset gamer">
+                                <h3 class="title-product">HeadSet Gamer Havit</h3>
+                                <div class="price-container">
+                                    <p class="offPrice">R$ 120,00</p>
+                                    <div class="price-product-container">
+                                        <p class="price-product">R$ 108,00</p>
+                                        <p class="discount">10% OFF</p>
+                                    </div>
+
+                                </div>
+                                <div class="frete-gratis-container">
+                                    <span class="green">Frete grátis <span class="white">por ser sua primeira
+                                            compra</span>
+                                    </span>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="carousel-item">
+                            <a href="luminaria.html">
+
+                                <img src="../../img/img-products/Luminario-com-carregador.png" width="250px"
+                                    alt="Luminaria com carregador">
+                                <h3 class="title-product">Luminária Com Carregador</h3>
+                                <div class="price-container">
+                                    <p class="offPrice">R$ 90,00</p>
+                                    <div class="price-product-container">
+                                        <p class="price-product">R$ 81,00</p>
+                                        <p class="discount">10% OFF</p>
+                                    </div>
+
+                                </div>
+                                <div class="frete-gratis-container">
+                                    <span class="green">Frete grátis <span class="white">por ser sua primeira
+                                            compra</span>
+                                    </span>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="carousel-item">
+                            <a href="cooler.html">
+
+                                <img src="../../img/img-products/cooler-notebook.png" width="250px" alt="Cooler">
+                                <h3 class="title-product">Cooler</h3>
+                                <div class="price-container">
+                                    <p class="offPrice">R$ 220,00</p>
+                                    <div class="price-product-container">
+                                        <p class="price-product">R$ 154,00</p>
+                                        <p class="discount">30% OFF</p>
+                                    </div>
+
+                                </div>
+                                <div class="frete-gratis-container">
+                                    <span class="green">Frete grátis <span class="white">por ser sua primeira
+                                            compra</span>
+                                    </span>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="carousel-item">
+                            <a href="teclado-gamer.html">
+
+                                <img src="../../img/img-products/teclado-gamer.png" width="250px" alt="Teclado gamer">
+                                <h3 class="title-product">Teclado Mecânico Redragon</h3>
+                                <div class="price-container">
+                                    <p class="offPrice">R$ 300,00</p>
+                                    <div class="price-product-container">
+                                        <p class="price-product">R$ 270,00</p>
+                                        <p class="discount">10% OFF</p>
+                                    </div>
+
+                                </div>
+                                <div class="frete-gratis-container">
+                                    <span class="green">Frete grátis <span class="white">por ser sua primeira
+                                            compra</span>
+                                    </span>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="computador-gamer-i5.html">
+
+                                <img src="../../img/img-products/notebook gamer dell.png" width="250px"
+                                    alt="notebook gamer">
+                                <h3 class="title-product">Notebook Gamer Dell</h3>
+                                <div class="price-container">
+                                    <p class="offPrice">R$ 5300,00</p>
+                                    <div class="price-product-container">
+                                        <p class="price-product">R$ 2650,00</p>
+                                        <p class="discount">50% OFF</p>
+                                    </div>
+
+                                </div>
+                                <div class="frete-gratis-container">
+                                    <span class="green">Frete grátis <span class="white">por ser sua primeira
+                                            compra</span>
+                                    </span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Botão para navegar para a direita -->
             </div>
-            <button class="product-btn">
-                <a href="#">Comprar Agora</a>
+            <button class="carousel-btn2 right-btn right2 material-symbols-outlined" onclick="scrollToRight()">
+                arrow_forward_ios
             </button>
         </div>
 
-    </div>
+
+
+        <div id="features-id" class="features-product bg-color">
+            <h2 class="title-feature white">Características do produto</h2>
+            <div class="features-product-container">
+                <div class="feature-wrapper">
+                    <div class="feature">
+                        <span class="material-symbols-outlined green">task_alt</span>
+                        <span class="white">Marca: <strong>Mancer</strong></span>
+                    </div>
+
+                    <div class="feature">
+                        <span class="material-symbols-outlined green">task_alt</span>
+                        <span class="white">Modelo: <strong>Mancer-Gamer-MKT-21815</strong></span>
+                    </div>
+                </div>
+
+                <div class="feature-wrapper">
+                    <div class="feature">
+                        <span class="material-symbols-outlined green">task_alt</span>
+                        <span class="white">RAM: <strong>16 GB</strong></span>
+                    </div>
+
+                    <div class="feature">
+                        <span class="material-symbols-outlined green">task_alt</span>
+                        <span class="white">Sistema operacional <strong>Windows 10</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="desc-product-container bg-color">
+                <h2 class="desc-title green">Descrição</h2>
+                <div class="description" id="description">
+                    <p class="white font-18 line-height-desc font-weight-500">
+                        O PC Gamer Mancer foi criado pensando em proporcionar um ótimo desempenho, rapidez e eficiência
+                        para o seu usuário. Com um Design morderno e de fácil montagem, o PC Mancer vem oara inovar na
+                        categoria de PCs. Feito tanto para jogos e uso doméstico ou profissional, ou seja, é perfeito
+                        para você. Montado e criado por profissionais, a mais de 16 anos no mercado de informática, os
+                        computadores Mancer contam com itens de alta qualidade que irão lhe proporcionar experiências
+                        incríveis.
+                    </p>
+                </div>
+                <span class="toggle-button" onclick="toggleDescription()">Ver mais &#x25BC;</span>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="exclusive">
+                        <h2>Exclusivo</h2>
+                        <h3>Se inscreva!</h3>
+                        <span>Garanta 10% de desconto no primeiro pedido</span>
+                        <div class="input-container">
+                            <input class="footer-input" type="email" placeholder="Insira seu e-mail" required>
+                            <!-- <i class="material-symbols-outlined">send</i> -->
+                            <button type="button" class="btn">ENVIAR</button>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <h2>Suporte</h2>
+                        <span><i class="material-symbols-outlined icon-footer-support">phone_in_talk</i>(11)
+                            98996-9652</span>
+                        <span><i
+                                class="material-symbols-outlined icon-footer-support">alternate_email</i>katchau.support@gmail.com</span>
+                    </div>
+                    <div class="account">
+                        <h2>Sua Conta</h2>
+                        <span><a href="../profile/index.html">Minha conta</a></span>
+                        <span><a href="../SignUp/logIn.html">Entrar / Cadastrar</a></span>
+                        <span><a href="../carrinho/carrinho.html">Carrinho</a></span>
+                        <span><a href="../Favoritos/favoritos.html">Favoritos</a></span>
+                        <span><a href="../../index2.html" class="hover-simple">Início</a></span>
+                    </div>
+                    <div class="quick-links">
+                        <h2>Links Rápidos</h2>
+                        <span><a href="../politica-de-privacidade/politica-de-privacidade.html">Política de
+                                privacidade</a></span>
+                        <span><a href="../termos-de-uso/termos-de-uso.html">Termos de uso</a></span>
+                        <span><a href="../faq/faq.html">FAQ</a></span>
+                        <span><a href="../contato/index.html">Contato</a></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright-container">
+            <span>&copy Copyright Katchau 2024 Todos os direitos reservados</span>
+        </div>
+    </main>
+
+    <!-- Descrição Do produto -->
 
 
     <!-- Section Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="exclusive">
-                    <h2>Exclusivo</h2>
-                    <h3>Se inscreva!</h3>
-                    <span>Garanta 10% de desconto no primeiro pedido</span>
-                    <div class="input-container">
-                        <input class="footer-input" type="email" placeholder="Insira seu e-mail" required>
-                        <!-- <i class="material-symbols-outlined">send</i> -->
-                        <button type="button" class="btn">ENVIAR</button>
+
+
+    <div id="lightbox" class="lightbox">
+        <a href="#">
+            <img src="../../img/img-products/mouse.png" alt="Imagem Grande">
+        </a>
+    </div>
+
+    <!-- Modal Thumbnails-->
+    <div id="modalThumb" class="modal-thumb">
+        <span id="closeModal" class="close">&times;</span>
+        <img id="modalImage" class="modal-content-thumb" src="" alt="Imagem Ampliada">
+    </div>
+
+
+    <!-- Modal Rating -->
+    <div id="rating-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span> <!-- Deve estar aqui -->
+            <h2>Avalie nosso Produto</h2>
+            <p>Você está avaliando com <span id="selected-rating">0</span> estrelas.</p>
+            <textarea id="review-text" placeholder="Escreva seu comentário..."></textarea>
+            <button id="submit-review">Enviar Avaliação</button>
+        </div>
+    </div>
+
+    <!-- Popup rating -->
+    <div id="thank-you-popup" class="popup">
+        <div class="popup-content">
+            <span class="check-icon">✔</span>
+            <span class="popup-text">Agradecemos sua avaliação!!</span>
+        </div>
+    </div>
+
+    <!-- Modal meios de pagamento -->
+    <div id="unique-payment-modal" class="unique-modal-container hidden">
+        <div class="unique-modal-box">
+            <span id="unique-close-payment-modal" class="unique-close-button">&times;</span>
+            <h2 class="flex padding-40 bold-600 black font-20">Meios de Pagamento para este produto</h2>
+            <hr>
+            <ul class="unique-payment-options">
+                <div class="metod">
+                    <span class="title-metod">Cartões de crédito</span>
+                    <span class="subtitle">Aprovação imediata.</span>
+                    <div class="parcela-container">
+                        <span class="margin-bottom-20 flex size-16" style="font-size: 18px; margin-bottom: 20px;">Até
+                            12x sem juros</span>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="../../img/cards/visa.svg" alt="Visa">
+                                <p>12 parcelas</p>
+                            </div>
+                            <div class="card">
+                                <img src="../../img/cards/hipercard.svg" alt="hipercard">
+                                <p>12 parcelas</p>
+                            </div>
+                            <div class="card">
+                                <img src="../../img/cards/elo.svg" alt="elo">
+                                <p>12 parcelas</p>
+                            </div>
+                            <div class="card">
+                                <img src="../../img/cards/mastercard.svg" alt="mastercard">
+                                <p>12 parcelas</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="support">
-                    <h2>Suporte</h2>
-                    <span><i class="material-symbols-outlined icon-footer-support">phone_in_talk</i>(11)
-                        98996-9652</span>
-                    <span><i
-                            class="material-symbols-outlined icon-footer-support">alternate_email</i>katchau.support@gmail.com</span>
+
+                <hr>
+
+                <div class="metod">
+                    <span class="title-metod">Cartões de débito</span>
+                    <span class="subtitle">Aprovação imediata.</span>
+                    <div class="parcela-container">
+                        <div class="cards">
+                            <div class="card">
+                                <img src="../../img/cards/santander.svg" alt="santander">
+                                <p>Santander</p>
+                            </div>
+                            <div class="card">
+                                <img src="../../img/cards/nubank.svg" alt="nubank">
+                                <p>Nubank</p>
+                            </div>
+                            <div class="card">
+                                <img src="../../img/cards/btg-pactual.svg" alt="btg pactual">
+                                <p>Btg Pactual</p>
+                            </div>
+                            <div class="card">
+                                <img class="caixa" src="../../img/cards/caixa-economica-federal.svg" alt="caixa">
+                                <p>Caixa</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="account">
-                    <h2>Sua Conta</h2>
-                    <span><a href="../profile/index.html">Minha conta</a></span>
-                    <span><a href="../SignUp/entrar-kayan.html">Entrar / Cadastrar</a></span>
-                    <span><a href="../carrinho/carrinho.html">Carrinho</a></span>
-                    <span><a href="../Favoritos/favoritos.html">Favoritos</a></span>
-                    <span><a href="../../index2.html" class="hover-simple">Início</a></span>
+
+                <div class="metod">
+                    <span class="title-metod">Outros meios de pagamento</span>
+                    <p class="title-metod bold">Pix</p>
+                    <span class="subtitle">Aprovação imediata.</span>
+                    <div class="parcela-container">
+                        <div class="cards">
+                            <div class="card">
+                                <img class="pix" src="../../img/cards/pix.svg" alt="pix">
+                                <p class="blue size-14">Saiba mais sobre o pix</p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="quick-links">
-                    <h2>Links Rápidos</h2>
-                    <span><a href="../politica-de-privacidade/politica-de-privacidade.html">Política de privacidade</a></span>
-                    <span><a href="../termos-de-uso/termos-de-uso.html">Termos de uso</a></span>
-                    <span><a href="../faq/faq.html">FAQ</a></span>
-                    <span><a href="../contato/index.html">Contato</a></span>
+
+                <hr>
+
+                <div class="metod">
+
+                    <p class="title-metod bold">Boleto bancário</p>
+                    <p class="align-start">Ao comprar, explicaremos como fazer o pagamento em qualquer agência
+                        bancária,
+                        caixa
+                        eletrônico, Internet Banking ou correspondentes bancários.</p>
+                    <img src="../../img/cards/boleto-logo.svg" style="height: 100px;" alt="boleto">
                 </div>
-            </div>
+            </ul>
         </div>
-    </footer>
-    <div class="copyright-container">
-        <span>&copy Copyright Katchau 2024 Todos os direitos reservados</span>
     </div>
+
+    <button id="scrollToTopBtn" class="material-symbols-outlined" style="display: none;">arrow_upward</button>
+
+    <script src="../../JS/filtragemProdutos-ProductPage.js"></script>
+    <script src="../../JS/searchBar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/easyzoom@2.5.0/dist/easyzoom.js"></script>
+    <script src="../../JS/starAvaliation.js"></script>
+    <script src="../../JS/modal.js"></script>
+    <script src="../../JS/description.js"></script>
+    <script src="../../JS/scrollToDesc.js"></script>
+    <script src="../../JS/paymentModal.js"></script>
+    <script src="../../JS/carrinho-productPage.js"></script>
+    <script src="../../JS/thumbnail.js"></script>
+    <script src="../../JS/loader.js"></script>
+    <script src="../../JS/scrollToTop.js"></script>
+
+    <script src="../../JS/dropdownQuantity.js"></script>
+    <script src="../../JS/relatedProducts.js"></script>
 </body>
 
 </html>

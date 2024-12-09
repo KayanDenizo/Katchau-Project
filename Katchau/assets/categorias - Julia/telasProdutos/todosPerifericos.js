@@ -1,15 +1,20 @@
 const mostrarMaisBtn = document.getElementById('mostrarMais');
 const oculto = document.getElementById('oculto');
 
-mostrarMaisBtn.addEventListener('click', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
-    if (oculto.style.display == 'flex') {
-        oculto.style.display = 'none'; 
-        mostrarMaisBtn.innerText = 'Mostrar mais'; 
-    } else {
-        oculto.style.display = 'flex'; 
-        mostrarMaisBtn.innerText = 'Mostrar menos'; 
-    }
+
+    mostrarMaisBtn.addEventListener('click', () => {
+
+        if (oculto.style.display == 'flex') {
+            oculto.style.display = 'none';
+            mostrarMaisBtn.innerText = 'Mostrar mais';
+        } else {
+            oculto.style.display = 'flex';
+            mostrarMaisBtn.innerText = 'Mostrar menos';
+        }
+
+    });
 
 });
 

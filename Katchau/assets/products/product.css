@@ -608,7 +608,6 @@ img:not(.logo-marca) {
     transition: .2s ease-in-out;
 
     &:hover {
-        transform: scale(1.05);
         transition: .2s ease-in-out;
         background: #393E46;
     }

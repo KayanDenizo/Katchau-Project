@@ -46,7 +46,7 @@ li {
     line-height: 15.73px;
     text-decoration: underline #ccc;
     transition: .2s ease;
-    
+
     &:hover {
       color: #FD7014;
       transition: .2s ease;
@@ -63,7 +63,7 @@ li {
     #closeSidebar {
       cursor: pointer;
       transition: .2s ease;
-      
+
       &:hover {
         color: #b6b6b6c1;
         transition: .2s ease;
@@ -269,7 +269,7 @@ li {
   padding-right: 16px;
   font-size: 14px;
   transition: .2s ease;
-  
+
   &:hover {
     color: #ccc;
     transition: .2s ease;
@@ -370,4 +370,37 @@ li {
     }
   }
 
+}
+
+/* Pop Up addtocart */
+
+.popupcart-wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #222831;
+}
+
+.popUpCart {
+  display: none;
+  height: 45px;
+  z-index: 10;
+  background-color: #393E46;
+  border-radius: 70px;
+  position: fixed;
+  bottom: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  color: #f1f1f1;
+}
+
+.popUpCart img {
+  width: 45px;
+}
+
+#textAdded {
+  display: none;
 }
