@@ -41,3 +41,19 @@ btnConfirmacao.addEventListener('click', () => {
 btnClose.addEventListener('click', () => {
     containerPop.style.display = 'none';
 });
+
+const popContainerProgress = document.querySelector('.popContainerProgress');
+const eventBtnNegar = document.getElementById('eventBtnNegar');
+const progressoBar = document.querySelector('.barraProgresso');
+const naoBtn = document.getElementById('naoBtn');
+
+progressoBar.addEventListener('animationend', () => {
+    eventBtnNegar.style.display = 'none';
+    popContainerProgress.style.display = 'none';
+});
+
+naoBtn.addEventListener('click', () => {
+    eventBtnNegar.style.display = 'flex';
+    containerPop.style.display = 'none';
+});
+
